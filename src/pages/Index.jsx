@@ -28,6 +28,7 @@ export default function Index() {
         paragraphs={false}
         sixCards={false}
         paragraphsModal={false}
+        visualization={true}
       />
       <About modal={true} />
       <AboutInstagram

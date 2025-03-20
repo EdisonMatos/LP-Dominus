@@ -20,6 +20,7 @@ import FeaturesParagraphs from "./FeaturesParagraphs";
 import FeaturesButton from "./FeaturesButton";
 import DefaultModals from "./DefaultModals";
 import FeaturesWithIcons from "./FeatureWithIcons";
+import FeatureVisualization from "../sections/FeatureVisualization";
 
 export default function Features({
   modal,
@@ -30,6 +31,7 @@ export default function Features({
   button,
   paragraphsModal,
   featureIcons,
+  visualization,
 }) {
   return (
     <div>
@@ -302,6 +304,7 @@ export default function Features({
       {button && <FeaturesButton />}
       {paragraphsModal && <DefaultModals />}
       {featureIcons && <FeaturesWithIcons />}
+      {visualization && <FeatureVisualization />}
     </div>
   );
 }
