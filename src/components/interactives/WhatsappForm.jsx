@@ -1,17 +1,23 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import WhatsAppIcon from "../../assets/importAssets/WhatsAppIcon.webp";
-import { CiUser, CiPhone, CiMail, CiGlobe, CiChat1 } from "react-icons/ci";
-import emailjs from "@emailjs/browser";
+import { CiUser, CiPhone, CiMail, CiCreditCard1, CiBank } from "react-icons/ci";
 
-const WhatsappForm = () => {
+const FormCard1 = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [uf, setUf] = useState("");
-  const [message, setMessage] = useState("");
+  const [cpf, setCpf] = useState("");
+  const [position, setPosition] = useState("");
+  const [institution, setInstitution] = useState("");
+  const [endereco, setEndereco] = useState("");
+
+  // const [uf, setUf] = useState("");
+  // const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  
 
   const capitalizeFirstLetter = (str) => {
     return str
@@ -39,14 +45,14 @@ const WhatsappForm = () => {
   };
 
   const sendToWhatsapp = async () => {
-    setIsSubmitting(true);
-
+    // setIsSubmitting(true);
     const validationErrors = {};
 
+    // Validação de campos
     if (!name) {
       validationErrors.name = "O campo Nome é obrigatório.";
     } else if (!validateName(name)) {
-      validationErrors.name = "Nome inválido.";
+      validationErrors.name = "Preencha o nome completo";
     }
 
     if (!phone) {
@@ -55,21 +61,27 @@ const WhatsappForm = () => {
       validationErrors.phone = "Número inválido.";
     }
 
+    if (!position) {
+      validationErrors.position = "O campo Cargo é obrigatório.";
+    } else !validatePosition(position);
+
     if (!email) {
       validationErrors.email = "O campo E-mail é obrigatório.";
     } else if (!validateEmail(email)) {
       validationErrors.email = "E-mail inválido.";
     }
 
-    if (!uf) {
-      validationErrors.uf = "O campo Cidade e Estado é obrigatório.";
-    } else if (!validateUf(uf)) {
-      validationErrors.uf = "Cidade e Estado inválido.";
-    }
+    if (!institution) {
+      validationErrors.institution = "O campo Nome da Câmara é obrigatório.";
+    } else !validateInstitution(institution);
 
-    if (!validateMessage(message)) {
-      validationErrors.message = "O campo mensagem é obrigatório.";
-    }
+    if (!endereco) {
+      validationErrors.endereco = "O campo Endereço é obrigatório.";
+    } else !validateEndereco(endereco);
+
+    if (!cpf) {
+      validationErrors.cpf = "O campo Cpf é obrigatório.";
+    } else !validateCpf(cpf);
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -77,44 +89,35 @@ const WhatsappForm = () => {
       return;
     }
 
-    const templateParams = {
-      to_name: name,
-      name,
-      phone,
-      email,
-      uf,
-      to_email: email,
-      message,
-    };
+    // Aqui o número do WhatsApp precisa estar no formato correto
+    const whatsappNumber = "5599984234461"; // Certifique-se de que este número está correto com o código do país
+    const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
+    const whatsappMessage = `Olá! Meu nome é ${name}.%0A
+    Cpf: ${cpf}.%0A
+    Telefone: ${formattedPhone}.%0A
+    Cargo: ${position}.%0A
+    E-mail: ${email}.%0A
+    Nome da Câmara: ${institution}.%0A
+    Endereço: ${endereco}`;
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+    // Abrir WhatsApp em uma nova aba
     try {
-      const response = await emailjs.send(
-        "service_79yzhx9",
-        "template_mhpelei",
-        templateParams,
-        "HhY_ngFZdJ35Ugc0H"
-      );
-      console.log(
-        "Mensagem enviada com sucesso:",
-        response.status,
-        response.text
-      );
-
-      setName("");
-      setPhone("");
-      setEmail("");
-      setUf("");
-      setMessage("");
-      setIsSubmitting(false);
-      alert(
-        "Recebemos os seus dados com sucesso! Em breve nossa equipe entrará em contato. Obrigado!"
-      );
-      window.location.reload();
+      window.open(whatsappURL, "_blank");
     } catch (error) {
-      console.error("Erro ao enviar o e-mail:", error);
-      alert("Houve um erro ao enviar o e-mail. Tente novamente.");
-      setIsSubmitting(false);
+      console.error("Erro ao abrir o WhatsApp: ", error);
     }
+
+    // Limpar os campos após o envio
+    setName("");
+    setPhone("");
+    setEmail("");
+    setCpf("");
+    setPosition("");
+    setInstitution("");
+    setIsSubmitting(false);
   };
 
   const validateName = (name) => {
@@ -127,16 +130,35 @@ const WhatsappForm = () => {
     return cleanedPhone.length >= 10; // Pelo menos 10 dígitos
   };
 
+  const validatePosition = (position) => {
+    const positionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
+    return positionPattern.test(position.trim());
+  };
+
   const validateEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email.trim());
   };
-
-  const validateUf = (uf) => {
-    return uf.trim().length >= 5; // Requer ao menos 5 caracteres para Cidade e Estado
+  const validateInstitution = (institution) => {
+    const institutionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
+    return institutionPattern.test(institution.trim());
   };
 
-  const validateMessage = (message) => !!message;
+  const validateEndereco = (endereco) => {
+    const enderecoPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
+    return enderecoPattern.test(endereco.trim());
+  };
+
+  const validateCpf = (cpf) => {
+    const cpfPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
+    return cpfPattern.test(cpf.trim());
+  };
+
+  // const validateUf = (uf) => {
+  //   return uf.trim().length >= 5; // Requer ao menos 5 caracteres para Cidade e Estado
+  // };
+
+  // const validateMessage = (message) => !!message;
 
   const formatPhoneNumber = (phoneNumber) => {
     let cleaned = phoneNumber.replace(/\D/g, ""); // Remove tudo que não for número
@@ -158,7 +180,7 @@ const WhatsappForm = () => {
   };
 
   return (
-    <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full desktop1:w-[90%] h-auto">
+    <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
       <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
         {/* <h1 className="w-full mb-2 font-medium text-white">Fale conosco</h1> */}
         {/* Nome */}
@@ -178,6 +200,24 @@ const WhatsappForm = () => {
             />
           </div>
           {errors.name && <p className="text-red-500">{errors.name}</p>}
+        </div>{" "}
+        {/* Cpf */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiCreditCard1 />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="tel"
+              id="cpf"
+              value={cpf}
+              onChange={(e) => setCpf(e.target.value)}
+              placeholder="Cpf"
+              required
+            />
+          </div>
+          {errors.cpf && <p className="text-red-500">{errors.cpf}</p>}
         </div>
         {/* Telefone */}
         <div className="mb-6">
@@ -197,6 +237,63 @@ const WhatsappForm = () => {
           </div>
           {errors.phone && <p className="text-red-500">{errors.phone}</p>}
         </div>
+        {/* Cargo */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiBank />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="text"
+              id="position"
+              value={position}
+              onChange={(e) => setPosition(e.target.value)}
+              placeholder="Cargo"
+              required
+            />
+          </div>
+          {errors.position && <p className="text-red-500">{errors.position}</p>}
+        </div>
+        {/* Instituição */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiBank />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="text"
+              id="institution"
+              value={institution}
+              onChange={(e) => setInstitution(e.target.value)}
+              placeholder="Nome da Câmara"
+              required
+            />
+          </div>
+          {errors.institution && (
+            <p className="text-red-500">{errors.institution}</p>
+          )}
+        </div>
+        {/* Endereço */}
+        <div className="mb-6">
+          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiBank />
+            </div>
+            <input
+              className="w-full px-1 py-2 border-0 rounded-none"
+              type="text"
+              id="endereco"
+              value={endereco}
+              onChange={(e) => setEndereco(e.target.value)}
+              placeholder="Endereço"
+              required
+            />
+          </div>
+          {errors.endereco && <p className="text-red-500">{errors.endereco}</p>}
+        </div>
+       
         {/* Email */}
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
@@ -215,26 +312,8 @@ const WhatsappForm = () => {
           </div>
           {errors.email && <p className="text-red-500">{errors.email}</p>}
         </div>
-        {/* Cidade/Estado */}
-        <div className="mb-6">
-          <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiGlobe />
-            </div>
-            <input
-              className="w-full px-1 py-2 border-0 rounded-none"
-              type="text"
-              id="uf"
-              value={uf}
-              onChange={handleUfChange}
-              placeholder="Cidade e Estado"
-              required
-            />
-          </div>
-          {errors.uf && <p className="text-red-500">{errors.uf}</p>}
-        </div>
         {/* Mensagem */}
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-start justify-center w-12 px-1 bg-white">
               <CiChat1 className="mt-[14px]" />
@@ -244,18 +323,17 @@ const WhatsappForm = () => {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Mensagem"
+              placeholder="Conte um pouco sua situação:"
               required
             />
           </div>
           {errors.message && <p className="text-red-500">{errors.message}</p>}
-        </div>
+        </div> */}
         {/* Botão */}
         <button
           type="button"
           className="flex items-center w-full font-medium text-[#0E2B40] bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
           onClick={sendToWhatsapp}
-          disabled={isSubmitting}
         >
           <div className="flex items-center justify-center w-full">
             <img
@@ -263,7 +341,7 @@ const WhatsappForm = () => {
               className="w-6 h-6 mr-2 phone2:w-8 phone2:h-8"
               alt="WhatsApp Icon"
             />
-            <p>{isSubmitting ? "Enviando..." : "Enviar mensagem"}</p>
+            <p>{isSubmitting ? "Enviando..." : "Enviar inscrição"}</p>
           </div>
         </button>
       </div>
@@ -271,4 +349,4 @@ const WhatsappForm = () => {
   );
 };
 
-export default WhatsappForm;
+export default FormCard1;
