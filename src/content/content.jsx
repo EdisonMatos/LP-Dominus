@@ -51,17 +51,15 @@ export const infos = {
   },
   endereco: (
     <div>
-      <p>Endereço:</p>
       <p>Escritório:</p>
       <p>Rua General Andrade Neves,</p>
       <p>nº 90 - Sala 37, Centro Histórico.</p>
       <p>Porto Alegre - RS,</p>
       <p>CEP: 90010-210</p>
-
-      <br />
-      <br />
-
-      <p>Escritório:</p>
+    </div>
+  ),
+  enderecoSecundario: (
+    <div>
       <p>Treinamento</p>
       <p>Hotel Intercity Praia de Belas - </p>
       <p>Avenida Borges de Medeiros,</p>
@@ -824,6 +822,7 @@ const content = {
       phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
       email: `${infos.email}@${infos.domain}`,
       adress: infos.endereco,
+      adressSecundario: infos.enderecoSecundario,
       officeHours: infos.expediente,
       year: currentYear,
       footerexpediente: infos.expediente,
