@@ -807,6 +807,12 @@ const content = {
         },
       },
     },
+    contactForm: {
+      minitag: "FORMULÁRIO",
+      title: "Preencha o Formulário",
+      subtitle:
+        "Nos conte um pouco sobre sua situação preenchendo o formulário abaixo.",
+    },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
