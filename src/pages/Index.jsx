@@ -14,12 +14,14 @@ import Form from "../components/sections/Form";
 
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import BackToTopButton from "../components/interactives/BackToTopButton";
+import ProximosCursos from "../components/sections/ProximosCursos";
 
 export default function Index() {
   return (
     <div>
       <Navbar LightMode={true} />
       <Hero appDownloadButtons={false} />
+      <ProximosCursos socialPrint={true} instagram={true} />
       <Features
         defaultFeature={false}
         imageFeatures={true}

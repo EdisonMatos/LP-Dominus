@@ -8,16 +8,14 @@ import FeatureCardVisualization from "../cards/CardFeatureVisualization";
 export default function FeatureVisualization() {
   return (
     <div>
-      <SectionArea className="bg-bgSectionDark">
+      <SectionArea className="squares" paddingtop={false}>
         <SectionWrapper>
           <SectionHeader
             className="text-center"
-            miniTitle="Cursos Anteriores"
-            sectionHeaderTitle="Cursos Ministrados"
+            miniTitle="Especialistas"
+            sectionHeaderTitle="Nossos cursos"
             sectionHeaderSubtitle="Saiba quais cursos tivemos em nossa unidade de cursos para não perder nenhuma oportunidade"
             color=""
-            titleColorSet="text-white"
-            subtitleColorSet="text-white"
           />
           <div className="flex flex-wrap justify-center gap-4">
             <MotionDivDownToUp className="w-full">

@@ -26,7 +26,7 @@ export default function FeatureCardVisualization({
   return (
     <MotionDivDownToUp className="flex justify-center w-auto">
       <div
-        className={` max-w-[350px] tablet2:max-w-[300px] font-mainFont flex flex-col desktop1:max-w-[300px] bg-white desktop3:max-w-[280px] flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px] ${className}`}
+        className={` max-w-[350px] tablet2:max-w-[300px] font-mainFont flex flex-col desktop1:max-w-[300px] shadow-lg bg-white desktop3:max-w-[280px] flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px] ${className}`}
       >
         <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
           <div
@@ -44,7 +44,7 @@ export default function FeatureCardVisualization({
             <h1 className="text-title1 leading-[27px] font-medium mt-[2px] mb-[12px]">
               {title}
             </h1>
-            <p className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-black/60 leading-[18px] desktop1:leading-[21px]">
+            <p className="text-paragraph2 desktop2:text-paragraph3 text-black/60 leading-[18px] desktop1:leading-[21px]">
               {description}
             </p>
 

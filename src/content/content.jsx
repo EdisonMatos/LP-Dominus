@@ -1,6 +1,8 @@
 import logo from "../assets/imgs/logo/logo.png";
-import heroImg from "../assets/imgs/hero/lawHero.png";
+import heroImg from "../assets/imgs/hero/lawHero.jpg";
 import bgHeroImg from "../assets/imgs/hero/bgHero.webp";
+
+import cursoDominus from "../assets/imgs/hero/cursoDominus.jpg";
 
 import imgFeatures from "../assets/imgs/features/imgServices.jpg";
 import imgDivisor from "../assets/imgs/features/imgDivisor.jpg";
@@ -109,7 +111,7 @@ const content = {
       title: (
         <h1 className="mb-[16px]">
           Cursos para fortalecer
-          <span className="text-primary [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]"> mandatos e gestão pública</span>
+          <span className="text-primary"> mandatos e gestão pública</span>
         </h1>
       ),
       subtitle:
