@@ -27,13 +27,13 @@ export default function Hero({ appDownloadButtons }) {
                 </div>
               </MotionDivDownToUp> */}
               <MotionDivDownToUp>
-                <div className="text-lighter flex justify-center  desktop1:justify-center font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]">
+                <div className="text-secondary flex justify-center  desktop1:justify-center font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 ">
                   <h1 className="text-center">{content.texts.hero.title}</h1>
                 </div>
               </MotionDivDownToUp>
               <MotionDivDownToUp>
                 <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-center font-secondFont text-paragraph4 phone3:text-paragraph5">
-                  <p className="text-lighter mb-[32px] text-center opacity-100 ">
+                  <p className="text-black mb-[32px] text-center opacity-100 ">
                     {content.texts.hero.subtitle}
                   </p>
                 </div>
@@ -53,7 +53,7 @@ export default function Hero({ appDownloadButtons }) {
                   <div className="flex justify-center desktop1:justify-center">
                     <div className="flex flex-col items-center desktop1:flex-row text-primary">
                       {content.texts.hero.obsHero.icon}
-                      <p className="text-white opacity-100 ml-[10px] text-center mt-[12px] desktop1:mt-0">
+                      <p className="text-secondary opacity-100 ml-[10px] text-center mt-[12px] desktop1:mt-0">
                         {content.texts.hero.obsHero.text}
                       </p>
                     </div>
@@ -62,7 +62,7 @@ export default function Hero({ appDownloadButtons }) {
                 {appDownloadButtons && (
                   <MotionDivDownToUp>
                     <div className="flex flex-col items-center desktop1:items-start">
-                      <p className="mb-[20px] mt-[60px] text-lighter opacity-80 text-center">
+                      <p className="mb-[20px] mt-[60px] text-secondary opacity-80 text-center">
                         {content.texts.hero.app.description}
                       </p>
                       <div className="">

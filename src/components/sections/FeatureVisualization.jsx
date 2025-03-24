@@ -19,41 +19,39 @@ export default function FeatureVisualization() {
             titleColorSet="text-white"
             subtitleColorSet="text-white"
           />
-          <MotionDivDownToUp>
-            <div className="flex justify-center w-full">
-              <div className="flex flex-col w-full gap-8 ">
-                <div className="flex flex-col tablet1:flex-row tablet1:items-start items-center gap-4 desktop1:flex-row desktop1:items-start desktop1:justify-evenly">
-                  <FeatureCardVisualization
-                    imageUrl={content.texts.features.card1.img}
-                    title={content.texts.features.card1.title}
-                    description={content.texts.features.card1.subtitle}
-                    button={false}
-                  />
+          <div className="flex flex-wrap justify-center gap-4">
+            <MotionDivDownToUp className="w-full">
+              <div className="flex flex-wrap justify-center gap-4">
+                <FeatureCardVisualization
+                  imageUrl={content.texts.features.card1.img}
+                  title={content.texts.features.card1.title}
+                  description={content.texts.features.card1.subtitle}
+                  button={false}
+                />
 
-                  <FeatureCardVisualization
-                    imageUrl={content.texts.features.card2.img}
-                    title={content.texts.features.card2.title}
-                    description={content.texts.features.card1.subtitle}
-                    button={false}
-                  />
+                <FeatureCardVisualization
+                  imageUrl={content.texts.features.card2.img}
+                  title={content.texts.features.card2.title}
+                  description={content.texts.features.card2.subtitle}
+                  button={false}
+                />
 
-                  <FeatureCardVisualization
-                    imageUrl={content.texts.features.card3.img}
-                    title={content.texts.features.card3.title}
-                    description={content.texts.features.card1.subtitle}
-                    button={false}
-                  />
+                <FeatureCardVisualization
+                  imageUrl={content.texts.features.card3.img}
+                  title={content.texts.features.card3.title}
+                  description={content.texts.features.card3.subtitle}
+                  button={false}
+                />
 
-                  <FeatureCardVisualization
-                    imageUrl={content.texts.features.card4.img}
-                    title={content.texts.features.card4.title}
-                    description={content.texts.features.card1.subtitle}
-                    button={false}
-                  />
-                </div>
+                <FeatureCardVisualization
+                  imageUrl={content.texts.features.card4.img}
+                  title={content.texts.features.card4.title}
+                  description={content.texts.features.card4.subtitle}
+                  button={false}
+                />
               </div>
-            </div>
-          </MotionDivDownToUp>
+            </MotionDivDownToUp>
+          </div>
         </SectionWrapper>
       </SectionArea>
     </div>

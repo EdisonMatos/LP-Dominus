@@ -24,13 +24,22 @@ export default function FeatureCardVisualization({
   };
 
   return (
-    <MotionDivDownToUp className="flex justify-center w-full">
+    <MotionDivDownToUp className="flex justify-center w-auto">
       <div
-        className={`w-[90%] tablet1:max-w-[400px] desktop2:max-w-[360px] bg-white flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px] ${className}`}
+        className={` max-w-[350px] tablet2:max-w-[300px] font-mainFont flex flex-col desktop1:max-w-[300px] bg-white desktop3:max-w-[280px] flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px] ${className}`}
       >
         <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
-          <img className="rounded-[10px]" src={imageUrl} alt={title} />
-          <div className="flex flex-col w-full h-full">
+          <div
+            className="h-[400px]  tablet1:h-[500px] flex justify-center items-center overflow-hidden rounded-2xl"
+            style={{
+              backgroundImage: `url(${imageUrl})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            {/* A imagem agora é usada como fundo */}
+          </div>
+          <div className="flex flex-col w-full ">
             <p className="text-black/50 text-paragraph2">{date}</p>
             <h1 className="text-title1 leading-[27px] font-medium mt-[2px] mb-[12px]">
               {title}
