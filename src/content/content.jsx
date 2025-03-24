@@ -109,7 +109,7 @@ const content = {
       title: (
         <h1 className="mb-[16px]">
           Cursos para fortalecer
-          <span className="text-primary "> mandatos e gestão pública</span>
+          <span className="text-primary [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]"> mandatos e gestão pública</span>
         </h1>
       ),
       subtitle:
