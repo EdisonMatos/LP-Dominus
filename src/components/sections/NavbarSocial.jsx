@@ -87,17 +87,17 @@ export default function NavbarSocial({ LightMode }) {
         className={`fixed z-20 w-full transition-colors duration-1000 ${
           LightMode
             ? scrolling
-              ? "bg-white  shadow-md"
+              ? "bg-white shadow-md"
               : "bg-transparent"
             : scrolling
-            ? "bg-gradient-to-b from-black to-bgSectionDark bg-opacity-100 shadow-lg transition-all duration-1000 border-b-[1px] border-primary"
-            : "transition-colors duration-1000 border-b-[1px] border-transparent border-black"
+            ? "bg-bgSectionDark/100 bg-opacity-100 shadow-lg transition-all duration-1000 border-b-[1px] border-white"
+            : "bg-black/30 transition-colors duration-1000 border-b-[1px] border-transparent border-black"
         }`}
       >
         <Navbar>
           <ScrollLink
             to="home"
-            className="cursor-pointer w-[45%] phone2:w-[50%] phone3:w-[45%] tablet1:w-[30%] tablet2:w-[25%] desktop1:w-[25%] desktop2:max-w-[200px]"
+            className="cursor-pointer w-auto phone3:max-w-[350px] tablet1:max-w-[470px] tablet2:max-w-[600px] desktop1:max-w-[350px] desktop2:max-w-[600px]"
             spy={true}
             smooth={true}
             duration={500}
@@ -111,7 +111,7 @@ export default function NavbarSocial({ LightMode }) {
                 LightMode
                   ? scrolling
                     ? "bg-transparent w-[50%] tablet1:w-[50%] tablet2:w-[40%] desktop1:w-[60%] desktop2:w-[30%] transition-all duration-1000"
-                    : "bg-white w-[64%] my-[20px] tablet1:w-[55%] tablet2:w-[47%] desktop1:w-[60%] desktop2:w-[40%] px-3 py-3 transition-all duration-1000"
+                    : " w-[64%] my-[20px] tablet1:w-[55%] tablet2:w-[47%] desktop1:w-[60%] desktop2:w-[40%] px-3 py-3 transition-all duration-1000"
                   : scrolling
                   ? "bg-transparent w-[70%] phone3:w-[60%] tablet1:w-[80%] tablet2:w-[70%] desktop1:w-[80%] desktop2:w-[80%] transition-all duration-1000"
                   : "bg-transparent my-[20px] w-full transition-all duration-1000"

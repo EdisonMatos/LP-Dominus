@@ -1,0 +1,86 @@
+import { useNavigate } from "react-router-dom";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import Button from "../interactives/Button";
+
+export default function FeatureCardVisualization({
+  imageUrl,
+  title,
+  date,
+  className = "", // Adicionando className como propriedade
+  description,
+  buttonLink,
+  buttonColor,
+  labelButton,
+  onClick,
+  button = true, // Define true como padrão
+}) {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    window.open(buttonLink, "_blank");
+    if (onClick) {
+      onClick();
+    }
+  };
+
+  return (
+    <MotionDivDownToUp className="flex justify-center w-auto">
+      <div
+        className={` max-w-[350px] tablet2:max-w-[300px] font-mainFont flex flex-col desktop1:max-w-[300px] bg-white desktop3:max-w-[280px] flex py-3 px-2 phone2:py-4 phone2:px-3 desktop1:py-3 desktop1:px-2 rounded-[10px] ${className}`}
+      >
+        <div className="flex flex-col gap-4 w-full desktop2:p-[4px]">
+          <div
+            className="h-[400px]  tablet1:h-[500px] flex justify-center items-center overflow-hidden rounded-2xl"
+            style={{
+              backgroundImage: `url(${imageUrl})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            {/* A imagem agora é usada como fundo */}
+          </div>
+          <div className="flex flex-col w-full ">
+            <p className="text-black/50 text-paragraph2">{date}</p>
+            <h1 className="text-title1 leading-[27px] font-medium mt-[2px] mb-[12px]">
+              {title}
+            </h1>
+            <p className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-black/60 leading-[18px] desktop1:leading-[21px]">
+              {description}
+            </p>
+
+            {button && ( // Só renderiza o botão se button for true
+              <div className="flex">
+                <Button
+                  target="_blank"
+                  removeAnchor={true}
+                  label={labelButton}
+                  color={buttonColor}
+                  className="text-white"
+                  size="small"
+                  onClick={handleButtonClick}
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-corner-down-right"
+                    >
+                      <polyline points="15 10 20 15 15 20" />
+                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                    </svg>
+                  }
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </MotionDivDownToUp>
+  );
+}

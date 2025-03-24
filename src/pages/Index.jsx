@@ -5,49 +5,49 @@ import About from "../components/sections/About";
 import AboutInstagram from "../components/sections/AboutInstagram";
 import Cta from "../components/sections/Cta";
 import Steps from "../components/sections/Steps";
-// import Maps from "../components/sections/Maps";
+import Maps from "../components/sections/Maps";
 import Faq from "../components/sections/Faq";
 import FooterSocial from "../components/sections/FooterSocial";
-// import DefaultModals from "../components/sections/DefaultModals";
+import DefaultModals from "../components/sections/DefaultModals";
+
+import Form from "../components/sections/Form";
 
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import BackToTopButton from "../components/interactives/BackToTopButton";
-import BlogPosts from "../components/sections/BlogPosts";
-
-
-// comentario para solucionar conflito
 
 export default function Index() {
   return (
     <div>
-      <Navbar LightMode={false} />
-      <Hero appDownloadButtons={false}/>
+      <Navbar LightMode={true} />
+      <Hero appDownloadButtons={false} />
       <Features
         defaultFeature={false}
-        featureIcons={true}
+        imageFeatures={true}
         button={false}
         modalWithCards={false}
         paragraphs={false}
         sixCards={false}
         paragraphsModal={false}
+        visualization={true}
       />
       <About modal={true} />
       <AboutInstagram
         socialPrint={true}
         instagram={true}
-        facebook={true}
-        linkedin={false}
+        facebook={false}
+        linkedin={true}
         x={false}
+        test={true}
       />
       <Cta />
       <Steps />
-       {/* <BlogPosts /> */}
+      <Form />
       <Faq />
       <FooterSocial
         addres={true}
         instagram={true}
-        facebook={true}
-        linkedin={false}
+        facebook={false}
+        linkedin={true}
         x={false}
         obs={false}
       />
@@ -56,4 +56,3 @@ export default function Index() {
     </div>
   );
 }
-

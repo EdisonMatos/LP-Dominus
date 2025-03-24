@@ -2,348 +2,104 @@ import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import content from "../../content/content";
 import Button from "../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
-import MotionDivRightToLeft from "../animation/MotionDivRightToLeft";
-import { useNavigate } from "react-router-dom";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
-export default function Hero({ appDownloadButtons, personImg, fundoImage }) {
-  const navigate = useNavigate();
-
+export default function Hero({ appDownloadButtons }) {
   return (
-    <>
-      {fundoImage ? (
-        <div
-          className="w-full bg-top bg-repeat bg-cover font-mainFont desktop1:py-[45px]"
-          id="home"
-          style={{ backgroundImage: `url(${content.texts.hero.heroImg})` }}
-        >
-          <div className="relative z-10 flex w-full bg-black bg-opacity-0 items-left py-[36px]">
-            <div className="w-full text-secondary justify-evenly">
-              <div className="h-[100px] desktop1:h-[140px]" />
-              <div className="flex flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px] pt-[40px] desktop1:pt-[0px] desktop1:pb-[0px]">
-                <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]  ">
-                  <MotionDivDownToUp>
-                    <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
-                      <p className="mb-[16px] bg-primary text-labelsIcons bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
-                        {content.texts.hero.miniTag}
+    <div
+      className="w-full bg-center bg-cover font-mainFont"
+      id="home"
+      style={{
+        backgroundImage: `url(${content.texts.hero.heroImg})`,
+      }}
+    >
+      <div className="relative z-10 flex w-full bg-black bg-opacity-0 items-center">
+        <div className="w-full text-secondary justify-center">
+          <div className="h-[125px] desktop3:h-[140px]" />
+          <div className="flex flex-col-reverse gap-[40px] w-[90%] desktop1:flex-row desktop1:justify-center  mx-auto max-w-[1000px] items-center pb-[64px] pt-[40px] desktop1:pt-[68px] desktop1:pb-[96px]">
+            <div className="flex flex-col w-full desktop1:w-[60%]">
+              {/* <MotionDivDownToUp>
+                <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
+                  <p className="mb-[16px] bg-bgSectionDark text-white bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
+                    {content.texts.hero.miniTag}
+                  </p>
+                </div>
+              </MotionDivDownToUp> */}
+              <MotionDivDownToUp>
+                <div className="text-secondary flex justify-center  desktop1:justify-center font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7 ">
+                  <h1 className="text-center">{content.texts.hero.title}</h1>
+                </div>
+              </MotionDivDownToUp>
+              <MotionDivDownToUp>
+                <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-center font-secondFont text-paragraph4 phone3:text-paragraph5">
+                  <p className="text-black mb-[32px] text-center opacity-100 ">
+                    {content.texts.hero.subtitle}
+                  </p>
+                </div>
+              </MotionDivDownToUp>
+              <div className="w-full phone2:w-full tablet2:w-auto">
+                {/* <div className="flex justify-center w-full desktop1:justify-start mb-[32px]">
+                  <Button
+                    aria-label={content.texts.hero.ctaButtonAriaLabel}
+                    label={content.texts.hero.ctaButtonText}
+                    buttonLink={whatsappContactLink}
+                    animation
+                    className="w-[100%] text-white"
+                    icon={<FaWhatsapp size={24} />}
+                  />
+                </div> */}
+                <MotionDivDownToUp>
+                  <div className="flex justify-center desktop1:justify-center">
+                    <div className="flex flex-col items-center desktop1:flex-row text-primary">
+                      {content.texts.hero.obsHero.icon}
+                      <p className="text-secondary opacity-100 ml-[10px] text-center mt-[12px] desktop1:mt-0">
+                        {content.texts.hero.obsHero.text}
                       </p>
                     </div>
-                  </MotionDivDownToUp>
+                  </div>
+                </MotionDivDownToUp>
+                {appDownloadButtons && (
                   <MotionDivDownToUp>
-                    <div className="text-white flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7">
-                      <h1 className="">{content.texts.hero.title}</h1>
-                    </div>
-                  </MotionDivDownToUp>
-                  <MotionDivDownToUp>
-                    <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-                      <p className="text-white mb-[32px] ">
-                        {content.texts.hero.subtitle}
+                    <div className="flex flex-col items-center desktop1:items-start">
+                      <p className="mb-[20px] mt-[60px] text-secondary opacity-80 text-center">
+                        {content.texts.hero.app.description}
                       </p>
-                    </div>
-                  </MotionDivDownToUp>
-                  <div className="w-full phone2:w-full tablet2:w-auto">
-                    <div className="flex justify-center w-full desktop1:justify-start mb-[32px]">
-                      <Button
-                        aria-label={content.texts.hero.ctaButtonAriaLabel}
-                        label={content.texts.hero.ctaButtonText}
-                        // onClick={() => navigate("/whatsapp")}
-                        buttonLink={whatsappContactLink}
-                        animation
-                        className="w-[100%]"
-                        icon={<FaWhatsapp size={24} />}
-                      />
-                    </div>
-                    <MotionDivDownToUp>
-                      <div className="flex justify-center desktop1:justify-start">
-                        <div className="flex flex-col items-center desktop1:flex-row text-primary">
-                          {content.texts.hero.obsHero.icon}
-                          <p className="text-white  ml-[10px] text-center mt-[12px] desktop1:mt-0">
-                            {content.texts.hero.obsHero.text}
-                          </p>
+                      <div className="">
+                        {" "}
+                        <div className="flex items-start gap-[20px]">
+                          <a
+                            href={content.texts.hero.app.imgs.appStore.link}
+                            target="_blank"
+                            className="transition hover:scale-110 opacity-80 invert"
+                          >
+                            <img
+                              src={content.texts.hero.app.imgs.appStore.img}
+                              alt={content.texts.hero.app.imgs.appStore.alt}
+                              className=""
+                            />
+                          </a>
+                          <a
+                            href={content.texts.hero.app.imgs.playStore.link}
+                            target="_blank"
+                            className="transition hover:scale-110 opacity-80 invert"
+                          >
+                            <img
+                              src={content.texts.hero.app.imgs.playStore.img}
+                              alt={content.texts.hero.app.imgs.playStore.alt}
+                              className=""
+                            />
+                          </a>
                         </div>
                       </div>
-                    </MotionDivDownToUp>
-                    {appDownloadButtons && (
-                      <MotionDivDownToUp>
-                        <div className="flex flex-col items-center desktop1:items-start">
-                          <p className="mb-[20px] mt-[60px] text-white  text-center">
-                            {content.texts.hero.app.description}
-                          </p>
-                          <div className="">
-                            {" "}
-                            <div className="flex items-start gap-[20px]">
-                              <a
-                                href={content.texts.hero.app.imgs.appStore.link}
-                                target="_blank"
-                                className="transition hover:scale-110 invert"
-                              >
-                                <img
-                                  src={content.texts.hero.app.imgs.appStore.img}
-                                  alt={content.texts.hero.app.imgs.appStore.alt}
-                                  className=""
-                                />
-                              </a>
-                              <a
-                                href={
-                                  content.texts.hero.app.imgs.playStore.link
-                                }
-                                target="_blank"
-                                className="transition hover:scale-110 invert"
-                              >
-                                <img
-                                  src={
-                                    content.texts.hero.app.imgs.playStore.img
-                                  }
-                                  alt={
-                                    content.texts.hero.app.imgs.playStore.alt
-                                  }
-                                  className=""
-                                />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </MotionDivDownToUp>
-                    )}
-                  </div>
-                </div>
+                    </div>
+                  </MotionDivDownToUp>
+                )}
               </div>
             </div>
           </div>
         </div>
-      ) : personImg ? (
-        <div
-          className="w-full bg-center bg-repeat bg-cover font-mainFont bg-gradient-to-b from-[#000000] to-[#2322BB] desktop1:pt-[45px]"
-          id="home"
-          style={{ backgroundImage: `url(${content.texts.hero.heroImg})` }}
-        >
-          <div className="relative z-10 flex w-full bg-black bg-opacity-0 items-left">
-            <div className="w-full text-secondary justify-evenly">
-              <div className="h-[100px] desktop1:h-[140px]" />
-              <div className="flex flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px] pt-[40px] desktop1:pt-[0px] desktop1:pb-[0px]">
-                <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]  ">
-                  <MotionDivDownToUp>
-                    <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
-                      <p className="mb-[16px] bg-primary text-labelsIcons bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
-                        {content.texts.hero.miniTag}
-                      </p>
-                    </div>
-                  </MotionDivDownToUp>
-                  <MotionDivDownToUp>
-                    <div className="text-white flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7">
-                      <h1 className="">{content.texts.hero.title}</h1>
-                    </div>
-                  </MotionDivDownToUp>
-                  <MotionDivDownToUp>
-                    <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-                      <p className="text-white mb-[32px] ">
-                        {content.texts.hero.subtitle}
-                      </p>
-                    </div>
-                  </MotionDivDownToUp>
-                  <div className="w-full phone2:w-full tablet2:w-auto">
-                    <div className="flex justify-center w-full desktop1:justify-start mb-[32px]">
-                      <Button
-                        aria-label={content.texts.hero.ctaButtonAriaLabel}
-                        label={content.texts.hero.ctaButtonText}
-                        // onClick={() => navigate("/whatsapp")}
-                        buttonLink={whatsappContactLink}
-                        animation
-                        className="w-[100%]"
-                        icon={<FaWhatsapp size={24} />}
-                      />
-                    </div>
-                    <MotionDivDownToUp>
-                      <div className="flex justify-center desktop1:justify-start pb-[36px]">
-                        <div className="flex flex-col items-center desktop1:flex-row text-primary">
-                          {content.texts.hero.obsHero.icon}
-                          <p className="text-white  ml-[10px] text-center mt-[12px] desktop1:mt-0">
-                            {content.texts.hero.obsHero.text}
-                          </p>
-                        </div>
-                      </div>
-                    </MotionDivDownToUp>
-                    {appDownloadButtons && (
-                      <MotionDivDownToUp>
-                        <div className="flex flex-col items-center desktop1:items-start">
-                          <p className="mb-[20px] mt-[60px] text-black  text-center">
-                            {content.texts.hero.app.description}
-                          </p>
-                          <div className="">
-                            {" "}
-                            <div className="flex items-start gap-[20px]">
-                              <a
-                                href={content.texts.hero.app.imgs.appStore.link}
-                                target="_blank"
-                                className="transition hover:scale-110 invert"
-                              >
-                                <img
-                                  src={content.texts.hero.app.imgs.appStore.img}
-                                  alt={content.texts.hero.app.imgs.appStore.alt}
-                                  className=""
-                                />
-                              </a>
-                              <a
-                                href={
-                                  content.texts.hero.app.imgs.playStore.link
-                                }
-                                target="_blank"
-                                className="transition hover:scale-110 invert"
-                              >
-                                <img
-                                  src={
-                                    content.texts.hero.app.imgs.playStore.img
-                                  }
-                                  alt={
-                                    content.texts.hero.app.imgs.playStore.alt
-                                  }
-                                  className=""
-                                />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </MotionDivDownToUp>
-                    )}
-                  </div>
-                </div>
-                <div className="flex justify-center w-[90%] tablet1:w-[450px] desktop1:w-[35%]">
-                  <MotionDivRightToLeft className="relative flex items-end justify-center w-full desktop2:justify-end">
-                    <img
-                      src={content.texts.hero.personImg}
-                      className="relative hidden desktop1:right-10 desktop1:flex"
-                      alt="Foto do advogado"
-                    ></img>
-                    <img
-                      src={content.texts.hero.personImgPhone}
-                      className="h-[100%] relative desktop1:hidden"
-                      alt="Foto do advogado"
-                    ></img>
-                    {/* <div
-                  className="bg-top rounded-xl w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat shadow-custom-opacity shadow-primary"
-                  style={{
-                    backgroundImage: `url(${content.texts.hero.heroImg})`,
-                    backgroundSize: "",
-                  }}
-                ></div> */}
-                  </MotionDivRightToLeft>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div
-          className="w-full bg-center bg-repeat font-mainFont bg-gradient-to-b from-[#000000] to-bgSectionDark"
-          id="home"
-        >
-          <div className="relative z-10 flex w-full bg-black bg-opacity-0 items-left">
-            <div className="w-full text-secondary justify-evenly">
-              <div className="h-[125px] desktop3:h-[140px]" />
-              <div className="flex flex-col-reverse gap-[40px]  desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px] pt-[40px] desktop1:pt-[68px] desktop1:pb-[96px]">
-                <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
-                  <MotionDivDownToUp>
-                    <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
-                      <p className="mb-[16px] bg-primary text-black bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
-                        {content.texts.hero.miniTag}
-                      </p>
-                    </div>
-                  </MotionDivDownToUp>
-                  <MotionDivDownToUp>
-                    <div className="text-white flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title6">
-                      <h1 className="">{content.texts.hero.title}</h1>
-                    </div>
-                  </MotionDivDownToUp>
-                  <MotionDivDownToUp>
-                    <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-                      <p className="text-white mb-[32px] ">
-                        {content.texts.hero.subtitle}
-                      </p>
-                    </div>
-                  </MotionDivDownToUp>
-                  <div className="w-full phone2:w-full tablet2:w-auto">
-                    <div className="flex justify-center w-full desktop1:justify-start mb-[32px]">
-                      <Button
-                        aria-label={content.texts.hero.ctaButtonAriaLabel}
-                        label={content.texts.hero.ctaButtonText}
-                        // onClick={() => navigate("/whatsapp")}
-                        buttonLink={whatsappContactLink}
-                        animation
-                        className="w-[100%]"
-                        icon={<FaWhatsapp size={24} />}
-                      />
-                    </div>
-                    <MotionDivDownToUp>
-                      <div className="flex justify-center desktop1:justify-start">
-                        <div className="flex flex-col items-center desktop1:flex-row text-primary">
-                          {content.texts.hero.obsHero.icon}
-                          <p className="text-white  ml-[10px] text-center mt-[12px] desktop1:mt-0">
-                            {content.texts.hero.obsHero.text}
-                          </p>
-                        </div>
-                      </div>
-                    </MotionDivDownToUp>
-                    {appDownloadButtons && (
-                      <MotionDivDownToUp>
-                        <div className="flex flex-col items-center desktop1:items-start">
-                          <p className="mb-[20px] mt-[60px] text-white  text-center">
-                            {content.texts.hero.app.description}
-                          </p>
-                          <div className="">
-                            {" "}
-                            <div className="flex items-start gap-[20px]">
-                              <a
-                                href={content.texts.hero.app.imgs.appStore.link}
-                                target="_blank"
-                                className="transition hover:scale-110 invert"
-                              >
-                                <img
-                                  src={content.texts.hero.app.imgs.appStore.img}
-                                  alt={content.texts.hero.app.imgs.appStore.alt}
-                                  className=""
-                                />
-                              </a>
-                              <a
-                                href={
-                                  content.texts.hero.app.imgs.playStore.link
-                                }
-                                target="_blank"
-                                className="transition hover:scale-110 invert"
-                              >
-                                <img
-                                  src={
-                                    content.texts.hero.app.imgs.playStore.img
-                                  }
-                                  alt={
-                                    content.texts.hero.app.imgs.playStore.alt
-                                  }
-                                  className=""
-                                />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </MotionDivDownToUp>
-                    )}
-                  </div>
-                </div>
-                <div className="flex justify-center w-[90%] tablet1:w-[450px] desktop1:w-[42%] desktop2:w-[42.8%]">
-                  <MotionDivDownToUp className="relative flex justify-end w-full ">
-                    <div
-                      className="bg-top rounded-xl w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat shadow-custom-opacity shadow-bgSectionDark"
-                      style={{
-                        backgroundImage: `url(${content.texts.hero.heroImg})`,
-                        backgroundSize: "",
-                      }}
-                    ></div>
-                  </MotionDivDownToUp>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </>
+      </div>
+    </div>
   );
 }

@@ -93,6 +93,17 @@ export default function FooterSocial({
                 </MotionDivDownToUp>
               )}
 
+              {addres && (
+                <MotionDivDownToUp>
+                  <div className="flex full gap-x-[12px] items-center opacity-90">
+                    <div>
+                      <MapPin />
+                    </div>
+                    <p>{content.texts.infos.adressSecundario}</p>
+                  </div>
+                </MotionDivDownToUp>
+              )}
+
               {/* EXPEDIENTE */}
               <MotionDivDownToUp>
                 <div className="flex full gap-x-[12px] items-center opacity-90">

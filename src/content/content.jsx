@@ -1,5 +1,5 @@
 import logo from "../assets/imgs/logo/logo.png";
-import heroImg from "../assets/imgs/hero/lawHero.jpg";
+import heroImg from "../assets/imgs/hero/lawHero.png";
 import bgHeroImg from "../assets/imgs/hero/bgHero.webp";
 
 import imgFeatures from "../assets/imgs/features/imgServices.jpg";
@@ -16,10 +16,10 @@ import trustedByImg1 from "../assets/imgs/trustedBy/item1.jpg";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.jpg";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.jpg";
 
-import featuresImg1 from "../assets/imgs/features/imgFeatures1.jpg";
-import featuresImg2 from "../assets/imgs/features/imgFeatures2.jpg";
-import featuresImg3 from "../assets/imgs/features/imgFeatures3.jpg";
-import featuresImg4 from "../assets/imgs/features/imgFeatures4.jpg";
+import featuresImg1 from "../assets/imgs/features/imgServices1.jpg";
+import featuresImg2 from "../assets/imgs/features/imgServices2.jpg";
+import featuresImg3 from "../assets/imgs/features/imgServices3.png";
+import featuresImg4 from "../assets/imgs/features/imgServices4.jpg";
 
 import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
 import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";
@@ -51,17 +51,15 @@ export const infos = {
   },
   endereco: (
     <div>
-      <p>Endereço:</p>
       <p>Escritório:</p>
       <p>Rua General Andrade Neves,</p>
       <p>nº 90 - Sala 37, Centro Histórico.</p>
       <p>Porto Alegre - RS,</p>
       <p>CEP: 90010-210</p>
-
-      <br />
-      <br />
-
-      <p>Escritório:</p>
+    </div>
+  ),
+  enderecoSecundario: (
+    <div>
       <p>Treinamento</p>
       <p>Hotel Intercity Praia de Belas - </p>
       <p>Avenida Borges de Medeiros,</p>
@@ -111,7 +109,7 @@ const content = {
       title: (
         <h1 className="mb-[16px]">
           Cursos para fortalecer
-          <span className="text-primary"> mandatos e gestão pública</span>
+          <span className="text-primary [text-shadow:_2px_3px_0_rgb(0_0_0_/_50%)]"> mandatos e gestão pública</span>
         </h1>
       ),
       subtitle:
@@ -807,6 +805,12 @@ const content = {
         },
       },
     },
+    contactForm: {
+      minitag: "FORMULÁRIO",
+      title: "Preencha o Formulário",
+      subtitle:
+        "Nos conte um pouco sobre sua situação preenchendo o formulário abaixo.",
+    },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
@@ -818,6 +822,7 @@ const content = {
       phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
       email: `${infos.email}@${infos.domain}`,
       adress: infos.endereco,
+      adressSecundario: infos.enderecoSecundario,
       officeHours: infos.expediente,
       year: currentYear,
       footerexpediente: infos.expediente,
