@@ -7,7 +7,7 @@ export default function IconButton(props) {
       aria-label={ariaLabel}
     >
       <div className="flex items-center text-center gap-[10px]">
-        <div className="flex flex-col text-labelsIcons justify-end">{icon}</div>
+        <div className="flex flex-col text-white justify-end">{icon}</div>
       </div>
     </button>
   );
