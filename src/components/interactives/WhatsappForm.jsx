@@ -1,7 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import WhatsAppIcon from "../../assets/importAssets/WhatsAppIcon.webp";
-import { CiUser, CiPhone, CiMail, CiCreditCard1, CiBank } from "react-icons/ci";
+import { IdCard } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
+import { Mail } from "lucide-react";
+import { Building } from "lucide-react";
+import { UserCheck } from "lucide-react";
+import { Phone } from "lucide-react";
+import { FolderPen } from "lucide-react";
 
 const FormCard1 = () => {
   const [name, setName] = useState("");
@@ -326,7 +333,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiUser />
+              <FolderPen />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -344,7 +351,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiCreditCard1 />
+              <IdCard />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -362,7 +369,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiPhone />
+              <Phone />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -380,7 +387,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiBank />
+              <UserCheck />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -398,7 +405,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiBank />
+              <Building />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -418,7 +425,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiBank />
+              <MapPin />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -436,7 +443,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiMail />
+              <Mail />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
@@ -454,7 +461,7 @@ const FormCard1 = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <CiCreditCard1 />
+              <BriefcaseBusiness />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
