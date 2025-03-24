@@ -11,13 +11,9 @@ const FormCard1 = () => {
   const [position, setPosition] = useState("");
   const [institution, setInstitution] = useState("");
   const [endereco, setEndereco] = useState("");
-
-  // const [uf, setUf] = useState("");
-  // const [message, setMessage] = useState("");
+  const [cnpj, setCnpj] = useState("");
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  
 
   const capitalizeFirstLetter = (str) => {
     return str
@@ -33,10 +29,22 @@ const FormCard1 = () => {
     setName(capitalizeFirstLetter(onlyLetters));
   };
 
-  const handleUfChange = (e) => {
+  const handlePositionChange = (e) => {
     const input = e.target.value;
-    const onlyLetters = input.replace(/[^a-zA-ZÀ-ÿ\s-]/g, ""); // Permite apenas letras, espaços e hífens
-    setUf(capitalizeFirstLetter(onlyLetters));
+    const onlyLetters = input.replace(/[^a-zA-ZÀ-ÿ\s]/g, ""); // Permite apenas letras e espaços
+    setPosition(capitalizeFirstLetter(onlyLetters));
+  };
+
+  const handleInstitutionChange = (e) => {
+    const input = e.target.value;
+    const onlyLetters = input.replace(/[^a-zA-ZÀ-ÿ\s]/g, ""); // Permite apenas letras e espaços
+    setInstitution(capitalizeFirstLetter(onlyLetters));
+  };
+
+  const handleEnderecoChange = (e) => {
+    const input = e.target.value;
+    const onlyLetters = input.replace(/[^a-zA-ZÀ-ÿ\s]/g, ""); // Permite apenas letras e espaços
+    setEndereco(capitalizeFirstLetter(onlyLetters));
   };
 
   const handlePhoneChange = (e) => {
@@ -44,11 +52,64 @@ const FormCard1 = () => {
     setPhone(formatPhoneNumber(input));
   };
 
+  const handleCnpjChange = (e) => {
+    const input = e.target.value.replace(/[^\d]/g, ""); // Remove tudo que não for número
+    const limitedInput = input.slice(0, 14);
+    setCnpj(formatCnpj(limitedInput));
+  };
+
+  const handleSubmitCnpj = (e) => {
+    e.preventDefault();
+
+    const errors = {};
+
+    // Validação do CNPJ
+    if (!cnpj) {
+      errors.cnpj = "O campo CNPJ é obrigatório.";
+    } else if (!validateCnpj(cnpj.replace(/\D/g, ""))) {
+      errors.cnpj = "O CNPJ deve conter exatamente 14 números e ser válido.";
+    }
+
+    // Validações dos outros campos (CPF, nome, etc.)
+    if (!cpf) {
+      errors.cpf = "O campo CPF é obrigatório.";
+    } else if (!validateCpf(cpf.replace(/\D/g, ""))) {
+      errors.cpf = "O CPF deve conter exatamente 11 números e ser válido.";
+    }
+
+    setErrors(errors);
+
+    // Se não houver erros, você pode enviar o formulário
+    if (Object.keys(errors).length === 0) {
+      alert("Formulário enviado com sucesso!");
+    }
+  };
+
+  const formatCnpj = (cnpj) => {
+    if (cnpj.length <= 2) return cnpj;
+    if (cnpj.length <= 5) return `${cnpj.slice(0, 2)}.${cnpj.slice(2)}`;
+    if (cnpj.length <= 8)
+      return `${cnpj.slice(0, 2)}.${cnpj.slice(2, 5)}.${cnpj.slice(5)}`;
+    if (cnpj.length <= 12)
+      return `${cnpj.slice(0, 2)}.${cnpj.slice(2, 5)}.${cnpj.slice(
+        5,
+        8
+      )}/${cnpj.slice(8)}`;
+    return `${cnpj.slice(0, 2)}.${cnpj.slice(2, 5)}.${cnpj.slice(
+      5,
+      8
+    )}/${cnpj.slice(8, 12)}-${cnpj.slice(12)}`;
+  };
+
   const sendToWhatsapp = async () => {
-    // setIsSubmitting(true);
     const validationErrors = {};
 
-    // Validação de campos
+    if (!cnpj) {
+      validationErrors.cnpj = "O campo CNPJ é obrigatório.";
+    } else if (!validateCnpj(cnpj)) {
+      validationErrors.cnpj = "O CNPJ deve conter exatamente 14 números.";
+    }
+
     if (!name) {
       validationErrors.name = "O campo Nome é obrigatório.";
     } else if (!validateName(name)) {
@@ -63,7 +124,7 @@ const FormCard1 = () => {
 
     if (!position) {
       validationErrors.position = "O campo Cargo é obrigatório.";
-    } else !validatePosition(position);
+    }
 
     if (!email) {
       validationErrors.email = "O campo E-mail é obrigatório.";
@@ -73,15 +134,18 @@ const FormCard1 = () => {
 
     if (!institution) {
       validationErrors.institution = "O campo Nome da Câmara é obrigatório.";
-    } else !validateInstitution(institution);
+    }
 
     if (!endereco) {
       validationErrors.endereco = "O campo Endereço é obrigatório.";
-    } else !validateEndereco(endereco);
+    }
 
     if (!cpf) {
-      validationErrors.cpf = "O campo Cpf é obrigatório.";
-    } else !validateCpf(cpf);
+      validationErrors.cpf = "O campo CPF é obrigatório.";
+    } else if (!validateCpf(cpf)) {
+      validationErrors.cpf =
+        "O CPF deve conter exatamente 11 números e ser válido.";
+    }
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -93,15 +157,17 @@ const FormCard1 = () => {
     const whatsappNumber = "5599984234461"; // Certifique-se de que este número está correto com o código do país
     const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
 
-    const whatsappMessage = `Olá! Meu nome é ${name}.%0A
-    Cpf: ${cpf}.%0A
-    Telefone: ${formattedPhone}.%0A
-    Cargo: ${position}.%0A
-    E-mail: ${email}.%0A
-    Nome da Câmara: ${institution}.%0A
-    Endereço: ${endereco}`;
+    const whatsappMessage = `Olá! Meu nome é ${name}.\n
+      Cpf: ${cpf}.\n
+      Telefone: ${formattedPhone}.\n
+      Cargo: ${position}.\n
+      E-mail: ${email}.\n
+      Nome da Câmara: ${institution}.\n
+      Endereço: ${endereco}`;
 
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
 
     // Abrir WhatsApp em uma nova aba
     try {
@@ -139,6 +205,7 @@ const FormCard1 = () => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email.trim());
   };
+
   const validateInstitution = (institution) => {
     const institutionPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
     return institutionPattern.test(institution.trim());
@@ -150,15 +217,88 @@ const FormCard1 = () => {
   };
 
   const validateCpf = (cpf) => {
-    const cpfPattern = /^[a-zA-ZÀ-ÿ\s]{5,}$/; // Permite pelo menos 5 caracteres (letras e espaços)
-    return cpfPattern.test(cpf.trim());
+    cpf = cpf.replace(/\D/g, ""); // Remove caracteres não numéricos
+
+    if (cpf.length !== 11) return false; // Verifica se o CPF tem exatamente 11 números
+
+    // Verificação dos dígitos verificadores
+    const digits = cpf.split("").map(Number);
+    const calcDigits = (cpf, multipliers) => {
+      const sum = multipliers.reduce(
+        (acc, multiplier, index) => acc + cpf[index] * multiplier,
+        0
+      );
+      const remainder = sum % 11;
+      return remainder < 2 ? 0 : 11 - remainder;
+    };
+
+    const firstCheckDigit = calcDigits(
+      digits.slice(0, 9),
+      [10, 9, 8, 7, 6, 5, 4, 3, 2]
+    );
+    const secondCheckDigit = calcDigits(
+      digits.slice(0, 10),
+      [11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+    );
+
+    return digits[9] === firstCheckDigit && digits[10] === secondCheckDigit;
   };
 
-  // const validateUf = (uf) => {
-  //   return uf.trim().length >= 5; // Requer ao menos 5 caracteres para Cidade e Estado
-  // };
+  const handleCpfChange = (e) => {
+    let value = e.target.value;
 
-  // const validateMessage = (message) => !!message;
+    // Remove caracteres não numéricos
+    value = value.replace(/\D/g, "");
+
+    // Limita a quantidade de números para 11 (tamanho do CPF)
+    if (value.length > 11) {
+      value = value.substring(0, 11);
+    }
+
+    // Aplica a máscara
+    value = value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+
+    setCpf(value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const errors = {};
+
+    // Valida se o CPF está vazio
+    if (!cpf) {
+      errors.cpf = "O campo CPF é obrigatório.";
+    } else if (!validateCpf(cpf.replace(/\D/g, ""))) {
+      // Remove a máscara para validar o CPF
+      errors.cpf = "O CPF deve conter exatamente 11 números e ser válido.";
+    }
+
+    setErrors(errors);
+
+    // Se não houver erros, você pode enviar o formulário
+    if (Object.keys(errors).length === 0) {
+      alert("Formulário enviado com sucesso!");
+    }
+  };
+
+  const validateCnpj = (cnpj) => {
+    // Expressão regular para CNPJ com ou sem máscara
+    const cnpjPattern = /^\d{2}(\.?\d{3}){2}\/\d{4}-\d{2}$/; // Para permitir a máscara no formato: 12.345.678/0001-90
+    const plainCnpjPattern = /^\d{14}$/; // Para permitir apenas números: 12345678000190
+
+    // Se o CNPJ for no formato com máscara
+    if (cnpjPattern.test(cnpj.trim())) {
+      return true;
+    }
+
+    // Se o CNPJ for apenas números
+    if (plainCnpjPattern.test(cnpj.trim())) {
+      return true;
+    }
+
+    return false;
+  };
 
   const formatPhoneNumber = (phoneNumber) => {
     let cleaned = phoneNumber.replace(/\D/g, ""); // Remove tudo que não for número
@@ -182,7 +322,6 @@ const FormCard1 = () => {
   return (
     <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
       <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
-        {/* <h1 className="w-full mb-2 font-medium text-white">Fale conosco</h1> */}
         {/* Nome */}
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
@@ -212,7 +351,7 @@ const FormCard1 = () => {
               type="tel"
               id="cpf"
               value={cpf}
-              onChange={(e) => setCpf(e.target.value)}
+              onChange={handleCpfChange}
               placeholder="Cpf"
               required
             />
@@ -248,7 +387,7 @@ const FormCard1 = () => {
               type="text"
               id="position"
               value={position}
-              onChange={(e) => setPosition(e.target.value)}
+              onChange={handlePositionChange}
               placeholder="Cargo"
               required
             />
@@ -266,7 +405,7 @@ const FormCard1 = () => {
               type="text"
               id="institution"
               value={institution}
-              onChange={(e) => setInstitution(e.target.value)}
+              onChange={handleInstitutionChange}
               placeholder="Nome da Câmara"
               required
             />
@@ -286,14 +425,13 @@ const FormCard1 = () => {
               type="text"
               id="endereco"
               value={endereco}
-              onChange={(e) => setEndereco(e.target.value)}
+              onChange={handleEnderecoChange}
               placeholder="Endereço"
               required
             />
           </div>
           {errors.endereco && <p className="text-red-500">{errors.endereco}</p>}
         </div>
-       
         {/* Email */}
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
@@ -312,23 +450,24 @@ const FormCard1 = () => {
           </div>
           {errors.email && <p className="text-red-500">{errors.email}</p>}
         </div>
-        {/* Mensagem */}
-        {/* <div className="mb-6">
+        {/* Cnpj */}
+        <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
-            <div className="flex items-start justify-center w-12 px-1 bg-white">
-              <CiChat1 className="mt-[14px]" />
+            <div className="flex items-center justify-center w-12 px-1 bg-white">
+              <CiCreditCard1 />
             </div>
-            <textarea
+            <input
               className="w-full px-1 py-2 border-0 rounded-none"
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Conte um pouco sua situação:"
+              type="tel"
+              id="cnpj"
+              value={cnpj}
+              onChange={handleCnpjChange}
+              placeholder="Cnpj"
               required
             />
           </div>
-          {errors.message && <p className="text-red-500">{errors.message}</p>}
-        </div> */}
+          {errors.cnpj && <p className="text-red-500">{errors.cnpj}</p>}
+        </div>
         {/* Botão */}
         <button
           type="button"
