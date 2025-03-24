@@ -91,7 +91,7 @@ export default function About({ modal = "true" }) {
                 // backgroundImage: `url(${content.texts.about.imagem.img})`,
               }
             }
-            className="shadow-custom-opacity shadow-black/40 relative bg-center bg-no-repeat bg-cover h-[350px] w-[90%] tablet1:w-full tablet1:h-[800px] desktop1:h-[467px] rounded-xl"
+            className="shadow-custom-opacity shadow-black/40 relative bg-center bg-no-repeat bg-cover h-[300px] w-[90%] tablet1:w-full tablet1:h-[690px] desktop1:h-[467px] rounded-xl"
           >
             <div className="w-full">
               <ImageGallery
@@ -108,11 +108,25 @@ export default function About({ modal = "true" }) {
               <style>
                 {`
                     .custom-gallery .image-gallery-slide img {
-                      height: 470px; 
+                      height: 300px; 
                       width: 100%;
                       object-fit: cover;
-                      border-radius: 15px;
+                      border-radius: 10px;
                     }
+
+                     @media (min-width: 640px) and (max-width: 1023px) {
+                        .custom-gallery .image-gallery-slide img {
+                          height: 690px;
+                         
+                        }
+                      }
+
+                      @media (min-width: 1024px) {
+                        .custom-gallery .image-gallery-slide img {
+                          height: 470px;
+                        }
+                      }
+
 
                     .custom-gallery .image-gallery-thumbnails img {
                       height: 60px;  
