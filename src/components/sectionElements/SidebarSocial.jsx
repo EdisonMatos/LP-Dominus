@@ -60,7 +60,7 @@ export default function SidebarSocial({ LightMode }) {
             LightMode
               ? scrolled
                 ? "text-black"
-                : "text-white"
+                : "text-black"
               : "text-primary"
           } w-[40px] h-[40px]`}
           onClick={() => setVisible(true)}
