@@ -13,6 +13,8 @@ import Button from "../interactives/Button";
 import SectionHeader from "../sectionElements/SectionHeader";
 import imgPoints from "../../assets/imgs/about/points.png";
 import imgCursoDominus from "../../assets/imgs/hero/cursoDominus.jpg";
+import WhatsappForm from "../interactives/WhatsappForm";
+import { FilePenLine } from "lucide-react";
 
 export default function ProximosCursos({
   instagram,
@@ -49,13 +51,18 @@ export default function ProximosCursos({
         <div className="desktop1:w-[550px] desktop2:w-[570px]">
           <MotionDivDownToUp>
             <SectionHeader
-              className="text-center"
-              miniTitle={content.texts.about.aboutSocial.miniTag}
-              sectionHeaderTitle={content.texts.about.aboutSocial.title}
-              sectionHeaderSubtitle={content.texts.about.aboutSocial.subtitle}
+              className="text-center desktop1:flex desktop1:w-full"
+              miniTitle={content.texts.contactForm.minitag}
+              sectionHeaderTitle={content.texts.contactForm.title}
+              sectionHeaderSubtitle={content.texts.contactForm.subtitle}
               color="dark"
               type="article"
             />
+            <MotionDivDownToUp>
+              <Paragraphs className="text-secondary text-opacity-80 mb-[48px]">
+                {content.texts.contactForm.paragraph}
+              </Paragraphs>
+            </MotionDivDownToUp>
           </MotionDivDownToUp>
           <MotionDivDownToUp>
             <Paragraphs className="text-white text-opacity-80 mb-[48px]">
@@ -158,9 +165,28 @@ export default function ProximosCursos({
                 }
               />
             )}
+            <Button
+              label="Cadastre-se Aqui"
+              icon={<FilePenLine />}
+              onClick={() => {
+                setModalTitle("Cadastro");
+                setModalContent(<WhatsappForm />);
+                setVisible(true);
+              }}
+            />
           </div>
         </div>
       </SectionWrapper>
+      <Dialog
+        className="font-secondFont"
+        header={modalTitle}
+        visible={visible}
+        onHide={() => setVisible(false)}
+        style={{ width: "50vw" }}
+        breakpoints={{ "4000px": "717px", "1024px": "70vw", "641px": "90vw" }}
+      >
+        <p className="m-0 ">{modalContent}</p>
+      </Dialog>
     </SectionArea>
   );
 }
