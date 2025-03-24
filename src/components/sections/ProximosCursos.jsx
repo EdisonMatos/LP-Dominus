@@ -55,7 +55,7 @@ export default function ProximosCursos({
               miniTitle={content.texts.contactForm.minitag}
               sectionHeaderTitle={content.texts.contactForm.title}
               sectionHeaderSubtitle={content.texts.contactForm.subtitle}
-              color="dark"
+              color=""
               type="article"
             />
             <MotionDivDownToUp>
@@ -167,6 +167,7 @@ export default function ProximosCursos({
             )}
             <Button
               label="Cadastre-se Aqui"
+              className="text-white"
               icon={<FilePenLine />}
               onClick={() => {
                 setModalTitle("Cadastro");
