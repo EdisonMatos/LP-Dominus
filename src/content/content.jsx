@@ -62,12 +62,12 @@ export const infos = {
   ),
   enderecoSecundario: (
     <div>
-      <p>Treinamento</p>
-      <p>Hotel Intercity Praia de Belas - </p>
+      <p>Treinamento:</p>
+      <p>Hotel Intercity Praia de Belas, </p>
       <p>Avenida Borges de Medeiros,</p>
-      <p>nº 2145 - Praia de Belas</p>
+      <p>nº 2145 - Praia de Belas.</p>
       <p>Porto Alegre - RS,</p>
-      <p>CEP 90110-150,</p>
+      <p>CEP 90110-150</p>
     </div>
   ),
   expediente: (
