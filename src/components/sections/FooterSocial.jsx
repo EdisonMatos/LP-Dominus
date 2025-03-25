@@ -38,7 +38,7 @@ export default function FooterSocial({
           <div className=" w-full max-w-[1215px] flex flex-col gap-y-[80px] desktop1:flex-row desktop1:justify-between">
             <div className="flex flex-col gap-y-[16px] desktop1:w-[290px] text-paragraph3">
               <MotionDivDownToUp>
-                <div className="h-[115px] flex justify-start items-center">
+                <div className="h-[115px] bg-white px-6 flex justify-start items-center">
                   <img
                     src={content.texts.navbar.logo.img}
                     alt={content.texts.navbar.logo.alt}
@@ -57,20 +57,6 @@ export default function FooterSocial({
                     className="hover:underline"
                   >
                     {content.texts.infos.phone}
-                  </a>
-                </div>
-              </MotionDivDownToUp>
-              <MotionDivDownToUp>
-                <div className="flex full gap-x-[12px] items-center opacity-90">
-                  <FaWhatsapp size={24} color={LightMode ? "black" : "white"} />
-
-                  <a
-                    href="https://wa.me/5511960186794?text=Ol%C3%A1%21%20Vim%20atrav%C3%A9s%20do%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20tirar%20umas%20d%C3%BAvidas."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    <p>(11) 96018-6794</p>
                   </a>
                 </div>
               </MotionDivDownToUp>

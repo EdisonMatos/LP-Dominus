@@ -808,10 +808,33 @@ const content = {
       },
     },
     contactForm: {
-      minitag: "FORMULÁRIO",
-      title: "Preencha o Formulário",
+      minitag: "Parlamento Eficiente",
+      title: "Capacitação para Vereadores e Servidores",
       subtitle:
-        "Nos conte um pouco sobre sua situação preenchendo o formulário abaixo.",
+        "",
+      paragraph: (
+        <p>
+          A boa gestão pública começa com conhecimento e preparo. Nossa
+          capacitação é voltada para vereadores e servidores que desejam
+          aprimorar suas habilidades, entender de maneira aprofundada o
+          funcionamento legislativo e atuar com mais eficiência e transparência.
+          <br />
+          <br />
+          Durante o curso, os participantes irão explorar temas essenciais que
+          irão fortalecer a atuação do parlamentar, garantindo uma comunicação
+          mais eficaz com a comunidade e promovendo uma gestão mais alinhada às
+          necessidades da população.
+          <br />
+          <br />A capacitação oferece uma oportunidade única de aprendizado, com
+          conteúdos práticos e aplicáveis, que irão proporcionar uma compreensão
+          mais ampla das ferramentas e técnicas que podem ser aplicadas no dia a
+          dia do parlamento.
+        </p>
+      ),
+      labelInstagram: "Siga-nos no Instagram",
+      labelFacebook: "Siga-nos no Facebook",
+      labelLinkedin: "Siga-nos no LinkedIn",
+      labelX: "Siga-nos no X",
     },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,

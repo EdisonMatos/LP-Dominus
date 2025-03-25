@@ -10,7 +10,7 @@ import { UserCheck } from "lucide-react";
 import { Phone } from "lucide-react";
 import { FolderPen } from "lucide-react";
 
-const FormCard1 = () => {
+const WhatsappForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -495,4 +495,4 @@ const FormCard1 = () => {
   );
 };
 
-export default FormCard1;
+export default WhatsappForm;
