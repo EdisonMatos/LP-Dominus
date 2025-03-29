@@ -9,6 +9,8 @@ import { Building } from "lucide-react";
 import { UserCheck } from "lucide-react";
 import { Phone } from "lucide-react";
 import { FolderPen } from "lucide-react";
+import { CiCreditCard1 } from "react-icons/ci";
+import content from "../../content/content";
 
 const WhatsappForm = () => {
   const [name, setName] = useState("");
@@ -148,11 +150,8 @@ const WhatsappForm = () => {
     }
 
     if (!cpf) {
-      validationErrors.cpf = "O campo CPF é obrigatório.";
-    } else if (!validateCpf(cpf)) {
-      validationErrors.cpf =
-        "O CPF deve conter exatamente 11 números e ser válido.";
-    }
+      validationErrors.cpf = "O campo Cpf é obrigatório.";
+    } else !validateInstitution(institution);
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -161,16 +160,23 @@ const WhatsappForm = () => {
     }
 
     // Aqui o número do WhatsApp precisa estar no formato correto
-    const whatsappNumber = "5599984234461"; // Certifique-se de que este número está correto com o código do país
-    const formattedPhone = phone.replace(/\D/g, ""); // Remover caracteres não numéricos
+    const whatsappNumber = "5551997328822"; // Certifique-se de que este número está correto com o código do país
+    const formatPhone = (phone) => {
+      const formattedPhone = phone.replace(/\D/g, ""); // Remove caracteres não numéricos
 
-    const whatsappMessage = `Olá! Meu nome é ${name}.\n
-      Cpf: ${cpf}.\n
-      Telefone: ${formattedPhone}.\n
-      Cargo: ${position}.\n
-      E-mail: ${email}.\n
-      Nome da Câmara: ${institution}.\n
-      Endereço: ${endereco}`;
+      if (formattedPhone.length !== 11) return phone; // Retorna original se não tiver 11 dígitos
+
+      return formattedPhone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+    };
+    const whatsappMessage = `Olá! 
+Vim através do site, e essa mensagem se refere a uma inscrição no curso ${content.texts.contactForm.title}.
+Meu nome é ${name}.
+Cpf: ${cpf}.
+Telefone: ${phone}.
+Cargo: ${position}.
+E-mail: ${email}.
+Nome da Câmara: ${institution}.
+Endereço: ${endereco}.`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       whatsappMessage
@@ -223,49 +229,18 @@ const WhatsappForm = () => {
     return enderecoPattern.test(endereco.trim());
   };
 
-  const validateCpf = (cpf) => {
-    cpf = cpf.replace(/\D/g, ""); // Remove caracteres não numéricos
+  const formatCpf = (value) => {
+    const onlyNumbers = value.replace(/\D/g, ""); // Remove caracteres não numéricos
+    const limitedNumbers = onlyNumbers.slice(0, 11); // Limita a 11 dígitos
 
-    if (cpf.length !== 11) return false; // Verifica se o CPF tem exatamente 11 números
-
-    // Verificação dos dígitos verificadores
-    const digits = cpf.split("").map(Number);
-    const calcDigits = (cpf, multipliers) => {
-      const sum = multipliers.reduce(
-        (acc, multiplier, index) => acc + cpf[index] * multiplier,
-        0
-      );
-      const remainder = sum % 11;
-      return remainder < 2 ? 0 : 11 - remainder;
-    };
-
-    const firstCheckDigit = calcDigits(
-      digits.slice(0, 9),
-      [10, 9, 8, 7, 6, 5, 4, 3, 2]
-    );
-    const secondCheckDigit = calcDigits(
-      digits.slice(0, 10),
-      [11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
-    );
-
-    return digits[9] === firstCheckDigit && digits[10] === secondCheckDigit;
+    return limitedNumbers
+      .replace(/(\d{3})(\d)/, "$1.$2")
+      .replace(/(\d{3})\.(\d{3})(\d)/, "$1.$2.$3")
+      .replace(/(\d{3})\.(\d{3})\.(\d{3})(\d{1,2})/, "$1.$2.$3-$4");
   };
-
   const handleCpfChange = (e) => {
-    let value = e.target.value;
-
-    // Remove caracteres não numéricos
-    value = value.replace(/\D/g, "");
-
-    // Limita a quantidade de números para 11 (tamanho do CPF)
-    if (value.length > 11) {
-      value = value.substring(0, 11);
-    }
-
-    // Aplica a máscara
-    value = value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
-
-    setCpf(value);
+    const formattedCpf = formatCpf(e.target.value);
+    setCpf(formattedCpf);
   };
 
   const handleSubmit = (e) => {
@@ -351,7 +326,7 @@ const WhatsappForm = () => {
         <div className="mb-6">
           <div className="flex mb-2 text-gray-500 tablet1:mb-0">
             <div className="flex items-center justify-center w-12 px-1 bg-white">
-              <IdCard />
+              <CiCreditCard1 />
             </div>
             <input
               className="w-full px-1 py-2 border-0 rounded-none"
