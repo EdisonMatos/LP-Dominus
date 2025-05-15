@@ -831,17 +831,15 @@ const content = {
         },
       },
     },
+
     contactForm: {
-      miniTag: "INSCRIÇÃO",
-      title: "Garanta sua vaga nos cursos da Dominus Cursos",
-      subtitle:
-        "Não perca a chance de aprimorar sua atuação no setor público com nossos cursos especializados e presenciais.",
-      description: (
+      minitag: "Fortalecendo o Legislativo",
+      title:
+        "Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas Impositivas",
+      subtitle: "",
+      paragraph: (
         <p>
-          Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas
-          Impositivas
-          <br />
-          <br />
+
           Curso desenvolvido para capacitar vereadores, assessores legislativos
           e servidores públicos no entendimento e na atuação eficaz dentro do
           processo orçamentário municipal.
