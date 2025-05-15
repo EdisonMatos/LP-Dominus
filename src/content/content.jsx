@@ -808,7 +808,7 @@ const content = {
       },
     },
     contactForm: {
-      minitag: "Fortalecendo o Legislativo",
+      minitag: "FORTALECENDO O LEGISLATIVO",
       title:
         "Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas Impositivas",
       subtitle: "",
