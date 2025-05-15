@@ -168,7 +168,7 @@ export default function ProximosCursos({
                 }
               />
             )}
-            {/* <Button
+            <Button
               label="Cadastre-se Aqui"
               className="text-white"
               icon={<FilePenLine />}
@@ -177,18 +177,6 @@ export default function ProximosCursos({
                 setModalContent(<WhatsappForm />);
                 setVisible(true);
               }}
-            /> */}
-            <Button
-              label="Cadastre-se Aqui"
-              className="text-white"
-              icon={<FaWhatsapp size={24} />}
-              //   icon={<FilePenLine />}
-              buttonLink={whatsappContactLink}
-              //   onClick={() => {
-              //     setModalTitle("Cadastro");
-              //     setModalContent(<WhatsappForm />);
-              //     setVisible(true);
-              //   }}
             />
           </div>
         </div>
