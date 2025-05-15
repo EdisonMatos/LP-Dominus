@@ -10,7 +10,7 @@ import { UserCheck } from "lucide-react";
 import { Phone } from "lucide-react";
 import { FolderPen } from "lucide-react";
 import { CiCreditCard1 } from "react-icons/ci";
-import content from "../../content/content";
+import contentCursos from "../../content/ContentCursos";
 
 const WhatsappForm = () => {
   const [name, setName] = useState("");
@@ -168,9 +168,12 @@ const WhatsappForm = () => {
 
       return formattedPhone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
     };
-    const whatsappMessage = `Olá! 
-Vim através do site, e essa mensagem se refere a uma inscrição no curso ${content.texts.contactForm.title}.
-Meu nome é ${name}.
+    const whatsappMessage = `Olá! Vim através do site, e essa mensagem se refere a uma inscrição.
+
+Curso/Evento: ${contentCursos.texts.curso1.title}.
+Data: ${contentCursos.texts.curso1.date}.
+
+Nome: ${name}.
 Cpf: ${cpf}.
 Telefone: ${phone}.
 Cargo: ${position}.

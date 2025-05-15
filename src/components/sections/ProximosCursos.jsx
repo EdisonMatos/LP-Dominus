@@ -15,6 +15,7 @@ import imgPoints from "../../assets/imgs/about/points.png";
 import imgCursoDominus from "../../assets/imgs/hero/imagemCursoLegislativo.jpg";
 import WhatsappForm from "../interactives/WhatsappForm";
 import { FilePenLine } from "lucide-react";
+import contentCursos from "../../content/ContentCursos";
 
 export default function ProximosCursos({
   instagram,
@@ -52,9 +53,10 @@ export default function ProximosCursos({
           <MotionDivDownToUp>
             <SectionHeader
               className="text-center desktop1:flex desktop1:w-full"
-              miniTitle={content.texts.contactForm.minitag}
-              sectionHeaderTitle={content.texts.contactForm.title}
-              sectionHeaderSubtitle={content.texts.contactForm.subtitle}
+              // miniTitle={contentCursos.texts.curso1.name}
+              sectionHeaderTitle={contentCursos.texts.curso1.title}
+              sectionHeaderSubtitle={contentCursos.texts.curso1.description}
+              data={contentCursos.texts.curso1.date}
               color=""
               type="article"
             />
@@ -66,7 +68,7 @@ export default function ProximosCursos({
           </MotionDivDownToUp>
           <MotionDivDownToUp>
             <Paragraphs className="text-white text-opacity-80 mb-[48px]">
-              {content.texts.about.aboutSocial.paragraph}
+              {contentCursos.texts.curso1.description}
             </Paragraphs>
           </MotionDivDownToUp>
 

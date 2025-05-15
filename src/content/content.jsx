@@ -807,37 +807,7 @@ const content = {
         },
       },
     },
-    contactForm: {
-      minitag: "INSCRIÇÃO",
-      title:
-        "Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas Impositivas",
-      subtitle: "",
-      paragraph: (
-        <p>
-          Curso desenvolvido para capacitar vereadores, assessores legislativos
-          e servidores públicos no entendimento e na atuação eficaz dentro do
-          processo orçamentário municipal.
-          <br />
-          <br />
-          O conteúdo abrange desde os fundamentos do planejamento público até a
-          elaboração, análise e fiscalização do orçamento anual. Um dos focos
-          principais é a compreensão e a aplicação das emendas impositivas —
-          instrumento fundamental para garantir que as demandas da população
-          sejam atendidas de forma direta e transparente.
-          <br />
-          <br />
-          Com uma abordagem prática e atualizada, o curso prepara os
-          participantes para exercerem um papel mais estratégico e propositivo
-          no Legislativo, fortalecendo a relação entre o parlamento municipal e
-          a gestão pública, e promovendo maior eficiência na alocação dos
-          recursos públicos.
-        </p>
-      ),
-      labelInstagram: "Siga-nos no Instagram",
-      labelFacebook: "Siga-nos no Facebook",
-      labelLinkedin: "Siga-nos no LinkedIn",
-      labelX: "Siga-nos no X",
-    },
+    
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
