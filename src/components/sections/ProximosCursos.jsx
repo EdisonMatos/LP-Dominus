@@ -12,9 +12,12 @@ import content from "../../content/content";
 import Button from "../interactives/Button";
 import SectionHeader from "../sectionElements/SectionHeader";
 import imgPoints from "../../assets/imgs/about/points.png";
-import imgCursoDominus from "../../assets/imgs/hero/cursoDominus.jpg";
+import imgCursoDominus from "../../assets/imgs/hero/imagemCursoForm.jpg";
 import WhatsappForm from "../interactives/WhatsappForm";
 import { FilePenLine } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+
+const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
 export default function ProximosCursos({
   instagram,
@@ -52,7 +55,7 @@ export default function ProximosCursos({
           <MotionDivDownToUp>
             <SectionHeader
               className="text-center desktop1:flex desktop1:w-full"
-              miniTitle={content.texts.contactForm.minitag}
+              miniTitle={content.texts.contactForm.miniTag}
               sectionHeaderTitle={content.texts.contactForm.title}
               sectionHeaderSubtitle={content.texts.contactForm.subtitle}
               color=""
@@ -60,7 +63,7 @@ export default function ProximosCursos({
             />
             <MotionDivDownToUp>
               <Paragraphs className="text-secondary text-opacity-80 mb-[48px]">
-                {content.texts.contactForm.paragraph}
+                {content.texts.contactForm.description}
               </Paragraphs>
             </MotionDivDownToUp>
           </MotionDivDownToUp>
@@ -165,7 +168,7 @@ export default function ProximosCursos({
                 }
               />
             )}
-            <Button
+            {/* <Button
               label="Cadastre-se Aqui"
               className="text-white"
               icon={<FilePenLine />}
@@ -174,6 +177,18 @@ export default function ProximosCursos({
                 setModalContent(<WhatsappForm />);
                 setVisible(true);
               }}
+            /> */}
+            <Button
+              label="Cadastre-se Aqui"
+              className="text-white"
+              icon={<FaWhatsapp size={24} />}
+              //   icon={<FilePenLine />}
+              buttonLink={whatsappContactLink}
+              //   onClick={() => {
+              //     setModalTitle("Cadastro");
+              //     setModalContent(<WhatsappForm />);
+              //     setVisible(true);
+              //   }}
             />
           </div>
         </div>

@@ -428,6 +428,37 @@ const content = {
         },
       },
     },
+    // sectionForm: {
+    //   miniTag: "INSCRIÇÃO",
+    //   title: "Garanta sua vaga nos cursos da Dominus Cursos",
+    //   subtitle:
+    //     "Não perca a chance de aprimorar sua atuação no setor público com nossos cursos especializados e presenciais.",
+    //   description: (
+    //     <p>
+    //       Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas
+    //       Impositivas
+    //       <br />
+    //       <br />
+    //       Curso desenvolvido para capacitar vereadores, assessores legislativos
+    //       e servidores públicos no entendimento e na atuação eficaz dentro do
+    //       processo orçamentário municipal.
+    //       <br />
+    //       <br />
+    //       O conteúdo abrange desde os fundamentos do planejamento público até a
+    //       elaboração, análise e fiscalização do orçamento anual. Um dos focos
+    //       principais é a compreensão e a aplicação das emendas impositivas —
+    //       instrumento fundamental para garantir que as demandas da população
+    //       sejam atendidas de forma direta e transparente.
+    //       <br />
+    //       <br />
+    //       Com uma abordagem prática e atualizada, o curso prepara os
+    //       participantes para exercerem um papel mais estratégico e propositivo
+    //       no Legislativo, fortalecendo a relação entre o parlamento municipal e
+    //       a gestão pública, e promovendo maior eficiência na alocação dos
+    //       recursos públicos.
+    //     </p>
+    //   ),
+    // },
     blog: {
       miniTag: "BLOG",
       title: "Informação jurídica ao seu alcance",
@@ -801,26 +832,33 @@ const content = {
       },
     },
     contactForm: {
-      minitag: "Parlamento Eficiente",
-      title: "Capacitação para Vereadores e Servidores",
-      subtitle: "",
-      paragraph: (
+      miniTag: "INSCRIÇÃO",
+      title: "Garanta sua vaga nos cursos da Dominus Cursos",
+      subtitle:
+        "Não perca a chance de aprimorar sua atuação no setor público com nossos cursos especializados e presenciais.",
+      description: (
         <p>
-          A boa gestão pública começa com conhecimento e preparo. Nossa
-          capacitação é voltada para vereadores e servidores que desejam
-          aprimorar suas habilidades, entender de maneira aprofundada o
-          funcionamento legislativo e atuar com mais eficiência e transparência.
+          Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas
+          Impositivas
           <br />
           <br />
-          Durante o curso, os participantes irão explorar temas essenciais que
-          irão fortalecer a atuação do parlamentar, garantindo uma comunicação
-          mais eficaz com a comunidade e promovendo uma gestão mais alinhada às
-          necessidades da população.
+          Curso desenvolvido para capacitar vereadores, assessores legislativos
+          e servidores públicos no entendimento e na atuação eficaz dentro do
+          processo orçamentário municipal.
           <br />
-          <br />A capacitação oferece uma oportunidade única de aprendizado, com
-          conteúdos práticos e aplicáveis, que irão proporcionar uma compreensão
-          mais ampla das ferramentas e técnicas que podem ser aplicadas no dia a
-          dia do parlamento.
+          <br />
+          O conteúdo abrange desde os fundamentos do planejamento público até a
+          elaboração, análise e fiscalização do orçamento anual. Um dos focos
+          principais é a compreensão e a aplicação das emendas impositivas —
+          instrumento fundamental para garantir que as demandas da população
+          sejam atendidas de forma direta e transparente.
+          <br />
+          <br />
+          Com uma abordagem prática e atualizada, o curso prepara os
+          participantes para exercerem um papel mais estratégico e propositivo
+          no Legislativo, fortalecendo a relação entre o parlamento municipal e
+          a gestão pública, e promovendo maior eficiência na alocação dos
+          recursos públicos.
         </p>
       ),
       labelInstagram: "Siga-nos no Instagram",

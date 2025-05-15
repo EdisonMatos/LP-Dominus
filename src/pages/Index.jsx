@@ -31,7 +31,6 @@ export default function Index() {
         paragraphsModal={false}
         visualization={true}
       />
-      <SectionForm socialPrint={true} instagram={false} />
       <About modal={true} />
       <AboutInstagram
         socialPrint={true}
@@ -41,6 +40,7 @@ export default function Index() {
         x={false}
         test={true}
       />
+      {/* <SectionForm socialPrint={true} instagram={false} /> */}
       <Cta />
       <Steps />
       <Faq />
