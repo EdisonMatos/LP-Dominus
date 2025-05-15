@@ -12,7 +12,7 @@ import content from "../../content/content";
 import Button from "../interactives/Button";
 import SectionHeader from "../sectionElements/SectionHeader";
 import imgPoints from "../../assets/imgs/about/points.png";
-import imgCursoDominus from "../../assets/imgs/hero/cursoDominus.jpg";
+import imgCursoDominus from "../../assets/imgs/hero/imagemCursoLegislativo.jpg";
 import WhatsappForm from "../interactives/WhatsappForm";
 import { FilePenLine } from "lucide-react";
 
