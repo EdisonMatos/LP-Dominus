@@ -166,7 +166,7 @@ export default function ProximosCursos({
               />
             )}
             <Button
-              label="Cadastre-se Aqui"
+              label="Inscreva-se aqui"
               className="text-white"
               icon={<FilePenLine />}
               onClick={() => {
