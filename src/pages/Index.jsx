@@ -10,10 +10,10 @@ import Faq from "../components/sections/Faq";
 import FooterSocial from "../components/sections/FooterSocial";
 import DefaultModals from "../components/sections/DefaultModals";
 
-
 import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
 import BackToTopButton from "../components/interactives/BackToTopButton";
 import ProximosCursos from "../components/sections/ProximosCursos";
+import SectionForm from "../components/sections/SectionForm";
 
 export default function Index() {
   return (
@@ -40,6 +40,7 @@ export default function Index() {
         x={false}
         test={true}
       />
+      {/* <SectionForm socialPrint={true} instagram={false} /> */}
       <Cta />
       <Steps />
       <Faq />

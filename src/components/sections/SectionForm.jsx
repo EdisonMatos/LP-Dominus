@@ -19,7 +19,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
-export default function ProximosCursos({
+export default function SectionForm({
   instagram,
   facebook,
   x,
@@ -55,7 +55,7 @@ export default function ProximosCursos({
           <MotionDivDownToUp>
             <SectionHeader
               className="text-center desktop1:flex desktop1:w-full"
-              miniTitle={content.texts.contactForm.miniTag}
+              miniTitle={content.texts.contactForm.minitag}
               sectionHeaderTitle={content.texts.contactForm.title}
               sectionHeaderSubtitle={content.texts.contactForm.subtitle}
               color=""
@@ -63,18 +63,16 @@ export default function ProximosCursos({
             />
             <MotionDivDownToUp>
               <Paragraphs className="text-secondary text-opacity-80 mb-[48px]">
-                {content.texts.contactForm.description}
+                <Paragraphs className="text-secondary text-opacity-80 mb-[48px]">
+                  {content.texts.contactForm.description}
+                </Paragraphs>
               </Paragraphs>
             </MotionDivDownToUp>
           </MotionDivDownToUp>
-          <MotionDivDownToUp>
-            <Paragraphs className="text-white text-opacity-80 mb-[48px]">
-              {content.texts.about.aboutSocial.paragraph}
-            </Paragraphs>
-          </MotionDivDownToUp>
+         
 
           <div className="flex flex-col gap-4">
-            {instagram && (
+            {/* {instagram && (
               <Button
                 label={content.texts.about.aboutSocial.labelInstagram}
                 buttonLink={content.texts.links.instagram}
@@ -97,9 +95,9 @@ export default function ProximosCursos({
                   </svg>
                 }
               />
-            )}
+            )} */}
 
-            {facebook && (
+            {/* {facebook && (
               <Button
                 label={content.texts.about.aboutSocial.labelFacebook}
                 buttonLink={content.texts.links.facebook}
@@ -120,9 +118,9 @@ export default function ProximosCursos({
                   </svg>
                 }
               />
-            )}
+            )} */}
 
-            {x && (
+            {/* {x && (
               <Button
                 label={content.texts.about.aboutSocial.labelX}
                 buttonLink={content.texts.links.x}
@@ -142,9 +140,9 @@ export default function ProximosCursos({
                   </svg>
                 }
               />
-            )}
+            )} */}
 
-            {linkedin && (
+            {/* {linkedin && (
               <Button
                 label={content.texts.about.aboutSocial.labelLinkedin}
                 buttonLink={content.texts.links.linkedin}
@@ -167,16 +165,18 @@ export default function ProximosCursos({
                   </svg>
                 }
               />
-            )}
+            )} */}
             <Button
-              label="Inscreva-se aqui"
+              label="Cadastre-se Aqui"
               className="text-white"
-              icon={<FilePenLine />}
-              onClick={() => {
-                setModalTitle("Cadastro");
-                setModalContent(<WhatsappForm />);
-                setVisible(true);
-              }}
+              icon={<FaWhatsapp size={24} />}
+              //   icon={<FilePenLine />}
+              buttonLink={whatsappContactLink}
+              //   onClick={() => {
+              //     setModalTitle("Cadastro");
+              //     setModalContent(<WhatsappForm />);
+              //     setVisible(true);
+              //   }}
             />
           </div>
         </div>
