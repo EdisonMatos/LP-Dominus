@@ -110,12 +110,12 @@ const content = {
       miniTag: "CONSULTORIA E CAPACITAÇÃO EM PORTO ALEGRE - RS",
       title: (
         <h1 className="mb-[16px]">
-          Cursos para fortalecer
-          <span className="text-primary"> mandatos e gestão pública</span>
+          Cursos para mandatos{" "}
+          <span className="text-primary"> e gestão pública</span>
         </h1>
       ),
       subtitle:
-        "Capacitação prática e estratégica para vereadores e prefeitos, garantindo conformidade e eficiência.",
+        "Capacitação técnica para gestores e servidores do Poder Executivo e Legislativo, com foco em conformidade e eficiência.",
       heroImg: heroImg,
       ctaButtonText: "Entre em contato",
 
@@ -165,9 +165,9 @@ const content = {
     },
     features: {
       miniTag: "A ESCOLHA CERTA",
-      title: "Por que a Dominus Cursos é a melhor escolha?",
+      title: "Por que escolher a Dominus Cursos?",
       subtitle:
-        "Oferecemos capacitação prática e especializada para gestores públicos, garantindo conhecimento aplicável e resultados reais.",
+        "Oferecemos capacitação com foco em aplicação nas rotinas de gestão pública e nos deveres legais.",
 
       imgFeatures: imgFeatures,
       imgDivisor: imgDivisor,
@@ -175,7 +175,7 @@ const content = {
         img: featuresImg1,
         title: "Formação para Vereadores",
         subtitle:
-          "Capacitação focada em legislar com eficiência, transparência e compromisso com a comunidade.",
+          "Capacitação sobre funções legislativas, deveres legais e relação com a comunidade.",
 
         description: (
           <div>
@@ -203,9 +203,9 @@ const content = {
       },
       card2: {
         img: featuresImg2,
-        title: "Gestão Pública Eficiente",
+        title: "Gestão Pública",
         subtitle:
-          "Estratégias para uma administração moderna, inovadora e alinhada às boas práticas.",
+          "Capacitação em organização administrativa, planejamento e práticas de gestão pública.",
         description: (
           <div>
             A_Definir
@@ -234,7 +234,7 @@ const content = {
         img: featuresImg3,
         title: "Conformidade e Legislação",
         subtitle:
-          "Atualização sobre normas e leis para garantir segurança jurídica e governança eficaz.",
+          "Atualização em normas e leis para orientar decisões e condutas no setor público.",
 
         description: (
           <div>
@@ -322,8 +322,7 @@ const content = {
       },
       miniTag: "QUEM É A DOMINUS CURSOS",
       title: "Nossa trajetória",
-      subtitle:
-        "Capacitando políticos e gestores para uma administração pública eficiente e ética.",
+      subtitle: "Capacitação para uma administração pública eficiente e ética.",
 
       labelInstagram: "Siga-nos no Instagram",
       labelFacebook: "Siga-nos no Facebook",
@@ -331,45 +330,40 @@ const content = {
       labelX: "Siga-nos no X",
       paragraph: (
         <div>
-          A Dominus Cursos nasceu para capacitar políticos e agentes públicos a
-          exercerem seus mandatos com excelência.
+          A Dominus Cursos foi criada para capacitar políticos e agentes
+          públicos a exercerem seus mandatos com qualidade.
           <br />
-          Criada por profissionais experientes no meio legislativo, nossa missão
-          é oferecer conhecimento prático e estratégico para vereadores,
-          prefeitos e assessores, ajudando-os a tomar decisões assertivas e
-          captar recursos essenciais para suas cidades.
+          Formada por profissionais com experiência no meio legislativo, nossa
+          missão é fornecer conhecimento prático e estratégico para vereadores,
+          prefeitos e assessores, auxiliando na tomada de decisões e captação de
+          recursos para as cidades.
         </div>
       ),
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p>
-          A Dominus Cursos nasceu para capacitar políticos e agentes públicos a
-          exercerem seus mandatos com excelência.
+          A Dominus Cursos foi criada para capacitar políticos e agentes
+          públicos a exercerem seus mandatos com qualidade.
           <br />
           <br />
-          Criada por profissionais experientes no meio legislativo, nossa missão
-          é oferecer conhecimento prático e estratégico para vereadores,
-          prefeitos e assessores, ajudando-os a tomar decisões assertivas e
-          captar recursos essenciais para suas cidades.
+          Formada por profissionais com experiência no meio legislativo, nossa
+          missão é fornecer conhecimento prático e estratégico para vereadores,
+          prefeitos e assessores, auxiliando na tomada de decisões e captação de
+          recursos para as cidades.
           <br />
           <br />
-          Acreditamos que políticos bem preparados geram impacto positivo,
-          trabalham com transparência e transformam a realidade local.
+          Acreditamos que políticos bem preparados têm impacto positivo,
+          trabalham com transparência e promovem mudanças locais.
           <br />
           <br />
           Por isso, além de cursos presenciais, oferecemos suporte contínuo e
-          consultoria personalizada, auxiliando na elaboração de projetos,
-          captação de recursos e gestão eficiente.
+          consultoria personalizada em projetos, captação de recursos e gestão.
           <br />
           <br />
           Nosso diferencial está na experiência prática dos instrutores e em uma
-          abordagem direta, sem burocracia.
-          <br />
-          <br />
-          Com treinamentos constantemente atualizados, garantimos que nossos
-          alunos desenvolvam habilidades aplicáveis ao dia a dia político,
-          tornando-se líderes capacitados para enfrentar desafios e transformar
-          suas cidades.
+          abordagem objetiva, com treinamentos atualizados para garantir
+          habilidades aplicáveis ao trabalho político, formando líderes para
+          enfrentar desafios e transformar suas cidades.
           <br />
           <br />
         </p>
@@ -396,10 +390,9 @@ const content = {
     cta: {
       backgroundImg: ctaWhatsappImgBg,
       miniTag: "FALE CONOSCO",
-      title:
-        "Capacite-se agora para as demandas do mercado atual com nossa ajuda.",
+      title: "Capacite-se para as demandas do mercado atual com nossa ajuda.",
       subtitle:
-        "Fale com nossa equipe e descubra como nossos cursos podem aprimorar seus conhecimentos e sua atuação no setor público.",
+        "Fale com nossa equipe e saiba como nossos cursos podem aprimorar seus conhecimentos e atuação no setor público.",
       ctaButtonText: "Garanta sua vaga agora",
     },
     steps: {
@@ -435,6 +428,37 @@ const content = {
         },
       },
     },
+    // sectionForm: {
+    //   miniTag: "INSCRIÇÃO",
+    //   title: "Garanta sua vaga nos cursos da Dominus Cursos",
+    //   subtitle:
+    //     "Não perca a chance de aprimorar sua atuação no setor público com nossos cursos especializados e presenciais.",
+    //   description: (
+    //     <p>
+    //       Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas
+    //       Impositivas
+    //       <br />
+    //       <br />
+    //       Curso desenvolvido para capacitar vereadores, assessores legislativos
+    //       e servidores públicos no entendimento e na atuação eficaz dentro do
+    //       processo orçamentário municipal.
+    //       <br />
+    //       <br />
+    //       O conteúdo abrange desde os fundamentos do planejamento público até a
+    //       elaboração, análise e fiscalização do orçamento anual. Um dos focos
+    //       principais é a compreensão e a aplicação das emendas impositivas —
+    //       instrumento fundamental para garantir que as demandas da população
+    //       sejam atendidas de forma direta e transparente.
+    //       <br />
+    //       <br />
+    //       Com uma abordagem prática e atualizada, o curso prepara os
+    //       participantes para exercerem um papel mais estratégico e propositivo
+    //       no Legislativo, fortalecendo a relação entre o parlamento municipal e
+    //       a gestão pública, e promovendo maior eficiência na alocação dos
+    //       recursos públicos.
+    //     </p>
+    //   ),
+    // },
     blog: {
       miniTag: "BLOG",
       title: "Informação jurídica ao seu alcance",
@@ -807,7 +831,39 @@ const content = {
         },
       },
     },
-    
+
+    contactForm: {
+      minitag: "Fortalecendo o Legislativo",
+      title:
+        "Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas Impositivas",
+      subtitle: "",
+      paragraph: (
+        <p>
+
+          Curso desenvolvido para capacitar vereadores, assessores legislativos
+          e servidores públicos no entendimento e na atuação eficaz dentro do
+          processo orçamentário municipal.
+          <br />
+          <br />
+          O conteúdo abrange desde os fundamentos do planejamento público até a
+          elaboração, análise e fiscalização do orçamento anual. Um dos focos
+          principais é a compreensão e a aplicação das emendas impositivas —
+          instrumento fundamental para garantir que as demandas da população
+          sejam atendidas de forma direta e transparente.
+          <br />
+          <br />
+          Com uma abordagem prática e atualizada, o curso prepara os
+          participantes para exercerem um papel mais estratégico e propositivo
+          no Legislativo, fortalecendo a relação entre o parlamento municipal e
+          a gestão pública, e promovendo maior eficiência na alocação dos
+          recursos públicos.
+        </p>
+      ),
+      labelInstagram: "Siga-nos no Instagram",
+      labelFacebook: "Siga-nos no Facebook",
+      labelLinkedin: "Siga-nos no LinkedIn",
+      labelX: "Siga-nos no X",
+    },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
