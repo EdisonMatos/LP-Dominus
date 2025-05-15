@@ -1,13 +1,11 @@
 import bannerCurso1 from "../assets/imgs/hero/imagemCursoLegislativo.jpg";
 
-const currentYear = new Date().getFullYear();
-
 const contentCursos = {
   texts: {
     curso1: {
       title:
         "Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas Impositivas",
-      date: "05/06",
+      date: "05/06/2025",
       time: "09:00",
       description: (
         <p>
@@ -34,7 +32,5 @@ const contentCursos = {
     },
   },
 };
-
-
 
 export default contentCursos;
