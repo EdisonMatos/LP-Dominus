@@ -102,7 +102,7 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: ["Início", "Serviços", "Sobre Nós", "Perguntas Frequentes"],
+      menuItems: ["Início", "Serviços", "Cursos", "Perguntas Frequentes"],
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
     },
@@ -839,7 +839,6 @@ const content = {
       subtitle: "",
       paragraph: (
         <p>
-
           Curso desenvolvido para capacitar vereadores, assessores legislativos
           e servidores públicos no entendimento e na atuação eficaz dentro do
           processo orçamentário municipal.
