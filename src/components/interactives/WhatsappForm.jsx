@@ -10,7 +10,7 @@ import { UserCheck } from "lucide-react";
 import { Phone } from "lucide-react";
 import { FolderPen } from "lucide-react";
 import { CiCreditCard1 } from "react-icons/ci";
-import contentCursos from "../../content/ContentCursos";
+import content from "../../content/content";
 
 const WhatsappForm = () => {
   const [name, setName] = useState("");
@@ -170,8 +170,8 @@ const WhatsappForm = () => {
     };
     const whatsappMessage = `Olá! Vim através do site, e essa mensagem se refere a uma inscrição.
 
-Curso/Evento: ${contentCursos.texts.curso1.title}.
-Data: ${contentCursos.texts.curso1.date}.
+Curso/Evento: ${content.texts.contactForm.title}.
+
 
 Nome: ${name}.
 Cpf: ${cpf}.
