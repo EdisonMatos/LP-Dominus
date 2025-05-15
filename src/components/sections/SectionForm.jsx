@@ -1,0 +1,223 @@
+import Paragraphs from "../sectionElements/Paragraphs";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionTitles from "../sectionElements/SectionTitles";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import React, { useState } from "react";
+import { Dialog } from "primereact/dialog";
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+import content from "../../content/content";
+import Button from "../interactives/Button";
+import SectionHeader from "../sectionElements/SectionHeader";
+import imgPoints from "../../assets/imgs/about/points.png";
+import imgCursoDominus from "../../assets/imgs/hero/imagemCursoForm.jpg";
+import WhatsappForm from "../interactives/WhatsappForm";
+import { FilePenLine } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+
+const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
+
+export default function SectionForm({
+  instagram,
+  facebook,
+  x,
+  linkedin,
+  socialPrint,
+}) {
+  const [visible, setVisible] = useState(false);
+  const [modalContent, setModalContent] = useState("");
+  const [modalTitle, setModalTitle] = useState("");
+
+  return (
+    <SectionArea id="about" className="squares" paddingtop={true}>
+      <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px]  desktop1:gap-x-[40px]  desktop1:justify-between">
+        {socialPrint ? (
+          <MotionDivDownToUp className="relative w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
+            <img
+              src={imgCursoDominus}
+              alt={content.texts.about.aboutSocial.img.alt}
+              className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]"
+            />
+          </MotionDivDownToUp>
+        ) : (
+          <MotionDivDownToUp className=" w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
+            <div
+              style={{
+                backgroundImage: `url(${content.texts.about.aboutSocial.img.img})`,
+              }}
+              className="relative bg-center bg-no-repeat bg-cover h-[450px] w-full tablet1:h-[800px] desktop1:h-[467px] rounded-xl shadow-custom-opacity shadow-secondary/25"
+            ></div>
+          </MotionDivDownToUp>
+        )}
+        <div className="desktop1:w-[550px] desktop2:w-[570px]">
+          <MotionDivDownToUp>
+            <SectionHeader
+              className="text-center desktop1:flex desktop1:w-full"
+              miniTitle="INSCRIÇÃO"
+              sectionHeaderTitle="Garanta sua vaga nos cursos da Dominus Cursos"
+              sectionHeaderSubtitle="Não perca a chance de aprimorar sua atuação no setor público com nossos cursos especializados e presenciais."
+              color=""
+              type="article"
+            />
+            <MotionDivDownToUp>
+              <Paragraphs className="text-secondary text-opacity-80 mb-[48px]">
+                <Paragraphs className="text-secondary text-opacity-80 mb-[48px]">
+                  <p>
+                    Fortalecendo o Legislativo: Orçamento, Planejamento e
+                    Emendas Impositivas
+                    <br />
+                    <br />
+                    Curso desenvolvido para capacitar vereadores, assessores
+                    legislativos e servidores públicos no entendimento e na
+                    atuação eficaz dentro do processo orçamentário municipal.
+                    <br />
+                    <br />
+                    O conteúdo abrange desde os fundamentos do planejamento
+                    público até a elaboração, análise e fiscalização do
+                    orçamento anual. Um dos focos principais é a compreensão e a
+                    aplicação das emendas impositivas — instrumento fundamental
+                    para garantir que as demandas da população sejam atendidas
+                    de forma direta e transparente.
+                    <br />
+                    <br />
+                    Com uma abordagem prática e atualizada, o curso prepara os
+                    participantes para exercerem um papel mais estratégico e
+                    propositivo no Legislativo, fortalecendo a relação entre o
+                    parlamento municipal e a gestão pública, e promovendo maior
+                    eficiência na alocação dos recursos públicos.
+                  </p>
+                </Paragraphs>
+              </Paragraphs>
+            </MotionDivDownToUp>
+          </MotionDivDownToUp>
+          <MotionDivDownToUp>
+            <Paragraphs className="text-white text-opacity-80 mb-[48px]">
+              {content.texts.about.aboutSocial.paragraph}
+            </Paragraphs>
+          </MotionDivDownToUp>
+
+          <div className="flex flex-col gap-4">
+            {/* {instagram && (
+              <Button
+                label={content.texts.about.aboutSocial.labelInstagram}
+                buttonLink={content.texts.links.instagram}
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-instagram"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                }
+              />
+            )} */}
+
+            {/* {facebook && (
+              <Button
+                label={content.texts.about.aboutSocial.labelFacebook}
+                buttonLink={content.texts.links.facebook}
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-facebook"
+                  >
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                }
+              />
+            )} */}
+
+            {/* {x && (
+              <Button
+                label={content.texts.about.aboutSocial.labelX}
+                buttonLink={content.texts.links.x}
+                icon={
+                  <svg
+                    viewBox="0 0 21.573 19.5"
+                    version="1.1"
+                    id="svg4"
+                    width="20"
+                    height="20"
+                  >
+                    <defs id="defs8" />
+                    <path
+                      d="m 16.998462,0 h 3.308 l -7.227,8.26 8.502,11.24 h -6.657 l -5.2139994,-6.817 -5.966,6.817 H 0.43446256 L 8.1644626,10.665 0.00846256,0 H 6.8344626 l 4.7129994,6.231 z m -1.161,17.52 h 1.833 L 5.8384626,1.876 h -1.967 z"
+                      id="path2"
+                    />
+                  </svg>
+                }
+              />
+            )} */}
+
+            {/* {linkedin && (
+              <Button
+                label={content.texts.about.aboutSocial.labelLinkedin}
+                buttonLink={content.texts.links.linkedin}
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-linkedin"
+                  >
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                }
+              />
+            )} */}
+            <Button
+              label="Cadastre-se Aqui"
+              className="text-white"
+              icon={<FaWhatsapp size={24} />}
+              //   icon={<FilePenLine />}
+              buttonLink={whatsappContactLink}
+              //   onClick={() => {
+              //     setModalTitle("Cadastro");
+              //     setModalContent(<WhatsappForm />);
+              //     setVisible(true);
+              //   }}
+            />
+          </div>
+        </div>
+      </SectionWrapper>
+      <Dialog
+        className="font-secondFont"
+        header={modalTitle}
+        visible={visible}
+        onHide={() => setVisible(false)}
+        style={{ width: "50vw" }}
+        breakpoints={{ "4000px": "717px", "1024px": "70vw", "641px": "90vw" }}
+      >
+        <p className="m-0 ">{modalContent}</p>
+      </Dialog>
+    </SectionArea>
+  );
+}
