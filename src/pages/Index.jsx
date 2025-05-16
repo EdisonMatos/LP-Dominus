@@ -36,7 +36,7 @@ export default function Index() {
         socialPrint={true}
         instagram={true}
         facebook={false}
-        linkedin={true}
+        linkedin={false}
         x={false}
         test={true}
       />
@@ -48,7 +48,7 @@ export default function Index() {
         addres={true}
         instagram={true}
         facebook={false}
-        linkedin={true}
+        linkedin={false}
         x={false}
         obs={false}
       />
