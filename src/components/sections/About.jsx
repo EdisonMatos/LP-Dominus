@@ -18,11 +18,14 @@ import { MoveRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import ImageGallery from "react-image-gallery";
-import imgAbout1 from "../../assets/imgs/about/aboutImg1.png";
-import imgAbout2 from "../../assets/imgs/about/aboutImg2.png";
-import imgAbout3 from "../../assets/imgs/about/aboutImg3.png";
-import imgAbout4 from "../../assets/imgs/about/aboutImg4.png";
-import imgAbout5 from "../../assets/imgs/about/aboutImg5.png";
+import imgAbout0 from "../../assets/imgs/about/aboutImg.webp";
+import imgAbout1 from "../../assets/imgs/about/aboutImg1.webp";
+import imgAbout2 from "../../assets/imgs/about/aboutImg2.webp";
+import imgAbout3 from "../../assets/imgs/about/aboutImg3.webp";
+import imgAbout4 from "../../assets/imgs/about/aboutImg4.webp";
+import imgAbout5 from "../../assets/imgs/about/aboutImg5.webp";
+import imgAbout6 from "../../assets/imgs/about/aboutImg6.webp";
+
 import "react-image-gallery/styles/css/image-gallery.css";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
@@ -35,6 +38,10 @@ export default function About({ modal = "true" }) {
   const [modalTitle, setModalTitle] = useState("");
 
   const images = [
+    {
+      original: imgAbout0,
+      thumbnail: imgAbout0,
+    },
     {
       original: imgAbout1,
       thumbnail: imgAbout1,
@@ -54,6 +61,10 @@ export default function About({ modal = "true" }) {
     {
       original: imgAbout5,
       thumbnail: imgAbout5,
+    },
+    {
+      original: imgAbout6,
+      thumbnail: imgAbout6,
     },
   ];
 
@@ -91,7 +102,7 @@ export default function About({ modal = "true" }) {
                 // backgroundImage: `url(${content.texts.about.imagem.img})`,
               }
             }
-            className="shadow-custom-opacity shadow-black/40 relative bg-center bg-no-repeat bg-cover h-[300px] w-[90%] tablet1:w-full tablet1:h-[690px] desktop1:h-[467px] rounded-xl"
+            className="shadow-custom-opacity shadow-black/40 relative bg-center bg-no-repeat bg-cover h-auto w-auto tablet1:max-w-[700px] bg-blue-800 tablet1:h-auto desktop1:h-auto rounded-xl"
           >
             <div className="w-full">
               <ImageGallery
@@ -114,16 +125,24 @@ export default function About({ modal = "true" }) {
                       border-radius: 10px;
                     }
 
+                    @media (min-width: 425px) and (max-width: 639px) {
+                        .custom-gallery .image-gallery-slide img {
+                          height: 400px;
+                         
+                        }
+                      }
+
                      @media (min-width: 640px) and (max-width: 1023px) {
                         .custom-gallery .image-gallery-slide img {
-                          height: 690px;
-                         
+                          height: 600px;
+                         max-width: 700px;
                         }
                       }
 
                       @media (min-width: 1024px) {
                         .custom-gallery .image-gallery-slide img {
-                          height: 470px;
+                          height: 400px;
+                          max-width: 600px;
                         }
                       }
 
