@@ -18,11 +18,14 @@ import { MoveRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import ImageGallery from "react-image-gallery";
-import imgAbout1 from "../../assets/imgs/about/aboutImg1.png";
-import imgAbout2 from "../../assets/imgs/about/aboutImg2.png";
-import imgAbout3 from "../../assets/imgs/about/aboutImg3.png";
-import imgAbout4 from "../../assets/imgs/about/aboutImg4.png";
-import imgAbout5 from "../../assets/imgs/about/aboutImg5.png";
+import imgAbout0 from "../../assets/imgs/about/aboutImg.webp";
+import imgAbout1 from "../../assets/imgs/about/aboutImg1.webp";
+import imgAbout2 from "../../assets/imgs/about/aboutImg2.webp";
+import imgAbout3 from "../../assets/imgs/about/aboutImg3.webp";
+import imgAbout4 from "../../assets/imgs/about/aboutImg4.webp";
+import imgAbout5 from "../../assets/imgs/about/aboutImg5.webp";
+import imgAbout6 from "../../assets/imgs/about/aboutImg6.webp";
+
 import "react-image-gallery/styles/css/image-gallery.css";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
@@ -35,6 +38,10 @@ export default function About({ modal = "true" }) {
   const [modalTitle, setModalTitle] = useState("");
 
   const images = [
+    {
+      original: imgAbout0,
+      thumbnail: imgAbout0,
+    },
     {
       original: imgAbout1,
       thumbnail: imgAbout1,
@@ -54,6 +61,10 @@ export default function About({ modal = "true" }) {
     {
       original: imgAbout5,
       thumbnail: imgAbout5,
+    },
+    {
+      original: imgAbout6,
+      thumbnail: imgAbout6,
     },
   ];
 
