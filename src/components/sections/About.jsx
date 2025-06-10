@@ -102,7 +102,7 @@ export default function About({ modal = "true" }) {
                 // backgroundImage: `url(${content.texts.about.imagem.img})`,
               }
             }
-            className="shadow-custom-opacity shadow-black/40 relative bg-center bg-no-repeat bg-cover h-[300px] w-[90%] tablet1:w-full tablet1:h-[690px] desktop1:h-[467px] rounded-xl"
+            className="shadow-custom-opacity shadow-black/40 relative bg-center bg-no-repeat bg-cover h-auto w-auto tablet1:max-w-[700px] bg-blue-800 tablet1:h-auto desktop1:h-auto rounded-xl"
           >
             <div className="w-full">
               <ImageGallery
@@ -125,16 +125,24 @@ export default function About({ modal = "true" }) {
                       border-radius: 10px;
                     }
 
+                    @media (min-width: 425px) and (max-width: 639px) {
+                        .custom-gallery .image-gallery-slide img {
+                          height: 400px;
+                         
+                        }
+                      }
+
                      @media (min-width: 640px) and (max-width: 1023px) {
                         .custom-gallery .image-gallery-slide img {
-                          height: 690px;
-                         
+                          height: 600px;
+                         max-width: 700px;
                         }
                       }
 
                       @media (min-width: 1024px) {
                         .custom-gallery .image-gallery-slide img {
-                          height: 470px;
+                          height: 400px;
+                          max-width: 600px;
                         }
                       }
 
