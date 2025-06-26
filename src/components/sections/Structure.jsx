@@ -23,7 +23,7 @@ export default function Structure() {
             miniTitle="NOSSA ESTRUTURA"
             sectionHeaderTitle="Conheça o espaço onde grandes resultados acontecem"
             sectionHeaderSubtitle="Infraestrutura planejada para oferecer conforto, agilidade e excelência em cada atendimento."
-            color="dark"
+            color=""
           />
           <iframe
             width="100%"
