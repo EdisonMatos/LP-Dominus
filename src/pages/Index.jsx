@@ -14,6 +14,7 @@ import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappB
 import BackToTopButton from "../components/interactives/BackToTopButton";
 import ProximosCursos from "../components/sections/ProximosCursos";
 import SectionForm from "../components/sections/SectionForm";
+import Structure from "../components/sections/Structure";
 
 export default function Index() {
   return (
@@ -43,6 +44,7 @@ export default function Index() {
       {/* <SectionForm socialPrint={true} instagram={false} /> */}
       <Cta />
       <Steps />
+      <Structure />
       <Faq />
       <FooterSocial
         addres={true}
