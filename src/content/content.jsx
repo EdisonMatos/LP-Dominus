@@ -107,12 +107,13 @@ const content = {
       miniTag: "CONSULTORIA E CAPACITAÇÃO EM PORTO ALEGRE - RS",
       title: (
         <h1 className="mb-[16px]">
-          Cursos para mandatos{" "}
-          <span className="text-primary"> e gestão pública</span>
+          Especialista em Direito Público, com atuação voltada à assessoria
+          técnica e à formação
+          <span className="text-primary"> continuada de agentes públicos.</span>
         </h1>
       ),
       subtitle:
-        "Capacitação técnica para gestores e servidores do Poder Executivo e Legislativo, com foco em conformidade e eficiência.",
+        "Formação jurídica com foco prático e estratégico para quem atua na gestão pública.",
       heroImg: heroImg,
       ctaButtonText: "Entre em contato",
 
@@ -135,7 +136,7 @@ const content = {
             <path d="m16 18 2 2 4-4" />
           </svg>
         ),
-        text: "Cursos presenciais",
+        text: "Cursos presenciais, online e in company",
       },
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
