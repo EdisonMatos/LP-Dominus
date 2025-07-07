@@ -28,7 +28,7 @@ export default function Structure() {
           <iframe
             width="100%"
             height="315"
-            src="https://youtube.com/shorts/mPrQCQBGXhs"
+            src="https://www.youtube.com/embed/mPrQCQBGXhs"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
