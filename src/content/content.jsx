@@ -54,20 +54,17 @@ export const infos = {
   endereco: (
     <div>
       <p>Escritório:</p>
-      <p>Rua General Andrade Neves,</p>
-      <p>nº 90 - Sala 37, Centro Histórico.</p>
+      <p>Rua General Andrade Neves, </p>
+      <p>nº 90 - Sala 37, Centro Histórico,</p>
       <p>Porto Alegre - RS,</p>
       <p>CEP: 90010-210</p>
     </div>
   ),
   enderecoSecundario: (
     <div>
-      <p>Treinamento:</p>
-      <p>Hotel Intercity Praia de Belas, </p>
-      <p>Avenida Borges de Medeiros,</p>
-      <p>nº 2145 - Praia de Belas.</p>
-      <p>Porto Alegre - RS,</p>
-      <p>CEP 90110-150</p>
+      <p>Treinamentos:</p>
+      <p>Auditório Avohai – 9º andar,</p>
+      <p>Sala 91, em Porto Alegre - RS</p>
     </div>
   ),
   expediente: (
