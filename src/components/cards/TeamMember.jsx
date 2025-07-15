@@ -28,7 +28,7 @@ export default function TeamMember(props) {
   };
 
   return (
-    <div className="flex flex-col items-center p-[20px] h-auto w-full tablet1:w-[45%] desktop1:w-[25%] bg-neutral-100 rounded-lg">
+    <div className="flex flex-col items-center p-[20px] h-auto w-full tablet1:w-[45%] desktop1:w-[23%] bg-neutral-100 rounded-lg">
       <img
         alt={alt}
         src={img}
