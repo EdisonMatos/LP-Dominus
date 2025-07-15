@@ -34,9 +34,9 @@ export default function TeamMember(props) {
         src={img}
         className="w-[215px] h-[215px] desktop1:w- desktop1:h-auto mb-[24px] bg-black rounded-full"
       />
-      <h1 className="mb-[8px] text-title1  text-center font-bold">{name}</h1>
+      <h1 className="mb-[8px] text-title1 leading-6 text-center font-bold">{name}</h1>
       <div className="desktop2:h-auto desktop2:mb-[20px] flex flex-col items-center justify-center ">
-        <p className="text-center phone1:mb-4 text-paragraph3 text-black desktop2:mb-[20px] tablet1:w-[80%]">
+        <p className="text-center phone1:mb-4 text-paragraph1 text-black desktop2:mb-[20px] tablet1:w-[80%]">
           {role}
         </p>
         {modal && (
