@@ -181,6 +181,22 @@ export default function Team() {
               modalTitle={content.texts.team.members.member5.name}
               modalContent={
                 <p>
+                  Advogada. Mestre em Direito Público (Unisinos). Doutora em
+                  Ciência Política (UFRGS).
+                  <br />
+                  Bem resumido. Se achar que precisa de complemento, me avisa.
+                </p>
+              }
+            />
+
+            <TeamMember
+              img={content.texts.team.members.member6.img.img}
+              alt={content.texts.team.members.member6.img.alt}
+              name={content.texts.team.members.member6.name}
+              role={content.texts.team.members.member6.role}
+              modalTitle={content.texts.team.members.member6.name}
+              modalContent={
+                <p>
                   Sou Turismóloga, Especialista em Ecoturismo e Interpretação de
                   Natureza e Mestranda em Turismo e Hotelaria, busco estar em
                   constante aprendizado. Atualmente trabalho com consultorias em
@@ -195,11 +211,11 @@ export default function Team() {
               }
             />
             <TeamMember
-              img={content.texts.team.members.member6.img.img}
-              alt={content.texts.team.members.member6.img.alt}
-              name={content.texts.team.members.member6.name}
-              role={content.texts.team.members.member6.role}
-              modalTitle={content.texts.team.members.member6.name}
+              img={content.texts.team.members.member7.img.img}
+              alt={content.texts.team.members.member7.img.alt}
+              name={content.texts.team.members.member7.name}
+              role={content.texts.team.members.member7.role}
+              modalTitle={content.texts.team.members.member7.name}
               modalContent={
                 <p>
                   Doutorando em Ciência Política, com foco na produção e difusão
@@ -222,11 +238,11 @@ export default function Team() {
               }
             />
             <TeamMember
-              img={content.texts.team.members.member7.img.img}
-              alt={content.texts.team.members.member7.img.alt}
-              name={content.texts.team.members.member7.name}
-              role={content.texts.team.members.member7.role}
-              modalTitle={content.texts.team.members.member7.name}
+              img={content.texts.team.members.member8.img.img}
+              alt={content.texts.team.members.member8.img.alt}
+              name={content.texts.team.members.member8.name}
+              role={content.texts.team.members.member8.role}
+              modalTitle={content.texts.team.members.member8.name}
               modalContent={
                 <p>
                   Advogada inscrita na OAB/RS sob o nº 84.783, graduada em
@@ -242,11 +258,11 @@ export default function Team() {
               }
             />
             <TeamMember
-              img={content.texts.team.members.member8.img.img}
-              alt={content.texts.team.members.member8.img.alt}
-              name={content.texts.team.members.member8.name}
-              role={content.texts.team.members.member8.role}
-              modalTitle={content.texts.team.members.member8.name}
+              img={content.texts.team.members.member9.img.img}
+              alt={content.texts.team.members.member9.img.alt}
+              name={content.texts.team.members.member9.name}
+              role={content.texts.team.members.member9.role}
+              modalTitle={content.texts.team.members.member9.name}
               modalContent={
                 <p>
                   Advogado, inscrito na OAB/RS sob o nº 129.234, Graduado em
@@ -258,11 +274,11 @@ export default function Team() {
               }
             />
             <TeamMember
-              img={content.texts.team.members.member9.img.img}
-              alt={content.texts.team.members.member9.img.alt}
-              name={content.texts.team.members.member9.name}
-              role={content.texts.team.members.member9.role}
-              modalTitle={content.texts.team.members.member9.name}
+              img={content.texts.team.members.member10.img.img}
+              alt={content.texts.team.members.member10.img.alt}
+              name={content.texts.team.members.member10.name}
+              role={content.texts.team.members.member10.role}
+              modalTitle={content.texts.team.members.member10.name}
               modalContent={
                 <p>
                   É escritor, tendo publicado vários livros que vão de Memórias
@@ -282,11 +298,11 @@ export default function Team() {
               }
             />
             <TeamMember
-              img={content.texts.team.members.member10.img.img}
-              alt={content.texts.team.members.member10.img.alt}
-              name={content.texts.team.members.member10.name}
-              role={content.texts.team.members.member10.role}
-              modalTitle={content.texts.team.members.member10.name}
+              img={content.texts.team.members.member11.img.img}
+              alt={content.texts.team.members.member11.img.alt}
+              name={content.texts.team.members.member11.name}
+              role={content.texts.team.members.member11.role}
+              modalTitle={content.texts.team.members.member11.name}
               modalContent={
                 <p>
                   Possui ampla experiência na docência de literatura e língua
@@ -306,11 +322,11 @@ export default function Team() {
               }
             />
             <TeamMember
-              img={content.texts.team.members.member11.img.img}
-              alt={content.texts.team.members.member11.img.alt}
-              name={content.texts.team.members.member11.name}
-              role={content.texts.team.members.member11.role}
-              modalTitle={content.texts.team.members.member11.name}
+              img={content.texts.team.members.member12.img.img}
+              alt={content.texts.team.members.member12.img.alt}
+              name={content.texts.team.members.member12.name}
+              role={content.texts.team.members.member12.role}
+              modalTitle={content.texts.team.members.member12.name}
               modalContent={
                 <p>
                   Técnico em Contabilidade com sólida trajetória no setor

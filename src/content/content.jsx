@@ -41,6 +41,7 @@ import teamMemberImg8 from "../assets/imgs/team/team8.jpg";
 import teamMemberImg9 from "../assets/imgs/team/team9.jpg";
 import teamMemberImg10 from "../assets/imgs/team/team10.jpg";
 import teamMemberImg11 from "../assets/imgs/team/team11.jpg";
+import teamMemberImg12 from "../assets/imgs/team/team12.jpg";
 
 import imgTestimonial1 from "../assets/imgs/testimonials/deposition1.png";
 import imgTestimonial2 from "../assets/imgs/testimonials/deposition2.png";
@@ -614,52 +615,60 @@ const content = {
             img: teamMemberImg5,
             alt: "Membro da equipe",
           },
-          name: "Angelice Raquel Motter Manzino",
-          role: "Turismóloga | Mestranda em Turismo e Hotelaria | Pós Graduanda em Ecoturismo e Interpretação da Natureza | Turismo | Planejamento | Gestão | Consultoria | Instrutoria",
+          name: "Dra. Ana Paula Lopes Pombo",
+          role: "Mestre em Direito Público (Unisinos)",
         },
         member6: {
           img: {
             img: teamMemberImg6,
             alt: "Membro da equipe",
           },
-          name: "Cristian Sparemberger",
-          role: "Pesquisador e Cientista Político. Doutorando em Ciência Política, com foco na produção e difusão do conhecimento acadêmico.",
+          name: "Angelice Raquel Motter Manzino",
+          role: "Turismóloga | Mestranda em Turismo e Hotelaria | Pós Graduanda em Ecoturismo e Interpretação da Natureza | Turismo | Planejamento | Gestão | Consultoria | Instrutoria",
         },
         member7: {
           img: {
             img: teamMemberImg7,
             alt: "Membro da equipe",
           },
-          name: "Dra. Sandra Ostroski Lacks",
-          role: "Advogada inscrita na OAB/RS sob o nº 84.783, graduada em Direito pela UNIJUÍ.",
+          name: "Cristian Sparemberger",
+          role: "Pesquisador e Cientista Político. Doutorando em Ciência Política, com foco na produção e difusão do conhecimento acadêmico.",
         },
         member8: {
           img: {
             img: teamMemberImg8,
             alt: "Membro da equipe",
           },
-          name: "Dr. Euller Ernandes Petry",
-          role: "Advogado, inscrito na OAB/RS sob o nº 129.234, Graduado em Direio na Universidade Regional do Noroeste do Estado do Rio Grande do Sul.",
+          name: "Dra. Sandra Ostroski Lacks",
+          role: "Advogada inscrita na OAB/RS sob o nº 84.783, graduada em Direito pela UNIJUÍ.",
         },
         member9: {
           img: {
             img: teamMemberImg9,
             alt: "Membro da equipe",
           },
-          name: "Adeli Sell",
-          role: "Formado em Letras pela UFRGS e Direito pela FADERGS.",
+          name: "Dr. Euller Ernandes Petry",
+          role: "Advogado, inscrito na OAB/RS sob o nº 129.234, Graduado em Direio na Universidade Regional do Noroeste do Estado do Rio Grande do Sul.",
         },
         member10: {
           img: {
             img: teamMemberImg10,
             alt: "Membro da equipe",
           },
-          name: "Cristiano Fretta",
-          role: "Graduado em Letras na UFRGS e possui mestrado em literatura brasileira na mesma instituição.",
+          name: "Adeli Sell",
+          role: "Formado em Letras pela UFRGS e Direito pela FADERGS.",
         },
         member11: {
           img: {
             img: teamMemberImg11,
+            alt: "Membro da equipe",
+          },
+          name: "Cristiano Fretta",
+          role: "Graduado em Letras na UFRGS e possui mestrado em literatura brasileira na mesma instituição.",
+        },
+        member12: {
+          img: {
+            img: teamMemberImg12,
             alt: "Membro da equipe",
           },
           name: "Celso Lopes da Silva",
