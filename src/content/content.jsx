@@ -30,18 +30,18 @@ import imgFeaturesCardModal4 from "../assets/imgs/features/imgFeaturesCardModal4
 
 import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
 
-import teamMemberImg1 from "../assets/imgs/team/team1.jpg";
-import teamMemberImg2 from "../assets/imgs/team/team2.jpg";
-import teamMemberImg3 from "../assets/imgs/team/team3.jpg";
-import teamMemberImg4 from "../assets/imgs/team/team4.jpg";
-import teamMemberImg5 from "../assets/imgs/team/team5.jpg";
-import teamMemberImg6 from "../assets/imgs/team/team6.jpg";
-import teamMemberImg7 from "../assets/imgs/team/team7.jpg";
-import teamMemberImg8 from "../assets/imgs/team/team8.jpg";
-import teamMemberImg9 from "../assets/imgs/team/team9.jpg";
-import teamMemberImg10 from "../assets/imgs/team/team10.jpg";
-import teamMemberImg11 from "../assets/imgs/team/team11.jpg";
-import teamMemberImg12 from "../assets/imgs/team/team12.jpg";
+import teamMemberImg1 from "../assets/imgs/team/team1.webp";
+import teamMemberImg2 from "../assets/imgs/team/team2.webp";
+import teamMemberImg3 from "../assets/imgs/team/team3.webp";
+import teamMemberImg4 from "../assets/imgs/team/team4.webp";
+import teamMemberImg5 from "../assets/imgs/team/team5.webp";
+import teamMemberImg6 from "../assets/imgs/team/team6.webp";
+import teamMemberImg7 from "../assets/imgs/team/team7.webp";
+import teamMemberImg8 from "../assets/imgs/team/team8.webp";
+import teamMemberImg9 from "../assets/imgs/team/team9.webp";
+import teamMemberImg10 from "../assets/imgs/team/team10.webp";
+import teamMemberImg11 from "../assets/imgs/team/team11.webp";
+import teamMemberImg12 from "../assets/imgs/team/team12.webp";
 
 import imgTestimonial1 from "../assets/imgs/testimonials/deposition1.png";
 import imgTestimonial2 from "../assets/imgs/testimonials/deposition2.png";
