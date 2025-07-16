@@ -16,6 +16,7 @@ import BackToTopButton from "../components/interactives/BackToTopButton";
 import ProximosCursos from "../components/sections/ProximosCursos";
 import SectionForm from "../components/sections/SectionForm";
 import Structure from "../components/sections/Structure";
+import DownloadArchives from "../components/cards/Downloads";
 
 export default function Index() {
   return (
@@ -48,6 +49,7 @@ export default function Index() {
       <Steps />
       <Structure />
       <Faq />
+      <DownloadArchives />
       <FooterSocial
         addres={true}
         instagram={true}

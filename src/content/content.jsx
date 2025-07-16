@@ -115,13 +115,20 @@ const content = {
       miniTag: "CONSULTORIA E CAPACITAÇÃO EM PORTO ALEGRE - RS",
       title: (
         <h1 className="mb-[16px]">
-          Especialista em Direito Público, com atuação voltada à assessoria
-          técnica e à formação
-          <span className="text-primary"> continuada de agentes públicos.</span>
+          Consultoria especializada em gestão pública, planejamento e
+          <span className="text-primary"> fortalecimento institucional. </span>
         </h1>
       ),
-      subtitle:
-        "Formação jurídica com foco prático e estratégico para quem atua na gestão pública.",
+      subtitle: (
+        <p>
+          Conectamos teoria e prática, traduzindo a legislação em ações
+          concretas, alinhadas à realidade de cada município.
+          <br />
+          <br />
+          Trabalhamos junto aos gestores para qualificar processos, melhorar
+          resultados e garantir segurança institucional.
+        </p>
+      ),
       heroImg: heroImg,
       ctaButtonText: "Entre em contato",
 
