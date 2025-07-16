@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import DocumentButtonFeatureCard from "./CardDocuments";
 import Doc from "../../assets/imgs/doc/docs.png";
 import Certificado from "../../assets/imgs/doc/CertificadodeRegistroEmpresarial.pdf";
-import Conselho from "../../assets/imgs/doc/ConselhoRegionaldeAdministraçãodoRS.pdf";
+// import Conselho from "../../assets/imgs/doc/ConselhoRegionaldeAdministraçãodoRS.pdf";
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
