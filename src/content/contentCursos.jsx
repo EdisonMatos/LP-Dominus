@@ -33,6 +33,33 @@ const contentCursos = {
           se atualizar com temas jurídicos e estratégicos essenciais!
           <br />
           <br />
+          Conteúdo Programático do Curso
+          <br />
+          Planejamento Orçamentário Inovador e a LDO e LOA para 2026 Este curso
+          aborda o planejamento orçamentário governamental, focando em
+          estratégias inovadoras e no papel essencial da LDO e LOA como
+          instrumentos de governança pública para 2026. Abrange desde os
+          fundamentos do orçamento público e o ciclo orçamentário até a inovação
+          na gestão orçamentária e o uso dessas leis para accountability,
+          transparência e combate à corrupção.
+          <br />
+          <br />
+          Improbidade Administrativa no Âmbito Municipal Explore a Lei de
+          Improbidade Administrativa (Lei nº 8.429/92) e suas atualizações, com
+          foco na sua aplicação no contexto municipal. O curso aborda conceitos
+          e tipos de improbidade, sujeitos envolvidos, sanções e processos
+          legais, e os desafios específicos para combater atos de improbidade
+          nas administrações municipais.
+          <br />
+          <br />
+          Conformidades da Lei Geral de Proteção de Dados no Âmbito Municipal
+          Este curso detalha a LGPD e sua implementação prática nas
+          administrações municipais, visando à conformidade legal e segurança da
+          informação. Serão abordados os fundamentos da LGPD, o tratamento de
+          dados pelo poder público, governança e boas práticas (incluindo o
+          DPO), gestão de incidentes e os desafios na adequação municipal.
+          <br />
+          <br />
           👨‍🏫 Ministrado por especialistas renomados:
           <br />
           🔹 Matheus R. Faganello
