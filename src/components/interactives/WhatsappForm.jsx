@@ -13,6 +13,8 @@ import { CiCreditCard1 } from "react-icons/ci";
 import content from "../../content/content";
 import contentCursos from "../../content/contentCursos";
 
+import emailjs from "@emailjs/browser";
+
 const WhatsappForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -306,6 +308,38 @@ Endereço: ${endereco}.`;
     )}`;
   };
 
+  const sendEmail = async () => {
+    setIsSubmitting(true); // Mostra "Enviando..."
+
+    const templateParams = {
+      name,
+      cpf,
+      phone,
+      position,
+      institution,
+      endereco,
+      email,
+      cnpj,
+    };
+
+    try {
+      const result = await emailjs.send(
+        "service_gik4w8p", // substitua aqui
+        "template_o4kc0ak", // substitua aqui
+        templateParams,
+        "8bJXn-qPMOzTraXbd" // substitua aqui
+      );
+
+      console.log("E-mail enviado com sucesso!", result.text);
+      alert("Inscrição enviada com sucesso!");
+    } catch (error) {
+      console.error("Erro ao enviar e-mail:", error);
+      alert("Erro ao enviar a inscrição. Tente novamente.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
       <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
@@ -459,7 +493,7 @@ Endereço: ${endereco}.`;
         <button
           type="button"
           className="flex items-center w-full font-medium text-[#0E2B40] bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
-          onClick={sendToWhatsapp}
+          onClick={sendEmail}
         >
           <div className="flex items-center justify-center w-full">
             <img
