@@ -372,10 +372,10 @@ Endereço: ${endereco}.`;
 
     try {
       const result = await emailjs.send(
-        "service_gik4w8p",
-        "template_o4kc0ak",
+        "service_mjpjpug", // ID service
+        "template_vfbqv0w", // ID template
         templateParams,
-        "8bJXn-qPMOzTraXbd"
+        "FlGW-XR5RtnB_LE83" //public key
       );
 
       console.log("E-mail enviado com sucesso!", result.text);
