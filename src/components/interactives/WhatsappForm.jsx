@@ -566,12 +566,12 @@ Endereço: ${endereco}.`;
           onClick={sendEmail}
         >
           <div className="flex items-center justify-center w-full">
-            <img
+            {/* <img
               src={WhatsAppIcon}
               className="w-6 h-6 mr-2 phone2:w-8 phone2:h-8"
               alt="WhatsApp Icon"
-            />
-            <p>{isSubmitting ? "Enviando..." : "Enviar inscrição"}</p>
+            /> */}
+            <p>{isSubmitting ? "Enviando..." : "Inscreva-se aqui"}</p>
           </div>
         </button>
       </div>
