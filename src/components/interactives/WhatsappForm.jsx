@@ -309,7 +309,56 @@ Endereço: ${endereco}.`;
   };
 
   const sendEmail = async () => {
-    setIsSubmitting(true); // Mostra "Enviando..."
+    setIsSubmitting(true);
+
+    const validationErrors = {};
+
+    if (!cnpj) {
+      validationErrors.cnpj = "O campo CNPJ é obrigatório.";
+    } else if (!validateCnpj(cnpj)) {
+      validationErrors.cnpj = "O CNPJ deve conter exatamente 14 números.";
+    }
+
+    if (!name) {
+      validationErrors.name = "O campo Nome é obrigatório.";
+    } else if (!validateName(name)) {
+      validationErrors.name = "Preencha o nome completo.";
+    }
+
+    if (!phone) {
+      validationErrors.phone = "O campo Telefone é obrigatório.";
+    } else if (!validatePhone(phone)) {
+      validationErrors.phone = "Número inválido.";
+    }
+
+    if (!position) {
+      validationErrors.position = "O campo Cargo é obrigatório.";
+    }
+
+    if (!email) {
+      validationErrors.email = "O campo E-mail é obrigatório.";
+    } else if (!validateEmail(email)) {
+      validationErrors.email = "E-mail inválido.";
+    }
+
+    if (!institution) {
+      validationErrors.institution = "O campo Nome da Câmara é obrigatório.";
+    }
+
+    if (!endereco) {
+      validationErrors.endereco = "O campo Endereço é obrigatório.";
+    }
+
+    if (!cpf) {
+      validationErrors.cpf = "O campo CPF é obrigatório.";
+    }
+
+    // Se houver erros, não envia
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setIsSubmitting(false);
+      return;
+    }
 
     const templateParams = {
       name,
@@ -324,14 +373,24 @@ Endereço: ${endereco}.`;
 
     try {
       const result = await emailjs.send(
-        "service_gik4w8p", // substitua aqui
-        "template_o4kc0ak", // substitua aqui
+        "service_gik4w8p", // ID do serviço
+        "template_o4kc0ak", // ID do template
         templateParams,
-        "8bJXn-qPMOzTraXbd" // substitua aqui
+        "8bJXn-qPMOzTraXbd" // chave pública
       );
 
       console.log("E-mail enviado com sucesso!", result.text);
       alert("Inscrição enviada com sucesso!");
+
+      // Limpar campos após envio
+      setName("");
+      setPhone("");
+      setEmail("");
+      setCpf("");
+      setPosition("");
+      setInstitution("");
+      setEndereco("");
+      setCnpj("");
     } catch (error) {
       console.error("Erro ao enviar e-mail:", error);
       alert("Erro ao enviar a inscrição. Tente novamente.");
