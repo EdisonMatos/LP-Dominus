@@ -13,6 +13,8 @@ import { CiCreditCard1 } from "react-icons/ci";
 import content from "../../content/content";
 import contentCursos from "../../content/contentCursos";
 
+import emailjs from "@emailjs/browser";
+
 const WhatsappForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -306,6 +308,108 @@ Endereço: ${endereco}.`;
     )}`;
   };
 
+  const sendEmail = async () => {
+    setIsSubmitting(true);
+
+    const validationErrors = {};
+
+    if (!cnpj) {
+      validationErrors.cnpj = "O campo CNPJ é obrigatório.";
+    } else if (!validateCnpj(cnpj)) {
+      validationErrors.cnpj = "O CNPJ deve conter exatamente 14 números.";
+    }
+
+    if (!name) {
+      validationErrors.name = "O campo Nome é obrigatório.";
+    } else if (!validateName(name)) {
+      validationErrors.name = "Preencha o nome completo.";
+    }
+
+    if (!phone) {
+      validationErrors.phone = "O campo Telefone é obrigatório.";
+    } else if (!validatePhone(phone)) {
+      validationErrors.phone = "Número inválido.";
+    }
+
+    if (!position) {
+      validationErrors.position = "O campo Cargo é obrigatório.";
+    }
+
+    if (!email) {
+      validationErrors.email = "O campo E-mail é obrigatório.";
+    } else if (!validateEmail(email)) {
+      validationErrors.email = "E-mail inválido.";
+    }
+
+    if (!institution) {
+      validationErrors.institution = "O campo Nome da Câmara é obrigatório.";
+    }
+
+    if (!endereco) {
+      validationErrors.endereco = "O campo Endereço é obrigatório.";
+    }
+
+    if (!cpf) {
+      validationErrors.cpf = "O campo CPF é obrigatório.";
+    }
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setIsSubmitting(false);
+      return;
+    }
+
+    const templateParams = {
+      name,
+      cpf,
+      phone,
+      position,
+      institution,
+      endereco,
+      email,
+      cnpj,
+    };
+
+    try {
+      const result = await emailjs.send(
+        "service_mjpjpug", // ID service
+        "template_vfbqv0w", // ID template
+        templateParams,
+        "FlGW-XR5RtnB_LE83" //public key
+      );
+
+      console.log("E-mail enviado com sucesso!", result.text);
+
+      // ✅ Mostrar os dados enviados
+      alert(
+        `Inscrição enviada com sucesso!\n\n` +
+          `Nome: ${name}\n` +
+          `CPF: ${cpf}\n` +
+          `Telefone: ${phone}\n` +
+          `Cargo: ${position}\n` +
+          `E-mail: ${email}\n` +
+          `Instituição: ${institution}\n` +
+          `Endereço: ${endereco}\n` +
+          `CNPJ: ${cnpj}`
+      );
+
+      // ✅ Limpar campos
+      setName("");
+      setPhone("");
+      setEmail("");
+      setCpf("");
+      setPosition("");
+      setInstitution("");
+      setEndereco("");
+      setCnpj("");
+    } catch (error) {
+      console.error("Erro ao enviar e-mail:", error);
+      alert("Erro ao enviar a inscrição. Tente novamente.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className=" bg-[#0E2B40] p-6 rounded-[10px] w-full h-auto">
       <div className="w-full text-paragraph3 phone3:text-paragraph4 ">
@@ -459,7 +563,7 @@ Endereço: ${endereco}.`;
         <button
           type="button"
           className="flex items-center w-full font-medium text-[#0E2B40] bg-primary transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
-          onClick={sendToWhatsapp}
+          onClick={sendEmail}
         >
           <div className="flex items-center justify-center w-full">
             <img
