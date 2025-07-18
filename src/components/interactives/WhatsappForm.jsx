@@ -353,7 +353,6 @@ Endereço: ${endereco}.`;
       validationErrors.cpf = "O campo CPF é obrigatório.";
     }
 
-    // Se houver erros, não envia
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       setIsSubmitting(false);
@@ -373,16 +372,28 @@ Endereço: ${endereco}.`;
 
     try {
       const result = await emailjs.send(
-        "service_gik4w8p", // ID do serviço
-        "template_o4kc0ak", // ID do template
+        "service_gik4w8p",
+        "template_o4kc0ak",
         templateParams,
-        "8bJXn-qPMOzTraXbd" // chave pública
+        "8bJXn-qPMOzTraXbd"
       );
 
       console.log("E-mail enviado com sucesso!", result.text);
-      alert("Inscrição enviada com sucesso!");
 
-      // Limpar campos após envio
+      // ✅ Mostrar os dados enviados
+      alert(
+        `Inscrição enviada com sucesso!\n\n` +
+          `Nome: ${name}\n` +
+          `CPF: ${cpf}\n` +
+          `Telefone: ${phone}\n` +
+          `Cargo: ${position}\n` +
+          `E-mail: ${email}\n` +
+          `Instituição: ${institution}\n` +
+          `Endereço: ${endereco}\n` +
+          `CNPJ: ${cnpj}`
+      );
+
+      // ✅ Limpar campos
       setName("");
       setPhone("");
       setEmail("");
