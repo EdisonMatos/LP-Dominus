@@ -344,7 +344,7 @@ export default function FooterSocial({
                         href="#"
                       >
                         <span className="inline-block h-[48px] hover:underline hover:scale-110 transition">
-                          {content.texts.navbar.menuItems[2]}
+                          {content.texts.navbar.menuItems[1]}
                         </span>
                       </Link>
                     </div>
@@ -352,7 +352,7 @@ export default function FooterSocial({
                   <div className=" w-[46%] flex flex-col gap-y-[16px]">
                     <div className="h-[36px] hover:underline">
                       <Link
-                        to="service"
+                        to="curso"
                         className="cursor-pointer"
                         spy={true}
                         smooth={true}
@@ -361,7 +361,22 @@ export default function FooterSocial({
                         href="#"
                       >
                         <span className="inline-block h-[48px] hover:underline hover:scale-110 transition">
-                          {content.texts.navbar.menuItems[1]}
+                          {content.texts.navbar.menuItems[2]}
+                        </span>
+                      </Link>
+                    </div>
+                    <div className="h-[36px] hover:underline">
+                      <Link
+                        to="team"
+                        className="cursor-pointer"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        href="#"
+                      >
+                        <span className="inline-block h-[48px] hover:underline hover:scale-110 transition">
+                          {content.texts.navbar.menuItems[3]}
                         </span>
                       </Link>
                     </div>
@@ -376,7 +391,7 @@ export default function FooterSocial({
                         href="#"
                       >
                         <span className="inline-block h-[48px] hover:underline hover:scale-110 transition">
-                          {content.texts.navbar.menuItems[3]}
+                          {content.texts.navbar.menuItems[4]}
                         </span>
                       </Link>
                     </div>
