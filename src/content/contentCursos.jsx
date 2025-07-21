@@ -3,8 +3,7 @@ import bannerCurso1 from "../assets/imgs/hero/imagemCursoLegislativo.jpg";
 const contentCursos = {
   texts: {
     curso1: {
-      title:
-        "Fortalecendo o Legislativo: Orçamento, Planejamento e Emendas Impositivas",
+      title: "🚨 CURSO PRESENCIAL IMPERDÍVEL EM PORTO ALEGRE!",
       date: "29/07/2025",
       time: "09:00",
       description: (
