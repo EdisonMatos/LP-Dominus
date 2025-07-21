@@ -145,7 +145,7 @@ const WhatsappForm = () => {
     }
 
     if (!institution) {
-      validationErrors.institution = "O campo Nome da Câmara é obrigatório.";
+      validationErrors.institution = "O campo Instituição é obrigatório.";
     }
 
     if (!endereco) {
@@ -181,7 +181,7 @@ Cpf: ${cpf}.
 Telefone: ${phone}.
 Cargo: ${position}.
 E-mail: ${email}.
-Nome da Câmara: ${institution}.
+Instituição: ${institution}.
 CNPJ: ${cnpj}.
 Endereço: ${endereco}.`;
 
@@ -342,7 +342,7 @@ Endereço: ${endereco}.`;
     }
 
     if (!institution) {
-      validationErrors.institution = "O campo Nome da Câmara é obrigatório.";
+      validationErrors.institution = "O campo Instituição é obrigatório.";
     }
 
     if (!endereco) {
@@ -497,7 +497,7 @@ Endereço: ${endereco}.`;
               id="institution"
               value={institution}
               onChange={handleInstitutionChange}
-              placeholder="Nome da Câmara"
+              placeholder="Instituição"
               required
             />
           </div>
