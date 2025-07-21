@@ -186,8 +186,6 @@ export default function Team() {
                   <p>
                     Advogada. Mestre em Direito Público (Unisinos). Doutora em
                     Ciência Política (UFRGS).
-                    <br />
-                    Bem resumido. Se achar que precisa de complemento, me avisa.
                   </p>
                 }
               />
