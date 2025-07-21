@@ -140,7 +140,81 @@ export default function ListGroupSocial({ LightMode }) {
                   : "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
               } `}
           >
+            {content.texts.navbar.menuItems[1]}
+          </span>
+          <div
+            className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+              LightMode
+                ? scrolling
+                  ? "bg-black"
+                  : "bg-black"
+                : scrolling
+                ? "bg-lighter"
+                : "bg-lighter"
+            }`}
+          ></div>
+        </Link>
+      </li>
+      <li className="transition group h-[24px]">
+        <Link
+          to="curso"
+          className="relative font-semibold cursor-pointer"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-50}
+          href="#"
+        >
+          <span
+            className={`h-[24px] inline-block
+              ${
+                LightMode
+                  ? scrolling
+                    ? "hover:text-black"
+                    : "hover:text-black"
+                  : scrolling
+                  ? "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
+                  : "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
+              } `}
+          >
             {content.texts.navbar.menuItems[2]}
+          </span>
+          <div
+            className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+              LightMode
+                ? scrolling
+                  ? "bg-black"
+                  : "bg-black"
+                : scrolling
+                ? "bg-lighter"
+                : "bg-lighter"
+            }`}
+          ></div>
+        </Link>
+      </li>
+      <li className="transition group h-[24px]">
+        <Link
+          to="team"
+          className="relative font-semibold cursor-pointer"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-50}
+          href="#"
+        >
+          <span
+            className={`h-[24px] inline-block
+              ${
+                LightMode
+                  ? scrolling
+                    ? "hover:text-black"
+                    : "hover:text-black"
+                  : scrolling
+                  ? "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
+                  : "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
+              } `}
+          >
+            {content.texts.navbar.menuItems[3]}
           </span>
           <div
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
@@ -177,7 +251,7 @@ export default function ListGroupSocial({ LightMode }) {
                   : "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
               } `}
           >
-            {content.texts.navbar.menuItems[3]}
+            {content.texts.navbar.menuItems[4]}
           </span>
           <div
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${

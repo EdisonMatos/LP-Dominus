@@ -9,7 +9,7 @@ const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
 export default function Team() {
   return (
-    <SectionArea className="bg-bgSectionDark" paddingtop={false}>
+    <SectionArea className="bg-bgSectionDark" paddingtop={false} id="team">
       <SectionHeader
         className="text-center"
         miniTitle={content.texts.team.minitag}
