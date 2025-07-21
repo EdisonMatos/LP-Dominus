@@ -3,7 +3,8 @@ import bannerCurso1 from "../assets/imgs/hero/imagemCursoLegislativo.jpg";
 const contentCursos = {
   texts: {
     curso1: {
-      title: "🚨 CURSO PRESENCIAL IMPERDÍVEL EM PORTO ALEGRE!",
+      title:
+        "Gestão Pública Contemporânea: Prevenção à Improbidade, Orçamento Estratégico e LGPD",
       date: "29/07/2025",
       time: "09:00",
       description: (
