@@ -53,7 +53,7 @@ const currentYear = new Date().getFullYear();
 export const infos = {
   name: "Dominus Cursos",
   email: "contato", // Email desejado pelo cliente
-  domain: "dominusconsultoria.com", // Sem "www"
+  domain: "dominuscursos.com.br", // Sem "www"
   phone: {
     ddd: "51",
     firstPart: "99732", // Apenas os 5 primeiros números (incluindo o 9)
