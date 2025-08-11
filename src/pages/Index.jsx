@@ -17,6 +17,7 @@ import ProximosCursos from "../components/sections/ProximosCursos";
 import SectionForm from "../components/sections/SectionForm";
 import Structure from "../components/sections/Structure";
 import DownloadArchives from "../components/cards/Downloads";
+import CursosFixos from "../components/sections/CursosFixos";
 
 export default function Index() {
   return (
@@ -24,6 +25,7 @@ export default function Index() {
       <Navbar LightMode={true} />
       <Hero appDownloadButtons={false} />
       <ProximosCursos socialPrint={true} instagram={false} />
+      <CursosFixos />
       <Features
         defaultFeature={false}
         imageFeatures={true}
