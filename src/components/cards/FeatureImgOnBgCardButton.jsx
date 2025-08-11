@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import Button from "../interactives/Button";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function CourseCard(props) {
   const {
@@ -38,7 +39,7 @@ export default function CourseCard(props) {
 
       {/* Conteúdo */}
       <div className="p-6 flex flex-col gap-4">
-        <h2 className="text-primary font-bold text-lg leading-5">{title}</h2>
+        <h2 className="text-secondary font-bold text-lg leading-5">{title}</h2>
         <Button
           removeAnchor={false}
           label={buttonLabel}
@@ -46,6 +47,7 @@ export default function CourseCard(props) {
           color={buttonColor}
           size="small"
           onClick={onClick}
+          icon={<FaWhatsapp />}
         />
       </div>
     </MotionDivDownToUp>

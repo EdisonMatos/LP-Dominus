@@ -10,6 +10,7 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import ServiceDetailCard from "../cards/ServiceDetailCard";
 
+
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
 export default function CursosFixos() {
