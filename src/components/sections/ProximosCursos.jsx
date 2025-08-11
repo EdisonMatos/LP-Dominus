@@ -59,7 +59,7 @@ export default function ProximosCursos({
             <img
               src={imgCursoDominus}
               alt={content.texts.about.aboutSocial.img.alt}
-              className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]"
+              className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl "
             />
           </MotionDivDownToUp>
         ) : (
