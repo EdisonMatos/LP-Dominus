@@ -52,7 +52,7 @@ export default function ProximosCursos({
   const [modalTitle, setModalTitle] = useState("");
 
   return (
-    <SectionArea id="curso" className="squares" paddingtop={true}>
+    <SectionArea id="curso" className="squares" paddingtop={true} paddingbottom={false}>
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-x-[40px] desktop1:justify-between">
         {socialPrint ? (
           <MotionDivDownToUp className="relative w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">

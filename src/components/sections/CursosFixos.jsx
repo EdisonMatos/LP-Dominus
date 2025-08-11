@@ -29,71 +29,73 @@ export default function CursosFixos() {
     <div>
       <SectionArea
         id={"service"}
-        className="py-[40px] tablet1:py-[64px] desktop1:py-[96px] desktop1:pb-[0px] bg-quinary squares"
+        className=" desktop1:pb-[0px] bg-quinary squares" paddingtop={false}
       >
-        <SectionHeader
+        {/* <SectionHeader
           className="text-center"
           miniTitle="A_Definir"
           sectionHeaderTitle="A_Definir"
           sectionHeaderSubtitle="A_Definir"
           color="dark"
-        />
+        /> */}
         <SectionWrapper>
           <div className="flex flex-wrap justify-center desktop1:justify-evenly w-full gap-[36px] tablet1:gap-[24px] desktop1:w-[90%]">
             <FeatureImgOnBgCardButton
-              bgImg={content.texts.features.card1.service}
+              imgSrc={content.texts.features.card1.service}
               title={content.texts.features.card1.title}
               description={content.texts.features.card1.subtitle}
               buttonLabel={content.texts.features.card1.buttonLabel}
+              buttonLink={whatsappContactLink}
               animation
-              onClick={() =>
-                onClick(
-                  content.texts.features.card1.title,
-                  <div>
-                    <ServiceDetailCard
-                      img={content.texts.features.card1.img}
-                      // subtitle={content.texts.features.card1.subtitle}
-                      description={content.texts.features.card1.description}
-                      buttonIcon={content.texts.features.card1.icon}
-                      buttonLabel={
-                        content.texts.features.card1.buttonLabelModal
-                      }
-                      buttonLink={whatsappContactLink}
-                      bgPosition="bg-top"
-                    />
-                  </div>
-                )
-              }
+              //   onClick={() =>
+              //     onClick(
+              //       content.texts.features.card1.title,
+              //       <div>
+              //         <ServiceDetailCard
+              //           img={content.texts.features.card1.img}
+              //           // subtitle={content.texts.features.card1.subtitle}
+              //           description={content.texts.features.card1.description}
+              //           buttonIcon={content.texts.features.card1.icon}
+              //           buttonLabel={
+              //             content.texts.features.card1.buttonLabelModal
+              //           }
+              //           buttonLink={whatsappContactLink}
+              //           bgPosition="bg-top"
+              //         />
+              //       </div>
+              //     )
+              //   }
             />
             <FeatureImgOnBgCardButton
-              bgImg={content.texts.features.card2.service}
+              imgSrc={content.texts.features.card2.service}
               title={content.texts.features.card2.title}
               description={content.texts.features.card2.subtitle}
               buttonLabel={content.texts.features.card2.buttonLabel}
+              buttonLink={whatsappContactLink}
               animation
-              onClick={() =>
-                onClick(
-                  content.texts.features.card2.title,
-                  <div>
-                    <ServiceDetailCard
-                      img={content.texts.features.card2.img}
-                      // subtitle={content.texts.features.card2.subtitle}
-                      description={content.texts.features.card2.description}
-                      buttonIcon={content.texts.features.card2.icon}
-                      buttonLabel={
-                        content.texts.features.card2.buttonLabelModal
-                      }
-                      buttonLink={whatsappContactLink}
-                    />
-                  </div>
-                )
-              }
+              //   onClick={() =>
+              //     onClick(
+              //       content.texts.features.card2.title,
+              //       <div>
+              //         <ServiceDetailCard
+              //           img={content.texts.features.card2.img}
+              //           // subtitle={content.texts.features.card2.subtitle}
+              //           description={content.texts.features.card2.description}
+              //           buttonIcon={content.texts.features.card2.icon}
+              //           buttonLabel={
+              //             content.texts.features.card2.buttonLabelModal
+              //           }
+              //           buttonLink={whatsappContactLink}
+              //         />
+              //       </div>
+              //     )
+              //   }
             />
           </div>
         </SectionWrapper>
       </SectionArea>
 
-      <Dialog
+      {/* <Dialog
         className="font-secondFont"
         header={modalTitle}
         visible={visible}
@@ -111,7 +113,7 @@ export default function CursosFixos() {
       >
         <div>{modalSubtitle}</div>
         <div className="m-0">{modalContent}</div>
-      </Dialog>
+      </Dialog> */}
     </div>
   );
 }
