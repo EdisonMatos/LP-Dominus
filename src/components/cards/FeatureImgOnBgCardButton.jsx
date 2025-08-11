@@ -27,9 +27,9 @@ export default function CourseCard(props) {
   };
 
   return (
-    <MotionDivDownToUp className="w-full max-w-[290px] bg-white rounded-2xl overflow-hidden shadow-lg">
+    <MotionDivDownToUp className="w-full max-w-[290px] desktop2:max-w-[400px] bg-white rounded-2xl overflow-hidden shadow-lg">
       {/* Topo com imagem que vem via props */}
-      <div className="w-full h-[360px] flex items-center justify-center bg-gray-200">
+      <div className="w-full h-[360px] desktop2:h-[500px] flex items-center justify-center bg-gray-200">
         <img
           src={imgSrc}
           alt={title}
