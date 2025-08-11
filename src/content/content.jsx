@@ -23,6 +23,9 @@ import featuresImg2 from "../assets/imgs/features/imgServices2.jpg";
 import featuresImg3 from "../assets/imgs/features/imgServices3.png";
 import featuresImg4 from "../assets/imgs/features/imgServices4.jpg";
 
+import service1 from "../assets/imgs/features/services1.jpg";
+import service2 from "../assets/imgs/features/services2.jpg";
+
 import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
 import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";
 import imgFeaturesCardModal3 from "../assets/imgs/features/imgFeaturesCardModal3.jpg";
@@ -192,6 +195,7 @@ const content = {
       imgDivisor: imgDivisor,
       card1: {
         img: featuresImg1,
+        service: service1,
         title: "Formação para Vereadores",
         subtitle:
           "Capacitação sobre funções legislativas, deveres legais e relação com a comunidade.",
@@ -222,6 +226,7 @@ const content = {
       },
       card2: {
         img: featuresImg2,
+        service: service2,
         title: "Gestão Pública",
         subtitle:
           "Capacitação em organização administrativa, planejamento e práticas de gestão pública.",
