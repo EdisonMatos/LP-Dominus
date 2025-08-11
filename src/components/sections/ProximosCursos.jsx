@@ -55,57 +55,57 @@ export default function ProximosCursos({
     <SectionArea id="curso" className="squares" paddingtop={true}>
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-x-[40px] desktop1:justify-between">
         {socialPrint ? (
-          // <MotionDivDownToUp className="relative w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
-          //   <img
-          //     src={imgCursoDominus}
-          //     alt={content.texts.about.aboutSocial.img.alt}
-          //     className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]"
-          //   />
-          // </MotionDivDownToUp>
-          <MotionDivDownToUp className=" w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
-            <div className="shadow-custom-opacity shadow-secondary/25 relative bg-center bg-no-repeat bg-cover h-auto tablet1:h-auto w-full tablet1:w-full rounded-xl">
-              <ImageGallery
-                items={images}
-                showNav={false}
-                showFullscreenButton={false}
-                useBrowserFullscreen={false}
-                showBullets={true}
-                showThumbnails={false}
-                additionalClass="custom-gallery"
-                autoPlay={true}
-              />
-              <style>
-                {`
-                .custom-gallery .image-gallery-slide img {
-                  height: 450px !important;
-                  width: 100% !important;
-                  object-fit: cover !important;
-                  border-radius: 10px !important;
-                  margin: 0 auto;
-                }
-
-                @media (min-width: 640px) and (max-width: 1023px) {
-                  .custom-gallery .image-gallery-slide img {
-                    min-height: 840px !important;
-                  }
-                }
-
-                @media (min-width: 1024px) {
-                  .custom-gallery .image-gallery-slide img {
-                    height: 600px !important;
-                  }
-                }
-
-                .custom-gallery .image-gallery-thumbnails img {
-                  height: 60px !important;
-                  width: 100px !important;
-                  object-fit: cover !important;
-                }
-              `}
-              </style>
-            </div>
+          <MotionDivDownToUp className="relative w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
+            <img
+              src={imgCursoDominus}
+              alt={content.texts.about.aboutSocial.img.alt}
+              className="w-[100%] desktop1:w-[415px] desktop2:w-[485px]"
+            />
           </MotionDivDownToUp>
         ) : (
+          // <MotionDivDownToUp className=" w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
+          //   <div className="shadow-custom-opacity shadow-secondary/25 relative bg-center bg-no-repeat bg-cover h-auto tablet1:h-auto w-full tablet1:w-full rounded-xl">
+          //     <ImageGallery
+          //       items={images}
+          //       showNav={false}
+          //       showFullscreenButton={false}
+          //       useBrowserFullscreen={false}
+          //       showBullets={true}
+          //       showThumbnails={false}
+          //       additionalClass="custom-gallery"
+          //       autoPlay={true}
+          //     />
+          //     <style>
+          //       {`
+          //       .custom-gallery .image-gallery-slide img {
+          //         height: 450px !important;
+          //         width: 100% !important;
+          //         object-fit: cover !important;
+          //         border-radius: 10px !important;
+          //         margin: 0 auto;
+          //       }
+
+          //       @media (min-width: 640px) and (max-width: 1023px) {
+          //         .custom-gallery .image-gallery-slide img {
+          //           min-height: 840px !important;
+          //         }
+          //       }
+
+          //       @media (min-width: 1024px) {
+          //         .custom-gallery .image-gallery-slide img {
+          //           height: 600px !important;
+          //         }
+          //       }
+
+          //       .custom-gallery .image-gallery-thumbnails img {
+          //         height: 60px !important;
+          //         width: 100px !important;
+          //         object-fit: cover !important;
+          //       }
+          //     `}
+          //     </style>
+          //   </div>
+          // </MotionDivDownToUp>
           <MotionDivDownToUp className=" w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
             <div
               style={{
