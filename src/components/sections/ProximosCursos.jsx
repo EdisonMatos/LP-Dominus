@@ -137,7 +137,7 @@ export default function ProximosCursos({
           <div className="flex flex-col gap-4">
             <Button
               label="Inscreva-se aqui"
-              className="text-white"
+              className="text-black"
               icon={<FilePenLine />}
               onClick={() => {
                 setModalTitle("Cadastro");
