@@ -52,8 +52,13 @@ export default function ProximosCursos({
   const [modalTitle, setModalTitle] = useState("");
 
   return (
-    <SectionArea id="curso" className="squares" paddingtop={true} paddingbottom={false}>
-      <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-x-[40px] desktop1:justify-between">
+    <SectionArea
+      id="curso"
+      className="squares"
+      paddingtop={true}
+      paddingbottom={false}
+    >
+      <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-x-[40px] desktop1:justify-evenly">
         {socialPrint ? (
           <MotionDivDownToUp className="relative w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
             <img
@@ -64,7 +69,7 @@ export default function ProximosCursos({
           </MotionDivDownToUp>
         ) : (
           // <MotionDivDownToUp className=" w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
-          //   <div className="shadow-custom-opacity shadow-secondary/25 relative bg-center bg-no-repeat bg-cover h-auto tablet1:h-auto w-full tablet1:w-full rounded-xl">
+          //   <div className="relative w-full h-auto bg-center bg-no-repeat bg-cover shadow-custom-opacity shadow-secondary/25 tablet1:h-auto tablet1:w-full rounded-xl">
           //     <ImageGallery
           //       items={images}
           //       showNav={false}
