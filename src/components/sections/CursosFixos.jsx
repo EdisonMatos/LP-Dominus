@@ -9,8 +9,8 @@ import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import ServiceDetailCard from "../cards/ServiceDetailCard";
-
-
+import Button from "../interactives/Button";
+import { FaWhatsapp } from "react-icons/fa";
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
 
 export default function CursosFixos() {
@@ -30,7 +30,8 @@ export default function CursosFixos() {
     <div>
       <SectionArea
         id={"service"}
-        className=" desktop1:pb-[0px] bg-quinary squares" paddingtop={false}
+        className=" desktop1:pb-[0px] bg-quinary squares"
+        paddingtop={false}
       >
         {/* <SectionHeader
           className="text-center"
@@ -44,54 +45,15 @@ export default function CursosFixos() {
             <FeatureImgOnBgCardButton
               imgSrc={content.texts.features.card1.service}
               title={content.texts.features.card1.title}
-              description={content.texts.features.card1.subtitle}
               buttonLabel={content.texts.features.card1.buttonLabel}
               buttonLink={whatsappContactLink}
-              animation
-              //   onClick={() =>
-              //     onClick(
-              //       content.texts.features.card1.title,
-              //       <div>
-              //         <ServiceDetailCard
-              //           img={content.texts.features.card1.img}
-              //           // subtitle={content.texts.features.card1.subtitle}
-              //           description={content.texts.features.card1.description}
-              //           buttonIcon={content.texts.features.card1.icon}
-              //           buttonLabel={
-              //             content.texts.features.card1.buttonLabelModal
-              //           }
-              //           buttonLink={whatsappContactLink}
-              //           bgPosition="bg-top"
-              //         />
-              //       </div>
-              //     )
-              //   }
             />
             <FeatureImgOnBgCardButton
               imgSrc={content.texts.features.card2.service}
               title={content.texts.features.card2.title}
-              description={content.texts.features.card2.subtitle}
               buttonLabel={content.texts.features.card2.buttonLabel}
               buttonLink={whatsappContactLink}
-              animation
-              //   onClick={() =>
-              //     onClick(
-              //       content.texts.features.card2.title,
-              //       <div>
-              //         <ServiceDetailCard
-              //           img={content.texts.features.card2.img}
-              //           // subtitle={content.texts.features.card2.subtitle}
-              //           description={content.texts.features.card2.description}
-              //           buttonIcon={content.texts.features.card2.icon}
-              //           buttonLabel={
-              //             content.texts.features.card2.buttonLabelModal
-              //           }
-              //           buttonLink={whatsappContactLink}
-              //         />
-              //       </div>
-              //     )
-              //   }
-            />
+            ></FeatureImgOnBgCardButton>
           </div>
         </SectionWrapper>
       </SectionArea>

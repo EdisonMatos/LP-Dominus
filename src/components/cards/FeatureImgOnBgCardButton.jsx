@@ -3,51 +3,54 @@ import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import Button from "../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
 
-export default function CourseCard(props) {
+export default function FeatureImgOnBgCardButton(props) {
   const {
     imgSrc,
     title,
-    subtitle,
     description,
     buttonLabel,
     buttonLink,
-    onClick,
-    buttonColor,
+    buttonColor = "bg-primary",
   } = props;
 
-  CourseCard.propTypes = {
-    imgSrc: PropTypes.string,
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    description: PropTypes.string,
+  FeatureImgOnBgCardButton.propTypes = {
+    imgSrc: PropTypes.string.isRequired,
+    title: PropTypes.any,
+    description: PropTypes.any,
     buttonLabel: PropTypes.string,
     buttonLink: PropTypes.string,
     buttonColor: PropTypes.any,
-    onClick: PropTypes.func,
+  };
+
+  const handleWhatsAppClick = () => {
+    if (buttonLink) {
+      window.open(buttonLink, "_blank");
+    }
   };
 
   return (
-    <MotionDivDownToUp className="w-full max-w-[290px] desktop2:max-w-[400px] bg-white rounded-2xl overflow-hidden shadow-lg">
-      {/* Topo com imagem que vem via props */}
-      <div className="w-full h-[360px] desktop2:h-[500px] flex items-center justify-center bg-gray-200">
-        <img
-          src={imgSrc}
-          alt={title}
-          className="max-w-full max-h-full object-contain"
-        />
-      </div>
+    <MotionDivDownToUp className="flex flex-col w-full max-w-[430px] gap-[16px] tablet1:w-[47%] desktop1:w-[325px]">
+      {/* Imagem no topo */}
+      <div
+        className="w-full h-[400px] rounded-2xl bg-bottom bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(${imgSrc})` }}
+      ></div>
 
-      {/* Conteúdo */}
-      <div className="p-6 flex flex-col gap-4">
-        <h2 className="text-secondary font-bold text-lg leading-5">{title}</h2>
+      {/* Conteúdo branco abaixo da imagem */}
+      <div className="bg-white rounded-2xl p-6 shadow-md flex flex-col gap-4">
+        <h1 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px]">
+          {title}
+        </h1>
+        <p className="font-secondFont text-paragraph3 desktop1:text-paragraph4 text-quaternary">
+          {description}
+        </p>
         <Button
-          removeAnchor={false}
+          removeAnchor={true}
           label={buttonLabel}
-          buttonLink={buttonLink}
           color={buttonColor}
           size="small"
-          onClick={onClick}
-          icon={<FaWhatsapp />}
+          onClick={handleWhatsAppClick}
+          icon={<FaWhatsapp size={16} />}
         />
       </div>
     </MotionDivDownToUp>
