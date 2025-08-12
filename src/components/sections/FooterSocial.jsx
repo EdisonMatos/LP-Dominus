@@ -193,7 +193,7 @@ export default function FooterSocial({
                                 height="20"
                                 viewBox="0 0 24 24"
                                 fill="transparent"
-                                stroke="currentColor"
+                                stroke="black"
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
