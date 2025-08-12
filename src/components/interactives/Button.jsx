@@ -59,7 +59,7 @@ export default function Button({
           <button
             onClick={onClick}
             className={`flex ${className} ${sizeFeatures} shadow-custom-opacityButton shadow-shadowHero/20 ${
-              color || "bg-buttonColor"
+              color || "bg-primary"
             } flex-row items-center justify-around transition text-labelButtons desktop1:hover:scale-110`}
           >
             <div
