@@ -23,6 +23,8 @@ const contentCursos = {
           <br />
           🎓 <strong>Com certificado de participação!</strong>
           <br />
+          💰 <strong> Investimento R$ 1.150,00</strong>
+          <br />
           <br />
           👥<strong> Público-alvo:</strong>
           <br />
