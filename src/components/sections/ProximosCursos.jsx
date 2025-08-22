@@ -13,7 +13,7 @@ import Button from "../interactives/Button";
 import SectionHeader from "../sectionElements/SectionHeader";
 import imgPoints from "../../assets/imgs/about/points.png";
 
-import imgCursoDominus from "../../assets/imgs/hero/imagemCursoForm.jpg";
+import imgCursoDominus from "../../assets/imgs/hero/imagemCursoForm.webp";
 import WhatsappForm from "../interactives/WhatsappForm";
 import { FilePenLine } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
