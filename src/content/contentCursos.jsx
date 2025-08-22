@@ -4,8 +4,8 @@ const contentCursos = {
   texts: {
     curso1: {
       title:
-        "📚 Gestão Pública Conectada: Governança, Estratégia e Resultados Municipais ",
-      date: "19 a 21 de Agosto",
+        "📌 Curso: Gestão Pública Inteligente: Inteligência Artificial, Captação de Recursos e Elaboração de Leis e Projetos  ",
+      date: "16 à 18 de Setembro",
       time: "09:00",
       description: (
         <p className="text-black">
@@ -14,7 +14,7 @@ const contentCursos = {
           </span>
           <br />
           <br />
-          📅 <strong>Dias:</strong> 19, 20 e 21 de agosto
+          📅 <strong>Dias:</strong> 16, 17 e 18 de setembro
           <br />
           🕘<strong> Turnos:</strong> Manhã (09h às 12h) e Tarde (14h às 17h)
           <br />
@@ -23,7 +23,7 @@ const contentCursos = {
           <br />
           🎓 <strong>Com certificado de participação!</strong>
           <br />
-          💰 <strong> Investimento R$ 1.150,00</strong>
+          💰 <strong> Investimento R$ 1.250,00</strong>
           <br />
           <br />
           👥<strong> Público-alvo:</strong>
@@ -34,18 +34,36 @@ const contentCursos = {
           se atualizar com temas jurídicos e estratégicos essenciais!
           <br />
           <br />
-          <strong>EMENTA: </strong>
-          <br />O curso apresenta conceitos e práticas essenciais para a
-          modernização da gestão pública municipal, com foco na integração entre
-          governança, planejamento estratégico, comunicação institucional e
-          resultados efetivos para a sociedade. Serão abordados fundamentos
-          legais e técnicos, boas práticas de transparência e participação
-          social, estratégias de inovação e transformação digital, além de
-          métodos para otimização de recursos e fortalecimento da articulação
-          entre Executivo, Legislativo e comunidade. Proporciona aos
-          participantes ferramentas para liderar processos, comunicar de forma
-          eficaz, tomar decisões baseadas em evidências e alcançar maior
-          eficiência na administração pública.
+          <strong>Ementa: </strong>
+          <br />
+          <strong>
+            - Inovação e Inteligência Artificial na Gestão Pública:
+          </strong>
+          <br />
+          Aplicação de ferramentas de IA para otimizar processos, apoiar
+          decisões e aproximar o cidadão da gestão.
+          <br />
+          <br />
+          <strong>
+            - Captação de Recursos e Oportunidades de Financiamento:
+          </strong>
+          <br />
+          Estratégias para acessar programas federais, estaduais e
+          internacionais, elaboração de propostas e gestão de convênios.
+          <br />
+          <br />
+          <strong>
+            - Elaboração de Leis, Projetos e Políticas Públicas Eficazes:
+          </strong>
+          <br />
+          Técnicas para construir legislação de qualidade, projetos consistentes
+          e políticas públicas baseadas em evidências.
+          <br />
+          <br />
+          <strong>- Comunicação Estratégica e Resultados:</strong>
+          <br />
+          Uso da tecnologia e de boas práticas de governança para fortalecer a
+          imagem institucional e gerar impacto positivo.
         </p>
       ),
       banner: { bannerCurso1 },
