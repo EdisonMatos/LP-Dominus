@@ -29,7 +29,7 @@ export default function FeatureImgOnBgCardButton(props) {
   };
 
   return (
-    <MotionDivDownToUp className="flex flex-col w-full max-w-[430px] gap-[16px] tablet1:w-[47%] desktop1:w-[325px]">
+    <MotionDivDownToUp className="flex flex-col w-full max-w-[430px]  tablet1:w-[47%] desktop1:w-[325px]">
       {/* Imagem no topo */}
       <div
         className="w-full h-[400px] rounded-2xl bg-bottom bg-no-repeat bg-cover"
@@ -37,7 +37,7 @@ export default function FeatureImgOnBgCardButton(props) {
       ></div>
 
       {/* Conteúdo branco abaixo da imagem */}
-      <div className="bg-white rounded-2xl p-6 shadow-md flex flex-col gap-4">
+      <div className="bg-white rounded-b-2xl p-6 shadow-md flex flex-col gap-4">
         <h1 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px]">
           {title}
         </h1>
