@@ -334,6 +334,63 @@ export default function Team() {
                 modalTitle={content.texts.team.members.member12.name}
                 modalContent={
                   <p>
+                    Farmacêutica (Ufrgs1979) Homeopata . MBA em Gerência
+                    Empresarial e Gerontologia. Facilitadora de grupos a mais de
+                    20 anos com Biodanza e acolhimento 50+ e Terapeuta Floral.
+                  </p>
+                }
+              />
+
+              <TeamMember
+                img={content.texts.team.members.member13.img.img}
+                alt={content.texts.team.members.member13.img.alt}
+                name={content.texts.team.members.member13.name}
+                role={content.texts.team.members.member13.role}
+                modalTitle={content.texts.team.members.member13.name}
+                modalContent={
+                  <p>
+                    Advogado (Unisinos, 1988). Especializações em Direito
+                    Público (PUCRS, 2019) e Ciência Política (UFRGS, 2023).
+                    Servidor da Câmara Municipal de Porto Alegre desde 1979,
+                    onde é Diretor Legislativo desde 2008. Professor e
+                    palestrante em temas de interesse dos Poderes Legislativos
+                    locais, com ênfase no Processo Legislativo.
+                  </p>
+                }
+              />
+
+              <TeamMember
+                img={content.texts.team.members.member14.img.img}
+                alt={content.texts.team.members.member14.img.alt}
+                name={content.texts.team.members.member14.name}
+                role={content.texts.team.members.member14.role}
+                modalTitle={content.texts.team.members.member14.name}
+                modalContent={
+                  <p>
+                    Ativista pelos direitos das mulheres atuando na luta por
+                    políticas públicas para mulheres e pessoas com útero no
+                    climatério e na menopausa.
+                    <br />É facilitadora de grupos de mulheres, conduzindo a
+                    Jornada Quintessência 50+.
+                    <br />
+                    CEO do Instituto “Menopausa Sem Vergonha”, Márcia é a mente
+                    criativa e intérprete da Palestra Espetáculo de mesmo nome.
+                    <br />
+                    Realizou a Primeira Semana Municipal do Climatério e da
+                    Menopausa, evento PIONEIRO no Brasil, em outubro de 2024, na
+                    cidade de Porto Alegre - RS.
+                  </p>
+                }
+              />
+
+              <TeamMember
+                img={content.texts.team.members.member15.img.img}
+                alt={content.texts.team.members.member15.img.alt}
+                name={content.texts.team.members.member15.name}
+                role={content.texts.team.members.member15.role}
+                modalTitle={content.texts.team.members.member15.name}
+                modalContent={
+                  <p>
                     Técnico em Contabilidade com sólida trajetória no setor
                     público municipal, atuando desde 1991 como servidor efetivo
                     na Prefeitura Municipal de Sede Nova/RS, onde exerce a

@@ -45,6 +45,9 @@ import teamMemberImg9 from "../assets/imgs/team/team9.webp";
 import teamMemberImg10 from "../assets/imgs/team/team10.webp";
 import teamMemberImg11 from "../assets/imgs/team/team11.webp";
 import teamMemberImg12 from "../assets/imgs/team/team12.webp";
+import teamMemberImg13 from "../assets/imgs/team/team13.webp";
+import teamMemberImg14 from "../assets/imgs/team/team14.webp";
+import teamMemberImg15 from "../assets/imgs/team/team15.webp";
 
 import imgTestimonial1 from "../assets/imgs/testimonials/deposition1.png";
 import imgTestimonial2 from "../assets/imgs/testimonials/deposition2.png";
@@ -197,8 +200,7 @@ const content = {
         img: featuresImg1,
         service: service1,
         title: "Improbidade administrativa no âmbito municipal",
-        subtitle:
-          "",
+        subtitle: "",
 
         description: (
           <div>
@@ -687,6 +689,30 @@ const content = {
         member12: {
           img: {
             img: teamMemberImg12,
+            alt: "Membro da equipe",
+          },
+          name: "Claire Abreu",
+          role: "Farmacêutica Homeopata.",
+        },
+        member13: {
+          img: {
+            img: teamMemberImg13,
+            alt: "Membro da equipe",
+          },
+          name: "Dr. Luiz Afonso de Melo Peres",
+          role: "Advogado. Especialização em Direito Público e Ciência Política.",
+        },
+        member14: {
+          img: {
+            img: teamMemberImg14,
+            alt: "Membro da equipe",
+          },
+          name: "Márcia Selister",
+          role: "Mãe, educadora física, especializada em gestão de pessoas, yoga e yoga dance, palestrante e empresária. Atleta Master, foi campeã mundial de remo, aos 50 anos.",
+        },
+        member15: {
+          img: {
+            img: teamMemberImg15,
             alt: "Membro da equipe",
           },
           name: "Celso Lopes da Silva",
