@@ -1,5 +1,5 @@
-import logo from "../assets/imgs/logo/logo.png";
-import heroImg from "../assets/imgs/hero/lawHero.jpg";
+import logo from "../assets/imgs/logo/logo.webp";
+import heroImg from "../assets/imgs/hero/lawHero.webp";
 import bgHeroImg from "../assets/imgs/hero/bgHero.webp";
 
 import cursoDominus from "../assets/imgs/hero/cursoDominus.jpg";
@@ -8,9 +8,9 @@ import imgFeatures from "../assets/imgs/features/imgServices.jpg";
 import imgDivisor from "../assets/imgs/features/imgDivisor.jpg";
 
 import aboutImg1 from "../assets/imgs/about/aboutImg.jpg";
-import aboutSocialImg from "../assets/imgs/about/aboutSocial.png";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
-import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.jpg";
 
@@ -18,13 +18,13 @@ import trustedByImg1 from "../assets/imgs/trustedBy/item1.jpg";
 import trustedByImg2 from "../assets/imgs/trustedBy/item2.jpg";
 import trustedByImg3 from "../assets/imgs/trustedBy/item3.jpg";
 
-import featuresImg1 from "../assets/imgs/features/imgServices1.jpg";
-import featuresImg2 from "../assets/imgs/features/imgServices2.jpg";
-import featuresImg3 from "../assets/imgs/features/imgServices3.png";
-import featuresImg4 from "../assets/imgs/features/imgServices4.jpg";
+import featuresImg1 from "../assets/imgs/features/imgServices1.webp";
+import featuresImg2 from "../assets/imgs/features/imgServices2.webp";
+import featuresImg3 from "../assets/imgs/features/imgServices3.webp";
+import featuresImg4 from "../assets/imgs/features/imgServices4.webp";
 
-import service1 from "../assets/imgs/features/services1.jpg";
-import service2 from "../assets/imgs/features/services2.jpg";
+import service1 from "../assets/imgs/features/services1.webp";
+import service2 from "../assets/imgs/features/services2.webp";
 
 import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
 import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";
