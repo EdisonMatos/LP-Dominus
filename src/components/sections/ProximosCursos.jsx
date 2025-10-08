@@ -50,6 +50,12 @@ export default function ProximosCursos({
   const [visible, setVisible] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");
+  const [modalType, setModalType] = useState("form");
+
+  const openModal = (type) => {
+    setModalType(type);
+    setVisible(true);
+  };
 
   return (
     <SectionArea
@@ -139,29 +145,72 @@ export default function ProximosCursos({
             <Paragraphs className="text-white text-opacity-80 mb-[48px]"></Paragraphs>
           </MotionDivDownToUp>
 
-          <div className="flex flex-col gap-4">
-            <Button
-              label="Inscreva-se aqui"
-              className="text-black"
-              icon={<FilePenLine />}
-              onClick={() => {
-                setModalTitle("Cadastro");
-                setModalContent(<WhatsappForm />);
-                setVisible(true);
-              }}
-            />
+          <div className="flex flex-col gap-6 tablet1:flex-row">
+            <div className="flex flex-col gap-4">
+              <Button
+                label="Abrir Infos"
+                className="text-black"
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-info-icon lucide-info"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                }
+                onClick={() => {
+                  setModalTitle("🗓 PROGRAMAÇÃO");
+                  setVisible(true);
+                  openModal("info");
+                }}
+              />
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <Button
+                label="Inscreva-se aqui"
+                className="text-black"
+                icon={<FilePenLine />}
+                onClick={() => {
+                  setModalTitle("Cadastro");
+                  setModalContent(<WhatsappForm />);
+                  setVisible(true);
+                  openModal("form");
+                }}
+              />
+            </div>
           </div>
         </div>
       </SectionWrapper>
       <Dialog
         className="font-secondFont"
-        header={modalTitle}
+        header={<div className="border-b pb-4">{modalTitle}</div>}
         visible={visible}
         onHide={() => setVisible(false)}
         style={{ width: "50vw" }}
-        breakpoints={{ "4000px": "717px", "1024px": "70vw", "641px": "90vw" }}
+        breakpoints={{
+          "4000px": modalType === "form" ? "717px" : "500px",
+          "1024px": modalType === "form" ? "70vw" : "60vw",
+          "641px": modalType === "form" ? "90vw" : "85vw",
+        }}
       >
-        <p className="m-0 ">{modalContent}</p>
+        {modalType === "form" ? (
+          <p className="m-0 ">{modalContent}</p>
+        ) : (
+          <div>
+            <p>{contentCursos.texts.curso1.descriptionModal}</p>
+          </div>
+        )}
       </Dialog>
     </SectionArea>
   );

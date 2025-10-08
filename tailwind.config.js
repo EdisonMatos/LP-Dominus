@@ -18,8 +18,8 @@ export const theme = {
     },
     fontFamily: {
       mainFont: ["Merriweather", "sans-serif"],
-      // mainFont: ["Poppins", "sans-serif"],
-      secondFont: ["Merriweather", "sans-serif"],
+      secondFont: ["Poppins", "sans-serif"],
+      // secondFont: ["Merriweather", "sans-serif"],
       league: ["League Gothic"],
       barlow: ["Barlow Condensed"],
     },
