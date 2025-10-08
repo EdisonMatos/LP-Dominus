@@ -148,8 +148,9 @@ export default function ProximosCursos({
           <div className="flex flex-col gap-6 tablet1:flex-row">
             <div className="flex flex-col gap-4">
               <Button
-                label="Abrir Infos"
+                label="Veja a programação aqui"
                 className="text-black"
+                textclassName="text-start"
                 icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -180,6 +181,7 @@ export default function ProximosCursos({
               <Button
                 label="Inscreva-se aqui"
                 className="text-black"
+                textclassName="text-start"
                 icon={<FilePenLine />}
                 onClick={() => {
                   setModalTitle("Cadastro");
