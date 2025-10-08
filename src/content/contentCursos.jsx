@@ -1,4 +1,4 @@
-import bannerCurso1 from "../assets/imgs/hero/imagemCursoLegislativo.jpg";
+import bannerCurso1 from "../assets/imgs/hero/imagemCursoLegislativo.webp";
 
 const contentCursos = {
   texts: {
