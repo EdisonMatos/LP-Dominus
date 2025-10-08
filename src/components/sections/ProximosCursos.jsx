@@ -201,7 +201,7 @@ export default function ProximosCursos({
         onHide={() => setVisible(false)}
         style={{ width: "50vw" }}
         breakpoints={{
-          "4000px": modalType === "form" ? "717px" : "500px",
+          "4000px": modalType === "form" ? "717px" : "800px",
           "1024px": modalType === "form" ? "70vw" : "60vw",
           "641px": modalType === "form" ? "90vw" : "85vw",
         }}
