@@ -71,7 +71,7 @@ export default function ProximosCursos({
           </MotionDivDownToUp>
         ) : (
           <MotionDivDownToUp className=" w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
-            <div className="relative w-full h-auto bg-center bg-no-repeat bg-cover shadow-custom-opacity shadow-secondary/25 tablet1:h-auto tablet1:w-full rounded-xl">
+            <div className="relative bg-center bg-no-repeat bg-cover shadow-custom-opacity shadow-secondary/25  rounded-xl">
               <ImageGallery
                 items={images}
                 showNav={false}
@@ -86,22 +86,20 @@ export default function ProximosCursos({
               <style>
                 {`
                 .custom-gallery .image-gallery-slide img {
-                  height: 450px !important;
                   width: 100% !important;
-                  object-fit: cover !important;
+                  object-fit: contain !important;
                   border-radius: 10px !important;
                   margin: 0 auto;
                 }
 
                 @media (min-width: 640px) and (max-width: 1023px) {
                   .custom-gallery .image-gallery-slide img {
-                    min-height: 840px !important;
                   }
                 }
 
                 @media (min-width: 1024px) {
                   .custom-gallery .image-gallery-slide img {
-                    height: 600px !important;
+                    height: 560px !important;
                   }
                 }
 
