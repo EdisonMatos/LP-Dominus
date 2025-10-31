@@ -6,7 +6,9 @@ const contentCursos = {
     curso1: {
       title: "JORNADA NEXUS",
       subtitle: (
-        <p className="text-paragraph4">Do Aprendizado do Primeiro Ano à Blindagem dos Próximos Três</p>
+        <p className="text-paragraph4">
+          Do Aprendizado do Primeiro Ano à Blindagem dos Próximos Três
+        </p>
       ),
       date: "21 de Novembro",
       time: "09:00",
@@ -116,13 +118,14 @@ const contentCursos = {
           <br />
           <br /> */}
           <span className="font-semibold text-paragraph3">
-            08h30 - 09h00 | CREDENCIAMENTO E CAFÉ DE BOAS-VINDAS
+            08h30 - 09h00 | CREDENCIAMENTO
           </span>
           <br />
           <br />
-          <h1 className="font-semibold text-paragraph3">
+          <span className="font-semibold text-paragraph3">
             09h00 - 09h30 | ABERTURA INSTITUCIONAL
-          </h1>
+          </span>
+          <br />
           <span className="text-paragraph2 text-secondary">
             09h00 - 09h30 | Boas-vindas + O Conceito NEXUS
           </span>
@@ -146,7 +149,7 @@ const contentCursos = {
           <br />
           <br />
           <span className="text-paragraph2 text-secondary">
-            10h45 - 11h00 | COFFEE BREAK (15 min)
+            10h45 - 11h00 | COFFEE BREAK
           </span>
           <br />
           <br />
@@ -154,7 +157,7 @@ const contentCursos = {
             BLOCO 2: DECISÕES QUE SUSTENTAM
           </h1>
           <span className="text-paragraph2 text-secondary">
-            11h00 - 12h15 | JULIANO COLOMBO (1h15)
+            11h00 - 12h15 | JULIANO COLOMBO
           </span>
           <br />
           <br />
@@ -172,7 +175,7 @@ const contentCursos = {
           <br />
           <br />
           <span className="text-paragraph2 text-secondary">
-            12h30 - 13h30 | ALMOÇO ESTRATÉGICO (1h)
+            12h30 - 13h30 | ALMOÇO ESTRATÉGICO
           </span>
           <br />
           🍽️ Almoço por conta dos participantes
@@ -188,7 +191,7 @@ const contentCursos = {
             BLOCO 3: PERGUNTAS E PROPÓSITO
           </h1>
           <span className="text-paragraph2 text-secondary">
-            14h00 - 15h15 | TULIO MILMAN (1h15)
+            14h00 - 15h15 | TULIO MILMAN
           </span>
           <br />
           <br />
@@ -206,7 +209,7 @@ const contentCursos = {
             BLOCO 4: EXECUÇÃO QUE ENTREGA
           </h1>
           <span className="text-paragraph2 text-secondary">
-            15h15 - 16h30 | ROBERTA SAWITZKI (1h15)
+            15h15 - 16h30 | ROBERTA SAWITZKI
           </span>
           <br />
           <br />
@@ -224,7 +227,7 @@ const contentCursos = {
           <br />
           <br />
           <span className="text-paragraph2 text-secondary">
-            16h45 - 17h00 | ENCERRAMENTO ESTRATÉGICO (15 min)
+            16h45 - 17h00 | ENCERRAMENTO ESTRATÉGICO
           </span>
           <br />
           <br />
