@@ -10,7 +10,7 @@ const contentCursos = {
       time: "09:00",
       description: (
         <p className="text-black font-secondFont">
-          <span className="font-bold text-paragraph4 text-secondary">
+          <span className="font-semibold text-paragraph4">
             08h30 - 09h00 | CREDENCIAMENTO E CAFÉ DE BOAS-VINDAS
           </span>
           <br />
@@ -147,7 +147,7 @@ const contentCursos = {
           💼 <strong>Especialista:</strong> Doutora em Administração (UFRGS +
           Universidade de Trento, Itália) | Ex-gerente PMO Banrisul e SESI/RS |
           Professora de Gestão de Projetos e Aprendizagem Organizacional
-          <br />
+          <br /> <br />
           <span className="text-paragraph2 text-secondary">
             16h30 - 16h45 - MOMENTO DE CONEXÃO COM O CIDADÃO
           </span>
