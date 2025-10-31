@@ -1,52 +1,78 @@
-import bannerCurso1 from "../assets/imgs/hero/imagemCursoLegislativo.webp";
+import bannerCurso1 from "../assets/imgs/cursos/imagemCursoCarrosel1.webp";
+import bannerCurso2 from "../assets/imgs/cursos/imagemCursoCarrosel2.webp";
 
 const contentCursos = {
   texts: {
     curso1: {
-      title: "🌸 OUTUBRO + QUE ROSA ",
-      date: "21 à 23 de Outubro",
+      title: "JORNADA NEXUS",
+      subtitle: " Do Aprendizado do Primeiro Ano à Blindagem dos Próximos Três",
+      date: "21 de Novembro",
       time: "09:00",
       description: (
-        <p className="text-black">
+        <p className="text-black font-secondFont">
           <span className="font-bold text-paragraph4 text-secondary">
-            Imersão em Políticas Efetivas para o Bem-Estar Social e Turístico,
-            com Foco em Mulheres e Pessoas Idosas
+            08h30 - 09h00 | CREDENCIAMENTO E CAFÉ DE BOAS-VINDAS
           </span>
+          <br />
+          <br />
+          <h1 className="font-semibold text-paragraph4">
+            09h00 - 09h30 | ABERTURA INSTITUCIONAL
+          </h1>
+          <span className="text-paragraph2 text-secondary">
+            09h00 - 09h30 | Boas-vindas + O Conceito NEXUS
+          </span>
+          <br />
+          <br />
+          <h1 className="font-semibold text-paragraph4">
+            BLOCO 1: COMUNICAÇÃO QUE BLINDA
+          </h1>
+          <span className="text-paragraph2 text-secondary">
+            09h30 - 10h45 | LÚCIO UBERDAN
+          </span>
+          <br />
+          <br />
+          🎤 <strong>Palestra:</strong> "Marketing Político na Gestão:
+          Comunicação Estratégica para Construir Autoridade e Blindar Sua
+          Imagem"
+          <br />
+          💼 <strong>Especialista:</strong> Consultor | Pós-graduado em
+          Marketing Político e Comunicação Eleitoral | 20 anos de experiência em
+          projetos, gestões e campanhas nacionais e estaduais
           <br />
           <br />
           <span className="text-paragraph2 text-secondary">
-            Um evento inspirador voltado preferencialmente às mulheres gestoras,
-            vereadoras, secretárias e assessoras, que todos os dias fazem a
-            diferença em suas funções e lideram com propósito e determinação.
+            10h45 - 11h00 | COFFEE BREAK (15 min)
           </span>
-          <br />
-          <br />
-          <span className="text-paragraph2 text-secondary">
-            Durante três dias de imersão prática e reflexiva, serão debatidas
-            políticas públicas, projetos e ações voltadas ao bem-estar social e
-            turístico, com ênfase na valorização feminina e no cuidado com
-            pessoas idosas.
-          </span>
-          <br />
-          <br />
-          📅 <strong>Datas:</strong> 21, 22 e 23 de outubro
-          <br />
-          📍 <strong>Local:</strong> R. General Andrade Neves, nº 90 – Sala 91,
-          9º Andar, Auditório Avohai, Centro Histórico – Porto Alegre/RS
-          <br />
-          💰 <strong>Investimento:</strong> R$ 1.250,00
-          <br />
-          📲 <strong>Informações:</strong> (51) 99732-8822
-          <br />
-          🔗 <strong>www.dominuscursos.com.br</strong>
           <br />
           <br />
           <strong>
-            Participe e fortaleça sua trajetória com conhecimento, networking,
-            capacitação e o olhar de especialistas renomados na gestão pública.
+            <i>
+              {" "}
+              Este não é um "coquetel de confraternização". É a construção da
+              sua rede de apoio estratégico para os próximos 3 anos.
+            </i>
           </strong>
           <br />
           <br />
+          <span className="flex items-center gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-info-icon lucide-info"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 16v-4" />
+              <path d="M12 8h.01" />
+            </svg>
+            Confira mais informações na programação
+          </span>
         </p>
       ),
       descriptionModal: (
@@ -54,131 +80,98 @@ const contentCursos = {
           {/* 🗓 <strong>PROGRAMAÇÃO</strong>
           <br />
           <br /> */}
-          📅 <strong>21 de outubro – Terça-feira:</strong>
-          <br />
-          <br />
-          <span className="opacity-80">9h00 – “Cota não é só um número”</span>
-          <br />
-          <p className="font-bold py-2">
-            👩‍⚖ Dra. Maritânia Dallagnol – Advogada:
-          </p>
-          As cotas como instrumento de justiça social e inclusão. Avanços,
-          desafios e perspectivas para a igualdade real.
-          <br />
-          <br />
-          <br />
-          <span className="opacity-80">
-            10h30 – “Trajetória da Mulher na Política”
+          <h1 className="font-semibold text-paragraph4">
+            BLOCO 2: DECISÕES QUE SUSTENTAM
+          </h1>
+          <span className="text-paragraph2 text-secondary">
+            11h00 - 12h15 | JULIANO COLOMBO (1h15)
           </span>
           <br />
-          <p className="font-bold py-2">
-            👩‍💼 Mônica Leal – Secretária Municipal de Transparência (PMPA),
-            ex-vereadora de Porto Alegre:
-          </p>
-          Desafios e conquistas da mulher nos espaços de poder. Transparência e
-          liderança como pilares da representatividade.
+          <br />
+          🎤 <strong>Palestra:</strong> "Da gestão de equipes à entrega de
+          resultados - desafios do presente e do futuro para o Gestor Público"
+          <br />
+          💼 <strong>Especialista:</strong> Consultor | Palestrante|
+          Especialista em Gestão Empresarial, Financeira e Marketing Estratégico
+          | Superintendente do SESI/RS por 15 anos
           <br />
           <br />
-          <br />
-          <span className="opacity-80">
-            14h00 – “De Pequena Empresária à Vereadora”
+          <span className="text-paragraph2 text-secondary">
+            12-15 – 12h30 - MOMENTO DE FERRAMENTAS ESTRATÉGICAS
           </span>
           <br />
-          <p className="font-bold py-2">
-            👩‍🔧 Cláudia Araújo – Vereadora em Porto Alegre:
-          </p>
-          A força do empreendedorismo feminino e os caminhos para a política com
-          propósito.
           <br />
-          <br />
-          <br />
-          <span className="opacity-80">
-            15h30 – “Conteúdos de Cultura Afro e Indígena Obrigatórios nas
-            Escolas”
+          <span className="text-paragraph2 text-secondary">
+            12h30 - 13h30 | ALMOÇO ESTRATÉGICO (1h)
           </span>
           <br />
-          <p className="font-bold py-2">
-            👩🏽‍🎓 Eliane Almeida (Negrita) – Doutora em Educação (UFRGS),
-            Presidente do Instituto Apakani:
-          </p>
-          Educação para a diversidade: desafios e experiências na implementação
-          da Lei 11.645/08.
+          🍽️ Almoço por conta dos participantes
           <br />
           <br />
-          <hr className="border-b-[1px] border-" />
-          <br />
-          📅 <strong>22 de outubro – Quarta-feira:</strong>
-          <br />
-          <br />
-          <span className="opacity-80">
-            9h00 – “Da Participação Popular ao Parlamento”
+          <span className="text-paragraph2 text-secondary">
+            13h30 - 14h00 | CASES
           </span>
           <br />
-          <p className="font-bold py-2">👩‍💼 Dep. Fed. Denise Pessôa:</p>
-          Da mobilização social à representação política: a importância da voz
-          feminina nas decisões públicas.
           <br />
           <br />
-          <br />
-          <span className="opacity-80">
-            10h15 – “Mulheres Idosas: Acessibilidade e Rede de Cuidados na
-            Administração Pública”
+          <h1 className="font-semibold text-paragraph4">
+            BLOCO 3: PERGUNTAS E PROPÓSITO
+          </h1>
+          <span className="text-paragraph2 text-secondary">
+            14h00 - 15h15 | TULIO MILMAN (1h15)
           </span>
           <br />
-          <p className="font-bold py-2">👩‍🎓 Elenara Stein Leitão – Arquiteta:</p>
-          Desenho universal e políticas de inclusão: cidades mais acessíveis e
-          humanas para todas as idades.
+          <br />
+          🎤 <strong>Palestra:</strong> "Desafios da Comunicação em Tempos de
+          Redes Sociais e IA: Como Perguntar Certo, Comunicar Claro e Usar
+          Inteligência Artificial a Favor da Sua Gestão"
+          <br />
+          💼 <strong>Especialista:</strong> Consultor | Jornalista por 27 anos
+          do Grupo RBS | Especialista em IA – MIT | Storytelling pela Stanford |
+          Autor de "Onde Estás?"
           <br />
           <br />
           <br />
-          <span className="opacity-80">
-            14h00 – “Envelhecimento no RS e o Desafio das Políticas Públicas”
+          <h1 className="font-semibold text-paragraph4">
+            BLOCO 4: EXECUÇÃO QUE ENTREGA
+          </h1>
+          <span className="text-paragraph2 text-secondary">
+            15h15 - 16h30 | ROBERTA SAWITZKI (1h15)
           </span>
           <br />
-          <p className="font-bold py-2">
-            👩‍⚕ Cátia Siqueira – Coordenadora da Unidade Especial de Atenção à
-            Pessoa Idosa:
-          </p>
-          O cenário do envelhecimento e as estratégias de atenção e proteção
-          social no Estado.
           <br />
+          🎤 <strong>Palestra:</strong> "Planejamento e Execução de Projetos
+          Públicos: Essencialismo e Simplicidade para Eliminar Sobrecarga e
+          Multiplicar Entregas"
           <br />
+          💼 <strong>Especialista:</strong> Doutora em Administração (UFRGS +
+          Universidade de Trento, Itália) | Ex-gerente PMO Banrisul e SESI/RS |
+          Professora de Gestão de Projetos e Aprendizagem Organizacional
           <br />
-          <span className="opacity-80">
-            15h30 – “Cuidando da Ansiedade no Serviço Público”
+          <span className="text-paragraph2 text-secondary">
+            16h30 - 16h45 - MOMENTO DE CONEXÃO COM O CIDADÃO
           </span>
           <br />
-          <p className="font-bold py-2">
-            🧠 Grace Gomes – Psicóloga clínica e do trabalho, especialista em
-            transtornos de ansiedade e avaliação psicossocial:
-          </p>
-          Saúde mental e equilíbrio emocional como pilares do desempenho e da
-          boa gestão.
           <br />
-          <br />
-          <hr className="border-b-[1px] border-" />
-          <br />
-          📅 <strong>23 de outubro – Quinta-feira:</strong>
-          <br />
-          <br />
-          <span className="opacity-80">
-            9h00 – “Turismo, Planejamento e Empoderamento das Mulheres”
+          <span className="text-paragraph2 text-secondary">
+            16h45 - 17h00 | ENCERRAMENTO ESTRATÉGICO (15 min)
           </span>
           <br />
-          <p className="font-bold py-2">🌍 Angelice Motter – Turismóloga:</p>
-          O turismo como ferramenta de desenvolvimento, autonomia e protagonismo
-          feminino.
           <br />
-          <br />
-          <span className="opacity-80">
-            Encerramento – Roda de Conversa “Cuidar & Transformar”
+          <span className="text-paragraph2 text-secondary">
+            17h00 - 18h30 | COQUETEL ESTRATÉGICO DE INTEGRAÇÃO
           </span>
           <br />
-          Síntese dos aprendizados, integração de experiências e construção
-          coletiva de compromissos para políticas públicas efetivas.
+          📝 Momento exclusivo para aprofundar conexões com gestores e
+          palestrantes.
+          <br />
+          <br />
         </p>
       ),
-      banner: { bannerCurso1 },
+      banner: {
+        img1: bannerCurso1,
+        img2: bannerCurso2,
+      },
     },
   },
 };

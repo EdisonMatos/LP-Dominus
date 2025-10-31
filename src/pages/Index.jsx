@@ -24,7 +24,7 @@ export default function Index() {
     <div>
       <Navbar LightMode={true} />
       <Hero appDownloadButtons={false} />
-      <ProximosCursos socialPrint={true} instagram={false} />
+      <ProximosCursos socialPrint={false} instagram={false} />
       <CursosFixos />
       <Features
         defaultFeature={false}

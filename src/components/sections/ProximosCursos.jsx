@@ -25,16 +25,12 @@ import img3 from "../../assets/imgs/hero/carrossel3.jpg";
 
 const images = [
   {
-    original: img1,
+    original: contentCursos.texts.curso1.banner.img1,
     thumbnail: img1,
   },
   {
-    original: img2,
+    original: contentCursos.texts.curso1.banner.img2,
     thumbnail: img2,
-  },
-  {
-    original: img3,
-    thumbnail: img3,
   },
 ];
 
@@ -74,57 +70,57 @@ export default function ProximosCursos({
             />
           </MotionDivDownToUp>
         ) : (
-          // <MotionDivDownToUp className=" w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
-          //   <div className="relative w-full h-auto bg-center bg-no-repeat bg-cover shadow-custom-opacity shadow-secondary/25 tablet1:h-auto tablet1:w-full rounded-xl">
-          //     <ImageGallery
-          //       items={images}
-          //       showNav={false}
-          //       showFullscreenButton={false}
-          //       useBrowserFullscreen={false}
-          //       showBullets={true}
-          //       showThumbnails={false}
-          //       additionalClass="custom-gallery"
-          //       autoPlay={true}
-          //     />
-          //     <style>
-          //       {`
-          //       .custom-gallery .image-gallery-slide img {
-          //         height: 450px !important;
-          //         width: 100% !important;
-          //         object-fit: cover !important;
-          //         border-radius: 10px !important;
-          //         margin: 0 auto;
-          //       }
+          <MotionDivDownToUp className=" w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
+            <div className="relative w-full h-auto bg-center bg-no-repeat bg-cover shadow-custom-opacity shadow-secondary/25 tablet1:h-auto tablet1:w-full rounded-xl">
+              <ImageGallery
+                items={images}
+                showNav={false}
+                showFullscreenButton={false}
+                useBrowserFullscreen={false}
+                showBullets={true}
+                showThumbnails={false}
+                additionalClass="custom-gallery"
+                autoPlay={true}
+              />
+              <style>
+                {`
+                .custom-gallery .image-gallery-slide img {
+                  height: 450px !important;
+                  width: 100% !important;
+                  object-fit: cover !important;
+                  border-radius: 10px !important;
+                  margin: 0 auto;
+                }
 
-          //       @media (min-width: 640px) and (max-width: 1023px) {
-          //         .custom-gallery .image-gallery-slide img {
-          //           min-height: 840px !important;
-          //         }
-          //       }
+                @media (min-width: 640px) and (max-width: 1023px) {
+                  .custom-gallery .image-gallery-slide img {
+                    min-height: 840px !important;
+                  }
+                }
 
-          //       @media (min-width: 1024px) {
-          //         .custom-gallery .image-gallery-slide img {
-          //           height: 600px !important;
-          //         }
-          //       }
+                @media (min-width: 1024px) {
+                  .custom-gallery .image-gallery-slide img {
+                    height: 600px !important;
+                  }
+                }
 
-          //       .custom-gallery .image-gallery-thumbnails img {
-          //         height: 60px !important;
-          //         width: 100px !important;
-          //         object-fit: cover !important;
-          //       }
-          //     `}
-          //     </style>
-          //   </div>
-          // </MotionDivDownToUp>
-          <MotionDivDownToUp className=" w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
-            <div
-              style={{
-                backgroundImage: `url(${content.texts.about.aboutSocial.img.img})`,
-              }}
-              className="relative bg-center bg-no-repeat bg-cover h-[450px] w-full tablet1:h-[800px] desktop1:h-[467px] rounded-xl shadow-custom-opacity shadow-secondary/25"
-            ></div>
+                .custom-gallery .image-gallery-thumbnails img {
+                  height: 60px !important;
+                  width: 100px !important;
+                  object-fit: cover !important;
+                }
+              `}
+              </style>
+            </div>
           </MotionDivDownToUp>
+          // <MotionDivDownToUp className=" w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
+          //   <div
+          //     style={{
+          //       backgroundImage: `url(${content.texts.about.aboutSocial.img.img})`,
+          //     }}
+          //     className="relative bg-center bg-no-repeat bg-cover h-[450px] w-full tablet1:h-[800px] desktop1:h-[467px] rounded-xl shadow-custom-opacity shadow-secondary/25"
+          //   ></div>
+          // </MotionDivDownToUp>
         )}
         <div className="desktop1:w-[550px] desktop2:w-[570px]">
           <MotionDivDownToUp>
@@ -132,6 +128,7 @@ export default function ProximosCursos({
               className="text-center desktop1:flex desktop1:w-full"
               miniTitle={contentCursos.texts.curso1.date}
               sectionHeaderTitle={contentCursos.texts.curso1.title}
+              sectionHeaderSubtitle={contentCursos.texts.curso1.subtitle}
               color=""
               type="article"
             />
@@ -148,7 +145,7 @@ export default function ProximosCursos({
           <div className="flex flex-col gap-6 tablet1:flex-row">
             <div className="flex flex-col gap-4">
               <Button
-                label="Veja a programação aqui"
+                label="Ver programação"
                 className="text-black"
                 textclassName="text-start"
                 icon={
@@ -179,7 +176,7 @@ export default function ProximosCursos({
 
             <div className="flex flex-col gap-4">
               <Button
-                label="Inscreva-se aqui"
+                label="Inscreva-se"
                 className="text-black"
                 textclassName="text-start"
                 icon={<FilePenLine />}
