@@ -368,7 +368,7 @@ Endereço: ${endereco}.`;
       endereco,
       email,
       cnpj,
-      curso: content.texts.contactForm.title,
+      curso: contentCursos.texts.curso1.title,
     };
 
     try {
@@ -581,4 +581,3 @@ Endereço: ${endereco}.`;
 };
 
 export default WhatsappForm;
-
