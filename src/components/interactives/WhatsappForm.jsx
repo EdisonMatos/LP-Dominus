@@ -55,8 +55,9 @@ const WhatsappForm = () => {
 
   const handleEnderecoChange = (e) => {
     const input = e.target.value;
-    const onlyLetters = input.replace(/[^a-zA-ZÀ-ÿ\s]/g, ""); // Permite apenas letras e espaços
-    setEndereco(capitalizeFirstLetter(onlyLetters));
+    // Permite letras, números e espaços
+    const lettersAndNumbers = input.replace(/[^a-zA-ZÀ-ÿ0-9\s]/g, "");
+    setEndereco(capitalizeFirstLetter(lettersAndNumbers));
   };
 
   const handlePhoneChange = (e) => {
@@ -519,6 +520,7 @@ Endereço: ${endereco}.`;
               value={endereco}
               onChange={handleEnderecoChange}
               placeholder="Endereço"
+              pattern=".*[0-9].*"
               required
             />
           </div>
