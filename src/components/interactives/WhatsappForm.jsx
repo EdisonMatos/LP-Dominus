@@ -173,7 +173,7 @@ const WhatsappForm = () => {
     };
     const whatsappMessage = `Olá! Vim através do site, e essa mensagem se refere a uma inscrição.
 
-Curso/Evento: ${content.texts.contactForm.title}.
+Curso/Evento: ${contentCursos.texts.curso1.title}.
 Data e hora: ${contentCursos.texts.curso1.date}, às ${contentCursos.texts.curso1.time}.
 
 Nome: ${name}.
