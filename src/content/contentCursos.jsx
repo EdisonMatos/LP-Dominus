@@ -6,7 +6,9 @@ const contentCursos = {
     curso1: {
       title: "JORNADA NEXUS",
       subtitle: (
-        <p className="text-paragraph4">Do Aprendizado do Primeiro Ano à Blindagem dos Próximos Três</p>
+        <p className="text-paragraph4">
+          Do Aprendizado do Primeiro Ano à Blindagem dos Próximos Três
+        </p>
       ),
       date: "21 de Novembro",
       time: "09:00",
@@ -115,6 +117,11 @@ const contentCursos = {
           {/* 🗓 <strong>PROGRAMAÇÃO</strong>
           <br />
           <br /> */}
+          <span className="font-semibold text-paragraph3">
+            08h30 - 09h00 | CREDENCIAMENTO{" "}
+          </span>
+          <br />
+          <br />
           <span className="font-semibold text-paragraph3">
             08h30 - 09h00 | CREDENCIAMENTO E CAFÉ DE BOAS-VINDAS
           </span>
