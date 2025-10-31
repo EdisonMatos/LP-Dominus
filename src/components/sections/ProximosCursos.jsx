@@ -78,6 +78,7 @@ export default function ProximosCursos({
                 showFullscreenButton={false}
                 useBrowserFullscreen={false}
                 showBullets={true}
+                slideInterval={10000}
                 showThumbnails={false}
                 additionalClass="custom-gallery"
                 autoPlay={true}
