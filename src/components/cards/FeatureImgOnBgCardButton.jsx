@@ -29,18 +29,15 @@ export default function FeatureImgOnBgCardButton(props) {
   };
 
   return (
-    <MotionDivDownToUp className="flex flex-col w-full max-w-[331px] tablet1:max-w-[326px] desktop1:w-[325px] overflow-hidden rounded-2xl shadow-md">
-      {/* Imagem */}
-      <div className="w-full h-[400px] flex items-center justify-center bg-black">
-        <img
-          src={imgSrc}
-          alt={title}
-          className="w-full h-full object-cover rounded-t-2xl"
-        />
-      </div>
+    <MotionDivDownToUp className="flex flex-col w-full max-w-[331px] tablet1:max-w-[326px] desktop1:w-[325px] h-[610px]">
+      {/* Imagem no topo */}
+      <div
+        className="w-full h-[400px] rounded-2xl bg-bottom bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(${imgSrc})` }}
+      ></div>
 
-      {/* Conteúdo abaixo */}
-      <div className="bg-white p-6 flex flex-col gap-4 rounded-b-2xl">
+      {/* Conteúdo branco abaixo da imagem */}
+      <div className="bg-white rounded-b-2xl p-6 shadow-md flex flex-col gap-4">
         <h1 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px]">
           {title}
         </h1>
