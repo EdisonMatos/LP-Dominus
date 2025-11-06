@@ -14,7 +14,7 @@ const contentCursos = {
       time: "09:00",
       description: (
         <p className="text-black font-secondFont ">
-          💼 <strong>Data:</strong> 21 de Novembro de 2025 (Quinta-feira)
+          💼 <strong>Data:</strong> 21 de Novembro de 2025 (Sexta-feira)
           <br />
           💼 <strong>Local:</strong> Hotel Laghetto Siena – Gramado/RS
           <br />
