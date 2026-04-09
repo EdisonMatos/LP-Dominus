@@ -74,39 +74,7 @@ export default function Team() {
                   </p>
                 }
               />
-              <TeamMember
-                img={content.texts.team.members.member3.img.img}
-                alt={content.texts.team.members.member3.img.alt}
-                name={content.texts.team.members.member3.name}
-                role={content.texts.team.members.member3.role}
-                modalTitle={content.texts.team.members.member3.name}
-                modalContent={
-                  <p>
-                    Graduada em Licenciatura em Pedagogia pela Universidade
-                    Federal do Rio Grande do Sul - UFRGS e Bacharelado em
-                    Direito pelas Faculdades Integradas Machado de Assis - FEMA;
-                    <br />
-                    <br />
-                    Pós-Graduação em nível de Especialização em Gestão Pública
-                    pela Universidade Federal de Santa Maria - UFSM e MBA em
-                    Gestão Financeira, Controladoria e Auditoria pela Sociedade
-                    Educacional Três de Maio - SETREM e, em nível de Mestrado em
-                    Direito pela Universidade Regional do Noroeste do Estado do
-                    Rio Grande do Sul - UNIJUÍ.
-                    <br />
-                    <br />
-                    Concursada no município de Horizontina para o cargo de
-                    Controlador desde o ano de 2004. Professora dos Cursos
-                    Superiores de Direito e Enfermagem da FEMA - Santa Rosa/RS,
-                    atuando nas disciplinas de Direito Administrativo, Direito
-                    Constitucional e Educação Socioambiental e Governança.
-                    <br />
-                    <br />
-                    Atualmente ocupa a Direção Geral da Escola de Gestão Pública
-                    do município de Horizontina/RS
-                  </p>
-                }
-              />
+
               <TeamMember
                 img={content.texts.team.members.member4.img.img}
                 alt={content.texts.team.members.member4.img.alt}
@@ -238,26 +206,6 @@ export default function Team() {
                   </p>
                 }
               />
-              <TeamMember
-                img={content.texts.team.members.member8.img.img}
-                alt={content.texts.team.members.member8.img.alt}
-                name={content.texts.team.members.member8.name}
-                role={content.texts.team.members.member8.role}
-                modalTitle={content.texts.team.members.member8.name}
-                modalContent={
-                  <p>
-                    Advogada inscrita na OAB/RS sob o nº 84.783, graduada em
-                    Direito pela UNIJUÍ. Possui pós-graduação Lato Sensu em
-                    Docência na Educação Profissional pela Faculdade Mário
-                    Quintana (FAMAQUI).
-                    <br />
-                    <br />
-                    Atua como Assessora Jurídica Legislativa, com sólida
-                    experiência na área pública e na elaboração de pareceres e
-                    projetos de lei.
-                  </p>
-                }
-              />
             </div>
             <div className="flex flex-wrap justify-center gap-6 items-start">
               <TeamMember
@@ -379,46 +327,6 @@ export default function Team() {
                     Realizou a Primeira Semana Municipal do Climatério e da
                     Menopausa, evento PIONEIRO no Brasil, em outubro de 2024, na
                     cidade de Porto Alegre - RS.
-                  </p>
-                }
-              />
-
-              <TeamMember
-                img={content.texts.team.members.member15.img.img}
-                alt={content.texts.team.members.member15.img.alt}
-                name={content.texts.team.members.member15.name}
-                role={content.texts.team.members.member15.role}
-                modalTitle={content.texts.team.members.member15.name}
-                modalContent={
-                  <p>
-                    Técnico em Contabilidade com sólida trajetória no setor
-                    público municipal, atuando desde 1991 como servidor efetivo
-                    na Prefeitura Municipal de Sede Nova/RS, onde exerce a
-                    função de Oficial Administrativo, com destaque na chefia do
-                    Setor de Recursos Humanos.
-                    <br />
-                    <br />
-                    Natural de Humaitá/RS, possui 56 anos, é casado e pai de
-                    dois filhos. Iniciou sua vida profissional ainda jovem como
-                    estagiário da Caixa Econômica Federal, em sua cidade natal.
-                    Em seguida, desempenhou funções administrativas na
-                    Cotricampo – Cooperativa Tritícola Mista Campo Novo Ltda,
-                    até ingressar no serviço público municipal, onde construiu
-                    uma carreira marcada pela seriedade, comprometimento e
-                    conhecimento técnico.
-                    <br />
-                    <br />
-                    Ao longo dos anos, ampliou sua formação com cursos em
-                    Informática, Marketing de Vendas e capacitação específica em
-                    Aposentadoria e Pensões no Serviço Público, com ênfase no
-                    Regime Próprio de Previdência Social (RPPS). Também possui
-                    certificação como Agente Municipal.
-                    <br />
-                    <br />
-                    Reconhecido pela sua ética, dedicação e experiência, Celso
-                    atua de forma estratégica na gestão de pessoas e processos
-                    administrativos, contribuindo para a qualificação da
-                    administração pública regional.
                   </p>
                 }
               />

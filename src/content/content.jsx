@@ -614,14 +614,7 @@ const content = {
           name: "Professor Matheus Rocha Faganello",
           role: "Formado em Direto pela UFRGS, atua na  UniRitter, Fadergs, Pós graduação na Verbo, Sócio da Faganello Advogados.",
         },
-        member3: {
-          img: {
-            img: teamMemberImg3,
-            alt: "Membro da equipe",
-          },
-          name: "Raquel Luciene Sawtzki Callegaro",
-          role: "Graduada em Licenciatura em Pedagogia pela Universidade Federal do Rio Grande do Sul - UFRGS e Bacharelado em Direito pelas Faculdades Integradas Machado de Assis - FEMA",
-        },
+
         member4: {
           img: {
             img: teamMemberImg4,
@@ -654,14 +647,7 @@ const content = {
           name: "Cristian Sparemberger",
           role: "Pesquisador e Cientista Político. Doutorando em Ciência Política, com foco na produção e difusão do conhecimento acadêmico.",
         },
-        member8: {
-          img: {
-            img: teamMemberImg8,
-            alt: "Membro da equipe",
-          },
-          name: "Dra. Sandra Ostroski Lacks",
-          role: "Advogada inscrita na OAB/RS sob o nº 84.783, graduada em Direito pela UNIJUÍ.",
-        },
+
         member9: {
           img: {
             img: teamMemberImg9,
@@ -709,14 +695,6 @@ const content = {
           },
           name: "Márcia Selister",
           role: "Mãe, educadora física, especializada em gestão de pessoas, yoga e yoga dance, palestrante e empresária. Atleta Master, foi campeã mundial de remo, aos 50 anos.",
-        },
-        member15: {
-          img: {
-            img: teamMemberImg15,
-            alt: "Membro da equipe",
-          },
-          name: "Celso Lopes da Silva",
-          role: "Técnico em Contabilidade com sólida trajetória no setor público municipal.",
         },
       },
     },
