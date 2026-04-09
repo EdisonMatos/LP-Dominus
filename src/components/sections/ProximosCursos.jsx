@@ -13,7 +13,7 @@ import Button from "../interactives/Button";
 import SectionHeader from "../sectionElements/SectionHeader";
 import imgPoints from "../../assets/imgs/about/points.png";
 
-import imgCursoDominus from "../../assets/imgs/hero/imagemCursoLegislativo.webp";
+import imgCursoDominus from "../../assets/imgs/cursos/imagemCursoCarrosel1.webp";
 import WhatsappForm from "../interactives/WhatsappForm";
 import { FilePenLine } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -28,13 +28,26 @@ const images = [
     original: contentCursos.texts.curso1.banner.img1,
     thumbnail: img1,
   },
-  {
-    original: contentCursos.texts.curso1.banner.img2,
-    thumbnail: img2,
-  },
+  // {
+  //   original: contentCursos.texts.curso1.banner.img2,
+  //   thumbnail: img2,
+  // },
 ];
 
 const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
+
+function TextoComRolagem({ children }) {
+  return (
+    <div
+      className="overflow-y-auto max-h-[400px] pr-2 scroll-container"
+      style={{
+        scrollBehavior: "smooth",
+      }}
+    >
+      {children}
+    </div>
+  );
+}
 
 export default function ProximosCursos({
   instagram,
@@ -66,7 +79,7 @@ export default function ProximosCursos({
             <img
               src={imgCursoDominus}
               alt={content.texts.about.aboutSocial.img.alt}
-              className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl "
+              className="w-[100%] rounded-xl "
             />
           </MotionDivDownToUp>
         ) : (
@@ -132,9 +145,11 @@ export default function ProximosCursos({
               type="article"
             />
             <MotionDivDownToUp>
-              <Paragraphs className="text-secondary text-paragraph2 text-opacity-80 mb-[48px]">
-                {contentCursos.texts.curso1.description}
-              </Paragraphs>
+              <TextoComRolagem>
+                <Paragraphs className="text-secondary text-paragraph2 text-opacity-80 mb-[48px]">
+                  {contentCursos.texts.curso1.description}
+                </Paragraphs>
+              </TextoComRolagem>
             </MotionDivDownToUp>
           </MotionDivDownToUp>
           <MotionDivDownToUp>

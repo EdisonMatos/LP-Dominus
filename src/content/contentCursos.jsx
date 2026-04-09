@@ -1,249 +1,238 @@
 import bannerCurso1 from "../assets/imgs/cursos/imagemCursoCarrosel1.webp";
-import bannerCurso2 from "../assets/imgs/cursos/imagemCursoCarrosel2.webp";
+// import bannerCurso2 from "../assets/imgs/cursos/imagemCursoCarrosel2.webp";
 
 const contentCursos = {
   texts: {
     curso1: {
-      title: "JORNADA NEXUS",
+      title: "1º CONGRESSO GAÚCHO DE COMUNICAÇÃO PÚBLICA",
       subtitle: (
         <p className="text-paragraph4">
-          Do Aprendizado do Primeiro Ano à Blindagem dos Próximos Três
+          O elo estratégico entre a gestão pública e a confiança do cidadão.
         </p>
       ),
-      date: "21 de Novembro",
+      date: "01 de junho de 2026",
       time: "09:00",
       description: (
-        <p className="text-black font-secondFont ">
-          💼 <strong>Data:</strong> 21 de Novembro de 2025 (Sexta-feira)
-          <br />
-          💼 <strong>Local:</strong> Hotel Laghetto Siena – Gramado/RS
-          <br />
-          💼 <strong>Público:</strong> Prefeitos, vice-prefeitos, secretários e
-          assessores estratégicos
-          <br />
-          <br />
-          <span className="font-semibold text-paragraph3">
-            08h30 - 09h00 | CREDENCIAMENTO
-          </span>
-          <h1 className="font-semibold text-paragraph3">
-            09h00 - 09h30 | ABERTURA INSTITUCIONAL
-          </h1>
-          <h1 className=" text-paragraph3">
-            <strong> 09h30 - 10h45 | LÚCIO UBERDAN</strong> <br />{" "}
-            <span className="text-gray-500">
-              Marketing Político na Gestão: Comunicação Estratégica para
-              Construir Autoridade e Blindar Sua Imagem
+        <div className="text-black font-secondFont">
+          <p>
+            <span>
+              "A comunicação pública não é mais um setor de apoio; ela é o ativo
+              central da legitimidade de qualquer gestão. No dia 1º de junho,
+              Porto Alegre recebe as maiores referências do Brasil para discutir
+              como enfrentar a desinformação, gerir crises de imagem e
+              implementar a transparência real através da Linguagem Simples."
             </span>
-          </h1>
-          <h1 className="font-semibold text-paragraph3">
-            10h45 - 11h00 | COFFEE BREAK
-          </h1>
-          <h1 className=" text-paragraph3">
-            <strong> 11h00 - 12h15 | JULIANO COLOMBO</strong>
-            <br />
-            <span className="text-gray-500">
-              Da gestão de equipes à entrega de resultados - desafios do
-              presente e do futuro para o Gestor Público
-            </span>
-          </h1>
-          <h1 className="font-semibold text-paragraph3">
-            12h15 – 12h30 | MOMENTO DE FERRAMENTAS ESTRATÉGICAS
-          </h1>
-          <h1 className="font-semibold text-paragraph3">
-            12h30 - 13h30 | ALMOÇO ESTRATÉGICO (Almoço por conta dos
-            participantes)
-          </h1>
-          <h1 className="font-semibold text-paragraph3">
-            13h30 - 14h00 | CASES
-          </h1>
-          <h1 className=" text-paragraph3">
-            <strong> 14h00 - 15h15 | TULIO MILMAN</strong> <br />
-            <span className="text-gray-500">
-              Desafios da Comunicação em Tempos de Redes Sociais e IA: Como
-              Perguntar Certo, Comunicar Claro e Usar Inteligência Artificial a
-              Favor da Sua Gestão
-            </span>
-          </h1>
-          <h1 className=" text-paragraph3">
-            <strong> 15h15 - 16h30 | ROBERTA SAWITZKI</strong>
-            <br />
-            <span className="text-gray-500">
-              Planejamento e Execução de Projetos Públicos: Essencialismo e
-              Simplicidade para Eliminar Sobrecarga e Multiplicar Entregas
-            </span>
-          </h1>
-          <h1 className="font-semibold text-paragraph3">
-            16h30 - 16h45 | MOMENTO DE CONEXÃO COM O CIDADÃO
-          </h1>
-          <h1 className="font-semibold text-paragraph3">
-            16h45 - 17h00 | ENCERRAMENTO ESTRATÉGICO
-          </h1>
-          <h1 className="font-semibold text-paragraph3">
-            17h00 - 18h30 | COQUETEL ESTRATÉGICO DE INTEGRAÇÃO
-          </h1>
+          </p>
           <br />
-          <strong>
-            <i>
-              {" "}
-              Este não é um "coquetel de confraternização". É a construção da
-              sua rede de apoio estratégico para os próximos 3 anos.
-            </i>
-          </strong>
+          <strong>Informações de Acesso:</strong>
+          <br />
+          <strong>Data:</strong> 1º de Junho de 2026 (Segunda-feira)
+          <br />
+          <strong>Local:</strong> AIAMU – Rua dos Andradas, 1234, Centro
+          Histórico – Porto Alegre/RS
+          <br />
+          <strong>Público:</strong> Gestores, secretários/assessores e
+          servidores dos Poderes Executivo, Legislativo e Judiciário, além de
+          lideranças de Instituições Representativas e órgãos de controle.
           <br />
           <br />
-          <span className="flex items-center gap-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-info-icon lucide-info"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 16v-4" />
-              <path d="M12 8h.01" />
-            </svg>
-            Confira mais informações na programação
-          </span>
-        </p>
+          <strong>O que você vai encontrar:</strong>
+          <p className="text-paragraph3">
+            Transparência Radical: A técnica da Linguagem Simples como
+            ferramenta de gestão.
+          </p>
+          <p className="text-paragraph3">
+            Combate à Desinformação: Proteção institucional em um ecossistema de
+            redes sociais voláteis.
+          </p>
+          <p className="text-paragraph3">
+            Blindagem Reputacional: Protocolos de crise testados em instituições
+            públicas e órgãos de representação.
+          </p>
+          <p className="text-paragraph3">
+            Inteligência de Dados: Como sair do "achismo" e medir resultados
+            reais na comunicação.
+          </p>
+          <br />
+          <strong>Programação Confirmada:</strong>
+          <p className="text-paragraph3">
+            <strong>Sandra Bitencourt:</strong> Doutora em Comunicação (UFRGS).
+            Jornalista e Pesquisadora. Assessora de Comunicação do Tesouro do
+            Estado (RS) e coordenadora regional da Rede Nacional de Combate à
+            Desinformação (RNCD). Diretora do Instituto Novos Paradigmas.
+          </p>
+          <p className="text-paragraph3">
+            <strong>Soraia Hanna:</strong> Sócia-diretora executiva da Critério.
+            Jornalista e autora do livro "Gerindo crises, construindo
+            reputação". Especialista em gestão de imagem com trajetória em
+            quatro governos estaduais (RS) e na Assembleia Legislativa do Rio
+            Grande do Sul.
+          </p>
+          <p className="text-paragraph3">
+            <strong>Maria José Finatto:</strong> Doutora em Estudos da Linguagem
+            e especialista em Acessibilidade Textual. Pesquisadora premiada pelo
+            Google (LARA 2019). Coautora do projeto "LDO + Simples" do Tesouro
+            do Estado (RS) e professora pesquisadora da UFRGS.
+          </p>
+          <p className="text-paragraph3">
+            <strong>Daniela Machado:</strong> Jornalista e especialista em
+            Letramento Digital (Rhode Island/EUA). Coordenadora do EducaMídia
+            (Instituto Palavra Aberta) e coautora do Guia da Educação Midiática.
+            Atua na formação de educadores e apoio a formuladores de políticas
+            públicas.
+          </p>
+          <p className="text-paragraph3">
+            <strong>Rodrigo Abella:</strong> Diretor-executivo da Social MedIA
+            Gov. Graduado em Administração Pública (UDESC). Especialista em
+            inteligência de dados, IA e transparência pública, com 15 anos de
+            atuação no fortalecimento da gestão da comunicação governamental.
+          </p>
+          <p className="text-paragraph3">
+            <strong>Leandro Rolim:</strong> Doutor em Comunicação Audiovisual
+            (Salamanca). Superintendente de Comunicação Digital na EBC (Empresa
+            Brasil de Comunicação). Professor da Universidade Católica de
+            Brasília, com 20 anos de experiência em inovação e mídia pública.
+          </p>
+          <br />
+          <strong>Inscrições:</strong>
+          <p className="text-paragraph3">
+            <strong>Presencial (AIAMU/POA):</strong> R$ 475,00 (Vagas
+            limitadas).
+          </p>
+          <p className="text-paragraph3">
+            <strong>Virtual, ao vivo (Transmissão Nacional):</strong> R$ 79,90.
+          </p>
+          <br />
+          <br />
+          <p className="text-paragraph3">
+            "Este não é um curso teórico de faculdade. É o encontro onde se
+            define o padrão da comunicação institucional do Rio Grande do Sul
+            para os próximos anos."
+          </p>
+        </div>
       ),
       descriptionModal: (
-        <p className="text-paragraph2 desktop1:text-paragraph2">
-          {/* 🗓 <strong>PROGRAMAÇÃO</strong>
-          <br />
-          <br /> */}
-          <span className="font-semibold text-paragraph3">
-            08h30 - 09h00 | CREDENCIAMENTO
-          </span>
+        <div className="text-paragraph2 desktop1:text-paragraph2">
+          <strong>Programação Sugerida (Ordem de Fala)</strong>
           <br />
           <br />
           <span className="font-semibold text-paragraph3">
-            09h00 - 09h30 | ABERTURA INSTITUCIONAL
-          </span>
-          <br />
-          <span className="text-paragraph2 text-secondary">
-            09h00 - 09h30 | Boas-vindas + O Conceito NEXUS
+            08h00 – 08h30 | Credenciamento
           </span>
           <br />
           <br />
-          <h1 className="font-semibold text-paragraph3">
-            BLOCO 1: COMUNICAÇÃO QUE BLINDA
-          </h1>
-          <span className="text-paragraph2 text-secondary">
-            09h30 - 10h45 | LÚCIO UBERDAN
+          <span className="font-semibold text-paragraph3">
+            08h30 – 09h00 | Abertura Institucional
+          </span>
+          <br />
+          <span className="text-secondary">
+            (Dominus + Autoridades convidadas)
           </span>
           <br />
           <br />
-          🎤 <strong>Palestra:</strong> "Marketing Político na Gestão:
-          Comunicação Estratégica para Construir Autoridade e Blindar Sua
-          Imagem"
+          <span className="font-semibold text-paragraph3">
+            09h00 – 10h00 | SANDRA BITENCOURT
+          </span>
           <br />
-          💼 <strong>Especialista:</strong> Consultor | Pós-graduado em
-          Marketing Político e Comunicação Eleitoral | 20 anos de experiência em
-          projetos, gestões e campanhas nacionais e estaduais
+          🎤 <strong>Tema:</strong> Interesse, imagem e Comunicação Pública em
+          tempos instáveis: os circuitos que precisamos decifrar.
           <br />
-          <br />
-          <span className="text-paragraph2 text-secondary">
-            10h45 - 11h00 | COFFEE BREAK
+          <span className="text-secondary">
+            (Foco: Contextualização teórica e o papel da comunicação na
+            democracia atual).
           </span>
           <br />
           <br />
-          <h1 className="font-semibold text-paragraph3">
-            BLOCO 2: DECISÕES QUE SUSTENTAM
-          </h1>
-          <span className="text-paragraph2 text-secondary">
-            11h00 - 12h15 | JULIANO COLOMBO
+          <span className="font-semibold text-paragraph3">
+            10h00 – 10h15 | Coffee Break Estratégico
           </span>
           <br />
           <br />
-          🎤 <strong>Palestra:</strong> "Da gestão de equipes à entrega de
-          resultados - desafios do presente e do futuro para o Gestor Público"
+          <span className="font-semibold text-paragraph3">
+            10h30 – 11h30 | MARIA JOSÉ BOCORNY FINATTO (UFRGS)
+          </span>
           <br />
-          💼 <strong>Especialista:</strong> Consultor | Palestrante|
-          Especialista em Gestão Empresarial, Financeira e Marketing Estratégico
-          | Superintendente do SESI/RS por 15 anos
+          🎤 <strong>Tema:</strong> Acessibilidade Textual e Terminológica:
+          Técnicas de Linguagem Simples aplicadas à Comunicação de Utilidade
+          Pública.
           <br />
-          <br />
-          <span className="text-paragraph2 text-secondary">
-            12-15 – 12h30 - MOMENTO DE FERRAMENTAS ESTRATÉGICAS
+          <span className="text-secondary">
+            (Foco: Simplificação de terminologias técnicas, médicas e jurídicas
+            para promover a inclusão de cidadãos com diferentes perfis de
+            letramento e escolaridade).
           </span>
           <br />
           <br />
-          <span className="text-paragraph2 text-secondary">
-            12h30 - 13h30 | ALMOÇO ESTRATÉGICO
+          <span className="font-semibold text-paragraph3">
+            11h30 – 12h30 | RODRIGO ABELLA (Social MedIA Gov)
           </span>
           <br />
-          🍽️ Almoço por conta dos participantes
+          🎤 <strong>Tema:</strong> Comunicação Pública baseada em evidências:
+          10 Insights para alta performance.
           <br />
-          <br />
-          <span className="text-paragraph2 text-secondary">
-            13h30 - 14h00 | CASES
-          </span>
-          <br />
-          <br />
-          <br />
-          <h1 className="font-semibold text-paragraph3">
-            BLOCO 3: PERGUNTAS E PROPÓSITO
-          </h1>
-          <span className="text-paragraph2 text-secondary">
-            14h00 - 15h15 | TULIO MILMAN
+          <span className="text-secondary">
+            (Foco: Dados, benchmarking e o uso da IA para eficiência
+            governamental).
           </span>
           <br />
           <br />
-          🎤 <strong>Palestra:</strong> "Desafios da Comunicação em Tempos de
-          Redes Sociais e IA: Como Perguntar Certo, Comunicar Claro e Usar
-          Inteligência Artificial a Favor da Sua Gestão"
-          <br />
-          💼 <strong>Especialista:</strong> Consultor | Jornalista por 27 anos
-          do Grupo RBS | Especialista em IA – MIT | Storytelling pela Stanford |
-          Autor de "Onde Estás?"
-          <br />
-          <br />
-          <br />
-          <h1 className="font-semibold text-paragraph3">
-            BLOCO 4: EXECUÇÃO QUE ENTREGA
-          </h1>
-          <span className="text-paragraph2 text-secondary">
-            15h15 - 16h30 | ROBERTA SAWITZKI
+          <span className="font-semibold text-paragraph3">
+            12h30 – 14h00 | Almoço (Livre)
           </span>
           <br />
           <br />
-          🎤 <strong>Palestra:</strong> "Planejamento e Execução de Projetos
-          Públicos: Essencialismo e Simplicidade para Eliminar Sobrecarga e
-          Multiplicar Entregas"
+          <span className="font-semibold text-paragraph3">
+            14h00 – 15h00 | SORAIA HANNA
+          </span>
           <br />
-          💼 <strong>Especialista:</strong> Doutora em Administração (UFRGS +
-          Universidade de Trento, Itália) | Ex-gerente PMO Banrisul e SESI/RS |
-          Professora de Gestão de Projetos e Aprendizagem Organizacional
-          <br /> <br />
-          <span className="text-paragraph2 text-secondary">
-            16h30 - 16h45 - MOMENTO DE CONEXÃO COM O CIDADÃO
+          🎤 <strong>Tema:</strong> Gestão de Crise na Comunicação Pública: Da
+          narrativa à opinião pública.
+          <br />
+          <span className="text-secondary">
+            (Foco: Protocolos práticos, serenidade e construção de reputação sob
+            pressão).
           </span>
           <br />
           <br />
-          <span className="text-paragraph2 text-secondary">
-            16h45 - 17h00 | ENCERRAMENTO ESTRATÉGICO
+          <span className="font-semibold text-paragraph3">
+            15h00 – 16h00 | DANIELA MACHADO (EducaMídia)
+          </span>
+          <br />
+          🎤 <strong>Tema:</strong> Muito além das Fake News: Como enfrentar a
+          desinformação no ecossistema público.
+          <br />
+          <span className="text-secondary">
+            (Foco: Protocolos de curadoria, análise de mídias e proteção
+            institucional contra boatos).
           </span>
           <br />
           <br />
-          <span className="text-paragraph2 text-secondary">
-            17h00 - 18h30 | COQUETEL ESTRATÉGICO DE INTEGRAÇÃO
+          <span className="font-semibold text-paragraph3">
+            16h00 – 16h15 | Coffee Break Estratégico
           </span>
           <br />
-          📝 Momento exclusivo para aprofundar conexões com gestores e
-          palestrantes.
+          <br />
+          <span className="font-semibold text-paragraph3">
+            16h15 – 17h15 | LEANDRO ROLIM (EBC)
+          </span>
+          <br />
+          🎤 <strong>Tema:</strong> Inovação e Expansão: Da TV 3.0 à
+          capilaridade digital da mídia pública brasileira.
+          <br />
+          <span className="text-secondary">
+            (Foco: Tecnologia, participação social e o futuro da rede nacional
+            de comunicação).
+          </span>
           <br />
           <br />
-        </p>
+          <span className="font-semibold text-paragraph3">
+            17h15 – 17h45 | Encerramento e Entrega de Certificados
+          </span>
+        </div>
       ),
       banner: {
         img1: bannerCurso1,
-        img2: bannerCurso2,
+        // img2: bannerCurso2,
       },
     },
   },
