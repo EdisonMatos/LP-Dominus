@@ -38,19 +38,19 @@ const contentCursos = {
           <br />
           <strong>O que você vai encontrar:</strong>
           <p className="text-paragraph3">
-            Transparência Radical: A técnica da Linguagem Simples como
+            1. Transparência Radical: A técnica da Linguagem Simples como
             ferramenta de gestão.
           </p>
           <p className="text-paragraph3">
-            Combate à Desinformação: Proteção institucional em um ecossistema de
-            redes sociais voláteis.
+            2. Combate à Desinformação: Proteção institucional em um ecossistema
+            de redes sociais voláteis.
           </p>
           <p className="text-paragraph3">
-            Blindagem Reputacional: Protocolos de crise testados em instituições
-            públicas e órgãos de representação.
+            3. Blindagem Reputacional: Protocolos de crise testados em
+            instituições públicas e órgãos de representação.
           </p>
           <p className="text-paragraph3">
-            Inteligência de Dados: Como sair do "achismo" e medir resultados
+            4. Inteligência de Dados: Como sair do "achismo" e medir resultados
             reais na comunicação.
           </p>
           <br />
@@ -61,6 +61,7 @@ const contentCursos = {
             Estado (RS) e coordenadora regional da Rede Nacional de Combate à
             Desinformação (RNCD). Diretora do Instituto Novos Paradigmas.
           </p>
+          <br />
           <p className="text-paragraph3">
             <strong>Soraia Hanna:</strong> Sócia-diretora executiva da Critério.
             Jornalista e autora do livro "Gerindo crises, construindo
@@ -68,12 +69,14 @@ const contentCursos = {
             quatro governos estaduais (RS) e na Assembleia Legislativa do Rio
             Grande do Sul.
           </p>
+          <br />
           <p className="text-paragraph3">
             <strong>Maria José Finatto:</strong> Doutora em Estudos da Linguagem
             e especialista em Acessibilidade Textual. Pesquisadora premiada pelo
             Google (LARA 2019). Coautora do projeto "LDO + Simples" do Tesouro
             do Estado (RS) e professora pesquisadora da UFRGS.
           </p>
+          <br />
           <p className="text-paragraph3">
             <strong>Daniela Machado:</strong> Jornalista e especialista em
             Letramento Digital (Rhode Island/EUA). Coordenadora do EducaMídia
@@ -81,12 +84,14 @@ const contentCursos = {
             Atua na formação de educadores e apoio a formuladores de políticas
             públicas.
           </p>
+          <br />
           <p className="text-paragraph3">
             <strong>Rodrigo Abella:</strong> Diretor-executivo da Social MedIA
             Gov. Graduado em Administração Pública (UDESC). Especialista em
             inteligência de dados, IA e transparência pública, com 15 anos de
             atuação no fortalecimento da gestão da comunicação governamental.
           </p>
+          <br />
           <p className="text-paragraph3">
             <strong>Leandro Rolim:</strong> Doutor em Comunicação Audiovisual
             (Salamanca). Superintendente de Comunicação Digital na EBC (Empresa

@@ -48,12 +48,6 @@ export default function CursosFixos() {
               buttonLabel={content.texts.features.card1.buttonLabel}
               buttonLink={whatsappContactLink}
             />
-            <FeatureImgOnBgCardButton
-              imgSrc={content.texts.features.card2.service}
-              title={content.texts.features.card2.title}
-              buttonLabel={content.texts.features.card2.buttonLabel}
-              buttonLink={whatsappContactLink}
-            ></FeatureImgOnBgCardButton>
           </div>
         </SectionWrapper>
       </SectionArea>
