@@ -10,7 +10,7 @@ const contentCursos = {
           O elo estratégico entre a gestão pública e a confiança do cidadão.
         </p>
       ),
-      date: "01 de junho de 2026",
+      date: "1 de Junho",
       time: "09:00",
       description: (
         <div className="text-black font-secondFont text-sm">
