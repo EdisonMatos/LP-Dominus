@@ -57,6 +57,7 @@ export const infos = {
   name: "Dominus Cursos",
   email: "contato", // Email desejado pelo cliente
   domain: "dominuscursos.com.br", // Sem "www"
+  emailSecond: "dominusatende@gmail.com",
   phone: {
     ddd: "51",
     firstPart: "99732", // Apenas os 5 primeiros números (incluindo o 9)
@@ -737,6 +738,7 @@ const content = {
     infos: {
       phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
       email: `${infos.email}@${infos.domain}`,
+      emailSecundario: `${infos.emailSecond}`,
       adress: infos.endereco,
       adressSecundario: infos.enderecoSecundario,
       officeHours: infos.expediente,
