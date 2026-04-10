@@ -13,7 +13,7 @@ const contentCursos = {
       date: "01 de junho de 2026",
       time: "09:00",
       description: (
-        <div className="text-black font-secondFont">
+        <div className="text-black font-secondFont text-sm">
           <p>
             <span>
               A comunicação pública não é mais um setor de apoio; ela é o ativo
@@ -110,9 +110,9 @@ const contentCursos = {
           <br />
           <br />
           <p className="text-paragraph3">
-            "Este não é um curso teórico de faculdade. É o encontro onde se
+            Este não é um curso teórico de faculdade. É o encontro onde se
             define o padrão da comunicação institucional do Rio Grande do Sul
-            para os próximos anos."
+            para os próximos anos.
           </p>
         </div>
       ),
