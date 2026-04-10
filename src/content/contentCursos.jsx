@@ -16,11 +16,11 @@ const contentCursos = {
         <div className="text-black font-secondFont">
           <p>
             <span>
-              "A comunicação pública não é mais um setor de apoio; ela é o ativo
+              A comunicação pública não é mais um setor de apoio; ela é o ativo
               central da legitimidade de qualquer gestão. No dia 1º de junho,
               Porto Alegre recebe as maiores referências do Brasil para discutir
               como enfrentar a desinformação, gerir crises de imagem e
-              implementar a transparência real através da Linguagem Simples."
+              implementar a transparência real através da Linguagem Simples.
             </span>
           </p>
           <br />
@@ -118,121 +118,68 @@ const contentCursos = {
       ),
       descriptionModal: (
         <div className="text-paragraph2 desktop1:text-paragraph2">
-          <strong>Programação Sugerida (Ordem de Fala)</strong>
+          08h00 – 08h30 | Credenciamento
           <br />
+          08h30 – 09h00 | Abertura Institucional
           <br />
-          <span className="font-semibold text-paragraph3">
-            08h00 – 08h30 | Credenciamento
-          </span>
+          (Dominus + Autoridades convidadas)
           <br />
+          09h00 – 10h00 | SANDRA BITENCOURT
           <br />
-          <span className="font-semibold text-paragraph3">
-            08h30 – 09h00 | Abertura Institucional
-          </span>
+          Tema: Interesse, imagem e Comunicação Pública em tempos instáveis: os
+          circuitos que precisamos decifrar.
           <br />
-          <span className="text-secondary">
-            (Dominus + Autoridades convidadas)
-          </span>
+          (Foco: Contextualização teórica e o papel da comunicação na democracia
+          atual).
           <br />
+          10h00 – 10h15 | Coffee Break Estratégico
           <br />
-          <span className="font-semibold text-paragraph3">
-            09h00 – 10h00 | SANDRA BITENCOURT
-          </span>
+          10h30 – 11h30 | MARIA JOSÉ BOCORNY FINATTO (UFRGS)
           <br />
-          🎤 <strong>Tema:</strong> Interesse, imagem e Comunicação Pública em
-          tempos instáveis: os circuitos que precisamos decifrar.
+          Tema: Acessibilidade Textual e Terminológica: Técnicas de Linguagem
+          Simples aplicadas à Comunicação de Utilidade Pública.
           <br />
-          <span className="text-secondary">
-            (Foco: Contextualização teórica e o papel da comunicação na
-            democracia atual).
-          </span>
+          (Foco: Simplificação de terminologias técnicas, médicas e jurídicas
+          para promover a inclusão de cidadãos com diferentes perfis de
+          letramento e escolaridade).
           <br />
+          11h30 – 12h30 | RODRIGO ABELLA (Social MedIA Gov)
           <br />
-          <span className="font-semibold text-paragraph3">
-            10h00 – 10h15 | Coffee Break Estratégico
-          </span>
+          Tema: Comunicação Pública baseada em evidências: 10 Insights para alta
+          performance.
           <br />
+          (Foco: Dados, benchmarking e o uso da IA para eficiência
+          governamental).
           <br />
-          <span className="font-semibold text-paragraph3">
-            10h30 – 11h30 | MARIA JOSÉ BOCORNY FINATTO (UFRGS)
-          </span>
+          12h30 – 14h00 | Almoço (Livre)
           <br />
-          🎤 <strong>Tema:</strong> Acessibilidade Textual e Terminológica:
-          Técnicas de Linguagem Simples aplicadas à Comunicação de Utilidade
-          Pública.
+          14h00 – 15h00 | SORAIA HANNA
           <br />
-          <span className="text-secondary">
-            (Foco: Simplificação de terminologias técnicas, médicas e jurídicas
-            para promover a inclusão de cidadãos com diferentes perfis de
-            letramento e escolaridade).
-          </span>
+          Tema: Gestão de Crise na Comunicação Pública: Da narrativa à opinião
+          pública.
           <br />
+          (Foco: Protocolos práticos, serenidade e construção de reputação sob
+          pressão).
           <br />
-          <span className="font-semibold text-paragraph3">
-            11h30 – 12h30 | RODRIGO ABELLA (Social MedIA Gov)
-          </span>
+          15h00 – 16h00 | DANIELA MACHADO (EducaMídia)
           <br />
-          🎤 <strong>Tema:</strong> Comunicação Pública baseada em evidências:
-          10 Insights para alta performance.
+          Tema: Muito além das Fake News: Como enfrentar a desinformação no
+          ecossistema público.
           <br />
-          <span className="text-secondary">
-            (Foco: Dados, benchmarking e o uso da IA para eficiência
-            governamental).
-          </span>
+          (Foco: Protocolos de curadoria, análise de mídias e proteção
+          institucional contra boatos).
           <br />
+          16h00 – 16h15 | Coffee Break Estratégico
           <br />
-          <span className="font-semibold text-paragraph3">
-            12h30 – 14h00 | Almoço (Livre)
-          </span>
+          16h15 – 17h15| LEANDRO ROLIM (EBC)
           <br />
+          Tema: Inovação e Expansão: Da TV 3.0 à capilaridade digital da mídia
+          pública brasileira.
           <br />
-          <span className="font-semibold text-paragraph3">
-            14h00 – 15h00 | SORAIA HANNA
-          </span>
+          (Foco: Tecnologia, participação social e o futuro da rede nacional de
+          comunicação).
           <br />
-          🎤 <strong>Tema:</strong> Gestão de Crise na Comunicação Pública: Da
-          narrativa à opinião pública.
-          <br />
-          <span className="text-secondary">
-            (Foco: Protocolos práticos, serenidade e construção de reputação sob
-            pressão).
-          </span>
-          <br />
-          <br />
-          <span className="font-semibold text-paragraph3">
-            15h00 – 16h00 | DANIELA MACHADO (EducaMídia)
-          </span>
-          <br />
-          🎤 <strong>Tema:</strong> Muito além das Fake News: Como enfrentar a
-          desinformação no ecossistema público.
-          <br />
-          <span className="text-secondary">
-            (Foco: Protocolos de curadoria, análise de mídias e proteção
-            institucional contra boatos).
-          </span>
-          <br />
-          <br />
-          <span className="font-semibold text-paragraph3">
-            16h00 – 16h15 | Coffee Break Estratégico
-          </span>
-          <br />
-          <br />
-          <span className="font-semibold text-paragraph3">
-            16h15 – 17h15 | LEANDRO ROLIM (EBC)
-          </span>
-          <br />
-          🎤 <strong>Tema:</strong> Inovação e Expansão: Da TV 3.0 à
-          capilaridade digital da mídia pública brasileira.
-          <br />
-          <span className="text-secondary">
-            (Foco: Tecnologia, participação social e o futuro da rede nacional
-            de comunicação).
-          </span>
-          <br />
-          <br />
-          <span className="font-semibold text-paragraph3">
-            17h15 – 17h45 | Encerramento e Entrega de Certificados
-          </span>
+          17h15 – 17h45 | Encerramento e Entrega de Certificados
         </div>
       ),
       banner: {

@@ -75,12 +75,28 @@ export default function ProximosCursos({
     >
       <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-x-[40px] desktop1:justify-evenly">
         {socialPrint ? (
-          <MotionDivDownToUp className="relative w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
+          <MotionDivDownToUp className="relative w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex flex-col items-center gap-8 justify-center">
             <img
               src={imgCursoDominus}
               alt={content.texts.about.aboutSocial.img.alt}
               className="w-[100%] rounded-xl "
             />
+
+            <div className="flex flex-col gap-4">
+              <Button
+                label="Conheça o curso"
+                className="text-black"
+                textclassName="text-start"
+                icon={<FilePenLine />}
+                buttonLink={`http://1congressogauchodecomunicacaopublica.com/`}
+                // onClick={() => {
+                //   setModalTitle("Cadastro");
+                //   setModalContent(<WhatsappForm />);
+                //   setVisible(true);
+                //   openModal("form");
+                // }}
+              />
+            </div>
           </MotionDivDownToUp>
         ) : (
           <MotionDivDownToUp className=" w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
@@ -194,12 +210,13 @@ export default function ProximosCursos({
                 className="text-black"
                 textclassName="text-start"
                 icon={<FilePenLine />}
-                onClick={() => {
-                  setModalTitle("Cadastro");
-                  setModalContent(<WhatsappForm />);
-                  setVisible(true);
-                  openModal("form");
-                }}
+                buttonLink={`https://checkout.pagtrust.com.br/ckdbfbb82f?funnel=fnce9789c0&ra=false`}
+                // onClick={() => {
+                //   setModalTitle("Cadastro");
+                //   setModalContent(<WhatsappForm />);
+                //   setVisible(true);
+                //   openModal("form");
+                // }}
               />
             </div>
           </div>
