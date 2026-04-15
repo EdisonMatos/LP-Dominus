@@ -13,14 +13,15 @@ const contentCursos = {
       date: "1 de Junho",
       time: "09:00",
       description: (
-        <div className="text-black font-secondFont text-sm">
+        <div className="text-sm text-black font-secondFont">
           <p>
             <span>
               A comunicação pública não é mais um setor de apoio; ela é o ativo
               central da legitimidade de qualquer gestão. No dia 1º de junho,
               Porto Alegre recebe as maiores referências do Brasil para discutir
-              como enfrentar a desinformação, gerir crises de imagem e
-              implementar a transparência real através da Linguagem Simples.
+              como enfrentar a desinformação, gerir crises de imagem,
+              implementar a transparência real através da Linguagem Simples e
+              consolidar a governança de dados como pilar de eficiência.
             </span>
           </p>
           <br />
@@ -52,6 +53,10 @@ const contentCursos = {
           <p className="text-paragraph3">
             4. Inteligência de Dados: Como sair do "achismo" e medir resultados
             reais na comunicação.
+          </p>
+          <p className="text-paragraph3">
+            5. Governança e Integridade: O uso da transparência inteligente e da
+            proteção de dados (LGPD) para uma gestão centrada no cidadão.
           </p>
           <br />
           <strong>Programação Confirmada:</strong>
@@ -97,6 +102,14 @@ const contentCursos = {
             (Salamanca). Superintendente de Comunicação Digital na EBC (Empresa
             Brasil de Comunicação). Professor da Universidade Católica de
             Brasília, com 20 anos de experiência em inovação e mídia pública.
+          </p>
+          <br />
+          <p className="text-paragraph3">
+            <strong>Gustavo Ferenci:</strong> Secretário de Transparência,
+            Controladoria e Governo Digital de Canoas e Presidente do Fórum de
+            Proteção de Dados Pessoais dos Municípios. Especialista em
+            transparência inteligente, integridade e governança de dados voltada
+            à eficiência da gestão pública.
           </p>
           <br />
           <strong>Inscrições:</strong>
