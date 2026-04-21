@@ -82,7 +82,7 @@ export default function ProximosCursos({
               className="w-[100%] rounded-xl "
             />
 
-            <div className="flex flex-col gap-4">
+            {/* <div className="flex flex-col gap-4">
               <Button
                 label="Conheça o curso"
                 className="text-black"
@@ -96,7 +96,7 @@ export default function ProximosCursos({
                 //   openModal("form");
                 // }}
               />
-            </div>
+            </div> */}
           </MotionDivDownToUp>
         ) : (
           <MotionDivDownToUp className=" w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
@@ -210,7 +210,7 @@ export default function ProximosCursos({
                 className="text-black"
                 textclassName="text-start"
                 icon={<FilePenLine />}
-                buttonLink={`https://checkout.pagtrust.com.br/ckdbfbb82f?funnel=fnce9789c0&ra=false`}
+                buttonLink={`http://1congressogauchodecomunicacaopublica.com/`}
                 // onClick={() => {
                 //   setModalTitle("Cadastro");
                 //   setModalContent(<WhatsappForm />);

@@ -147,14 +147,12 @@ const contentCursos = {
           <br />
           10h00 – 10h15 | Coffee Break Estratégico
           <br />
-          10h30 – 11h30 | MARIA JOSÉ BOCORNY FINATTO (UFRGS)
+          10h30 – 11h30 | PROFESSORA UFRGS (Linguagem Simples)
           <br />
-          Tema: Acessibilidade Textual e Terminológica: Técnicas de Linguagem
-          Simples aplicadas à Comunicação de Utilidade Pública.
+          Tema: Linguagem Simples: O direito de entender como pilar da
+          transparência pública.
           <br />
-          (Foco: Simplificação de terminologias técnicas, médicas e jurídicas
-          para promover a inclusão de cidadãos com diferentes perfis de
-          letramento e escolaridade).
+          (Foco: Técnica de redação e acessibilidade para o cidadão).
           <br />
           11h30 – 12h30 | RODRIGO ABELLA (Social MedIA Gov)
           <br />
@@ -184,7 +182,7 @@ const contentCursos = {
           <br />
           16h00 – 16h15 | Coffee Break Estratégico
           <br />
-          16h15 – 17h15| LEANDRO ROLIM (EBC)
+          16h15 – 17h15 | LEANDRO ROLIM (EBC)
           <br />
           Tema: Inovação e Expansão: Da TV 3.0 à capilaridade digital da mídia
           pública brasileira.
@@ -192,7 +190,12 @@ const contentCursos = {
           (Foco: Tecnologia, participação social e o futuro da rede nacional de
           comunicação).
           <br />
-          17h15 – 17h45 | Encerramento e Entrega de Certificados
+          17h15 – 17h45 | GUSTAVO FERENCI
+          <br />
+          Tema: Transparência Pública Inteligente: Comunicação e Governança para
+          estruturas eficientes.
+          <br />
+          18h15 – 18h30 | Encerramento e Entrega de Certificados
         </div>
       ),
       banner: {
