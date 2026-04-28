@@ -99,9 +99,9 @@ const contentCursos = {
           <br />
           <p className="text-paragraph3">
             <strong>Leandro Rolim:</strong> Doutor em Comunicação Audiovisual
-            (Salamanca). Superintendente de Comunicação Digital na EBC (Empresa
-            Brasil de Comunicação). Professor da Universidade Católica de
-            Brasília, com 20 anos de experiência em inovação e mídia pública.
+            (Salamanca). Assessor Especial na SUDIM - EBC (Empresa Brasil de
+            Comunicação). Professor da Universidade Católica de Brasília, com 20
+            anos de experiência em inovação e mídia pública.
           </p>
           <br />
           <p className="text-paragraph3">
@@ -147,7 +147,7 @@ const contentCursos = {
           <br />
           10h00 – 10h15 | Coffee Break Estratégico
           <br />
-          10h30 – 11h30 | PROFESSORA UFRGS (Linguagem Simples)
+          10h30 – 11h30 | Maria José Finatto - Professora UFRGS
           <br />
           Tema: Linguagem Simples: O direito de entender como pilar da
           transparência pública.
