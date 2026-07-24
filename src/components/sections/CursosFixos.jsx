@@ -48,6 +48,11 @@ export default function CursosFixos() {
               buttonLabel={content.texts.features.card1.buttonLabel}
               buttonLink={whatsappContactLink}
             />
+            <FeatureImgOnBgCardButton
+              imgSrc="imgs/congresso.webp"
+              buttonLabel="1º Congresso Gaúcho de Comunicação Pública"
+              buttonLink="https://www.1congressogauchodecomunicacaopublica.com/"
+            />
           </div>
         </SectionWrapper>
       </SectionArea>

@@ -37,7 +37,7 @@ export default function FeatureImgOnBgCardButton(props) {
       ></div>
 
       {/* Conteúdo branco abaixo da imagem */}
-      <div className="bg-white rounded-b-2xl p-6 shadow-md flex flex-col gap-4">
+      <div className="flex flex-col gap-4 p-6 bg-white shadow-md rounded-b-2xl">
         <h1 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px]">
           {title}
         </h1>
@@ -50,7 +50,6 @@ export default function FeatureImgOnBgCardButton(props) {
           color={buttonColor}
           size="small"
           onClick={handleWhatsAppClick}
-          icon={<FaWhatsapp size={16} />}
         />
       </div>
     </MotionDivDownToUp>

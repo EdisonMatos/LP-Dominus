@@ -203,6 +203,106 @@ const contentCursos = {
         // img2: bannerCurso2,
       },
     },
+    curso2: {
+      title:
+        "1ª FEIRA DO LIVRO INFANTOJUVENIL DO MERCADO PÚBLICO DE PORTO ALEGRE",
+      date: "Dias 6 e 9 de outubro de 2026",
+      description: (
+        <div className="text-sm text-black font-secondFont">
+          <p>
+            <strong>
+              Projeto "Avós e Netos pelos Livros" promoverá leitura, integração
+              entre gerações e valorização da cultura em Porto Alegre
+            </strong>
+          </p>
+
+          <br />
+
+          <p>
+            Entre os dias 6 e 9 de outubro de 2026, o Mercado Público de Porto
+            Alegre sediará a 1ª Feira do Livro Infantojuvenil, evento que
+            receberá o projeto "Avós e Netos pelos Livros", uma iniciativa
+            voltada ao incentivo da leitura, ao fortalecimento dos vínculos
+            familiares e à valorização da convivência entre diferentes gerações.
+          </p>
+
+          <br />
+
+          <p>
+            O projeto é desenvolvido em parceria pelo Coletivo Metamorfose da
+            Vida e pelo Movimento Sociedade Sem Idadismo (MSI), organizações que
+            atuam na promoção do envelhecimento saudável, da inclusão social e
+            do combate ao preconceito relacionado à idade.
+          </p>
+
+          <br />
+
+          <p>
+            A proposta busca aproximar crianças, adolescentes, avós e demais
+            familiares do universo literário por meio do contato direto com
+            escritores, atividades culturais e experiências educativas,
+            reforçando o papel da leitura como instrumento de formação cidadã,
+            desenvolvimento intelectual e fortalecimento das relações
+            familiares.
+          </p>
+
+          <br />
+
+          <strong>
+            Durante os quatro dias de evento, o público encontrará:
+          </strong>
+
+          <br />
+          <br />
+
+          <p className="text-paragraph3">
+            1. Encontro entre crianças, adolescentes e autores de literatura
+            infantojuvenil;
+          </p>
+
+          <p className="text-paragraph3">
+            2. Atividades voltadas ao incentivo à leitura;
+          </p>
+
+          <p className="text-paragraph3">
+            3. Ações de valorização da convivência entre avós e netos;
+          </p>
+
+          <p className="text-paragraph3">
+            4. Visitas guiadas ao Mercado Público de Porto Alegre, destacando
+            sua história e a importância da preservação do patrimônio cultural;
+          </p>
+
+          <p className="text-paragraph3">
+            5. Espaços de integração entre famílias, escolas, escritores e
+            comunidade.
+          </p>
+
+          <br />
+
+          <strong>Participação das escolas</strong>
+
+          <br />
+          <br />
+
+          <p>
+            A organização conta com o apoio da Secretaria Municipal de Educação
+            de Porto Alegre (SMED) para incentivar a participação das escolas
+            municipais, promovendo visitas de estudantes à feira e estimulando
+            as famílias para que avós e netos participem juntos da programação.
+          </p>
+
+          <br />
+
+          <p>
+            A Dominus Consultoria e Capacitação reconhece iniciativas como esta
+            por seu relevante impacto social, educacional e cultural,
+            fortalecendo políticas públicas voltadas à educação, à cidadania, à
+            inclusão e à valorização das relações entre gerações.
+          </p>
+        </div>
+      ),
+    },
   },
 };
 
