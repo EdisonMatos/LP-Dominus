@@ -74,148 +74,9 @@ export default function ProximosCursos({
       paddingbottom={false}
     >
       {/* PRIMEIRO CURSO */}
-      <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-x-[40px] desktop1:justify-evenly">
-        {socialPrint ? (
-          <MotionDivDownToUp className="relative w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex flex-col items-center gap-8 justify-center">
-            <img
-              src={imgCursoDominus}
-              alt={content.texts.about.aboutSocial.img.alt}
-              className="w-[100%] rounded-xl"
-            />
-
-            {/* <div className="flex flex-col gap-4">
-              <Button
-                label="Conheça o curso"
-                className="text-black"
-                textclassName="text-start"
-                icon={<FilePenLine />}
-                buttonLink={`http://1congressogauchodecomunicacaopublica.com/`}
-              />
-            </div> */}
-          </MotionDivDownToUp>
-        ) : (
-          <MotionDivDownToUp className="w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex justify-center">
-            <div className="relative bg-center bg-no-repeat bg-cover shadow-custom-opacity shadow-secondary/25 rounded-xl">
-              <ImageGallery
-                items={images}
-                showNav={false}
-                showFullscreenButton={false}
-                useBrowserFullscreen={false}
-                showBullets={true}
-                slideInterval={10000}
-                showThumbnails={false}
-                additionalClass="custom-gallery"
-                autoPlay={true}
-              />
-
-              <style>
-                {`
-                  .custom-gallery .image-gallery-slide img {
-                    width: 100% !important;
-                    object-fit: contain !important;
-                    border-radius: 10px !important;
-                    margin: 0 auto;
-                  }
-
-                  @media (min-width: 640px) and (max-width: 1023px) {
-                    .custom-gallery .image-gallery-slide img {
-                    }
-                  }
-
-                  @media (min-width: 1024px) {
-                    .custom-gallery .image-gallery-slide img {
-                      height: 560px !important;
-                    }
-                  }
-
-                  .custom-gallery .image-gallery-thumbnails img {
-                    height: 60px !important;
-                    width: 100px !important;
-                    object-fit: cover !important;
-                  }
-                `}
-              </style>
-            </div>
-          </MotionDivDownToUp>
-        )}
-
-        <div className="desktop1:w-[550px] desktop2:w-[570px]">
-          <MotionDivDownToUp>
-            <SectionHeader
-              className="text-center desktop1:flex desktop1:w-full"
-              miniTitle={contentCursos.texts.curso1.date}
-              sectionHeaderTitle={contentCursos.texts.curso1.title}
-              sectionHeaderSubtitle={contentCursos.texts.curso1.subtitle}
-              color=""
-              type="article"
-            />
-
-            <MotionDivDownToUp>
-              <TextoComRolagem>
-                <Paragraphs className="text-secondary text-paragraph2 text-opacity-80 mb-[48px]">
-                  {contentCursos.texts.curso1.description}
-                </Paragraphs>
-              </TextoComRolagem>
-            </MotionDivDownToUp>
-          </MotionDivDownToUp>
-
-          <MotionDivDownToUp>
-            <Paragraphs className="text-white text-opacity-80 mb-[48px]"></Paragraphs>
-          </MotionDivDownToUp>
-
-          <div className="flex flex-col gap-6 tablet1:flex-row">
-            <div className="flex flex-col gap-4">
-              <Button
-                label="Ver programação"
-                className="text-black"
-                textclassName="text-start"
-                icon={
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-info-icon lucide-info"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M12 16v-4" />
-                    <path d="M12 8h.01" />
-                  </svg>
-                }
-                onClick={() => {
-                  setModalTitle("🗓 PROGRAMAÇÃO");
-                  setVisible(true);
-                  openModal("info");
-                }}
-              />
-            </div>
-
-            <div className="flex flex-col gap-4">
-              <Button
-                label="1º Congresso Gaúcho de Comunicação Pública"
-                className="text-black"
-                textclassName="text-start"
-                icon={<FilePenLine />}
-                buttonLink="http://1congressogauchodecomunicacaopublica.com/"
-                // onClick={() => {
-                //   setModalTitle("Cadastro");
-                //   setModalContent(<WhatsappForm />);
-                //   setVisible(true);
-                //   openModal("form");
-                // }}
-              />
-            </div>
-          </div>
-        </div>
-      </SectionWrapper>
 
       {/* SEGUNDO CURSO */}
-      <SectionWrapper className="flex flex-col desktop1:flex-row gap-[40px] desktop1:gap-x-[40px] desktop1:justify-evenly mt-[80px] desktop1:mt-[120px]">
+      <SectionWrapper className="flex flex-col desktop1:flex-row desktop1:gap-x-[40px] desktop1:justify-evenly ">
         <MotionDivDownToUp className="relative w-[100%] desktop1:w-[600px] desktop2:w-[485px] flex flex-col items-center justify-center">
           <img
             src="/imgs/avos.jpg"
@@ -224,7 +85,7 @@ export default function ProximosCursos({
           />
         </MotionDivDownToUp>
 
-        <div className="desktop1:w-[550px] desktop2:w-[570px]">
+        <div className="desktop1:w-[550px] desktop2:w-[570px] mt-6">
           <MotionDivDownToUp>
             <SectionHeader
               className="text-center desktop1:flex desktop1:w-full"
